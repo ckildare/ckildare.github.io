@@ -1,0 +1,10 @@
+.main {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.pageContent {
+  min-height: 80vh;
+  width: 100%;
+}

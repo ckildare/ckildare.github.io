@@ -1,0 +1,65 @@
+@use "../../styles/palette.scss" as *;
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 9rem;
+
+    background-color: $light-blue-palette;
+    font-family: $roboto-font;
+
+    .topRow {
+        display: flex;
+        align-items: center;
+
+        height: 6rem;
+        margin-left: 0.125rem;
+
+        .headshot {
+            border: 0.25rem $dark-blue-palette solid;
+            box-shadow: 0.125rem 0.125rem 0.125rem $shadow-gray-pallete;
+        }
+
+        .nameText {
+            font-size: 5rem;
+            margin-left: 2rem;
+            color: rgb(17, 28, 62);
+        }
+    }
+
+    .navBarContainer {
+        @include flex-with-centering;
+        gap: 0.325rem;
+
+        background-color: $dark-blue-palette;
+        border-top: 0.125rem $dark-blue-palette solid;
+
+        width: 100%;
+        height: 3rem;
+    
+        :last-child {
+            margin-right: none;
+        }
+
+        @include button-hover;
+
+        .buttonContainer {
+            @include flex-with-centering;
+            width: 10rem;
+            height: 2rem;
+            background-color: rgb(87, 99, 134);
+            box-shadow: 0.125rem 0.125rem 0.125rem rgb(29, 36, 56);
+        
+            .buttonText {
+                @include flex-with-centering;
+                font-size: 1.05rem;
+                width: stretch;
+                height: stretch;
+                color: white;
+            }
+        }
+    }
+}

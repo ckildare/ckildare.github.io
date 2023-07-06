@@ -1,0 +1,128 @@
+@use "../../styles/palette.scss"as *;
+
+.footerContainer {
+    @include flex-with-centering;
+
+    width: 100%;
+    height: 12rem;
+    gap: 1rem;
+    position: absolute;
+
+    background-color: $dark-blue-palette;
+    font-family: $roboto-font;
+
+    .contactsContainer {
+        @include flex-with-centering;
+        flex-direction: column;
+
+        height: inherit;
+        width: 50%;
+
+        .contactHeader {
+            @include flex-with-centering;
+
+            height: 3rem;
+            width: stretch;
+
+            font-size: 1.5rem;
+        }
+
+        .contacts {
+            display: grid;
+            align-content: center;
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+
+            height: 8rem;
+
+            padding: 0 1rem;
+            gap: 0.325rem;
+
+            .contactCard {
+                display: flex;
+                align-items: center;
+
+                width: 16rem;
+                height: 3rem;
+
+                box-shadow: 0.125rem 0.125rem 0.125rem rgb(29, 36, 56);
+                background-color: rgb(87, 99, 134);
+
+                .contactImage {
+                    @include flex-with-centering;
+                    margin-left: 0.1875rem;
+                    width: 3rem;
+
+                    img {
+                        border-radius: 4px;
+                    }
+                }
+
+                .contactText {
+                    @include flex-with-centering;
+                    width: 13rem;
+
+                    font-size: 1rem;
+                    color: white;
+                }
+            }
+
+            @include button-hover;
+        }
+    }
+
+    .githubRepo {
+        @include flex-with-centering;
+
+        background-color: rgb(35, 43, 68);
+        box-shadow: 0.25rem 0 0.5rem 0 $dark-blue-palette inset;
+
+        width: 50%;
+        height: inherit;
+
+        .deprecatedSiteImg {
+            @include flex-with-centering;
+            width: 30%;
+
+            img {
+                border-radius: 50%;
+                border: 0.25rem rgb(22, 27, 43) solid;
+                box-shadow: 0.25rem 0.25rem 0.25rem rgb(29, 36, 56),
+                    -0.125rem -0.125rem 0.125rem rgb(29, 36, 56);
+            }
+        }
+
+        .deprecatedSide {
+            @include flex-with-centering;
+            flex-direction: column;
+            height: inherit;
+            width: 70%;
+
+            .deprecatedSiteDescription {
+                @include flex-with-centering;
+                text-align: center;
+                margin: 0 1.5rem 2rem;
+                height: 6rem;
+            }
+
+            .deprecatedSiteLink {
+                @include flex-with-centering;
+                width: 15rem;
+                height: 2rem;
+
+                margin: 0 1rem;
+
+                box-shadow: 0.125rem 0.125rem 0.125rem rgb(29, 36, 56);
+                background-color: rgb(87, 99, 134);
+
+                .deprecatedSiteLinkText {
+                    @include flex-with-centering;
+                    width: stretch;
+                    height: 2rem;
+                }
+
+                @include button-hover;
+            }
+        }
+    }
+}

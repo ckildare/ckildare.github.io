@@ -1,0 +1,61 @@
+@use "../../styles/palette.scss"as *;
+
+.courseContainer {
+  display: flex;
+
+  .buttonWrapper {
+    background-color: rgb(100, 100, 100);
+    border: none;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .courseBody {
+
+    .courseInformation {
+
+    }
+  }
+
+  .courseLinkWrapper {
+    @include flex-with-centering;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    width: 100%;
+
+    .courseLink {
+      @include flex-with-centering;
+      flex-direction: row;
+      width: 100%;
+      padding: 0.5rem;
+
+      border: 0.25rem solid black;
+      border-radius: 0.75rem;
+
+      background-color: rgb(172, 172, 172);
+      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(88, 88, 88);
+
+      .linkText {
+        font-size: 1.75rem;
+        font-weight: 525;
+        color: black;
+
+        text-align: center;
+        width: 75%;
+        border-left: 2px solid black;
+        margin-left: 1rem;
+      }
+    }
+
+    .courseLink:hover {
+      background-color: rgb(208, 208, 208);
+      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(80, 80, 80);
+    }
+  }
+}
+
+.courseContainerShadow {
+
+}

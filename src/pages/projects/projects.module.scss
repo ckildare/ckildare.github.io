@@ -1,0 +1,33 @@
+@use "../../styles/palette.scss"as *;
+
+.projectPageContainer {
+  @include flex-with-centering;
+  flex-direction: column;
+  min-height: 130vh;
+  background-color: $coffee-palette;
+
+  .title {
+    @include flex-with-centering;
+    padding: 1rem 0 0.5rem;
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    @include flex-with-centering;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .projectGridWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    max-width: 90rem;
+    min-width: 30rem;
+    height: min-content;
+
+    justify-content: center;
+  }
+}

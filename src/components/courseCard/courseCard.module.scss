@@ -1,47 +1,107 @@
 @use "../../styles/palette.scss"as *;
 
-.courseContainer {
+.courseBody {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: inherit;
+  padding: 1rem;
 
-  .buttonWrapper {
-    background-color: rgb(100, 100, 100);
-    border: none;
-  }
+  border: 1px solid black;
 
-  .title {
-    font-size: 2rem;
-  }
+  .courseInfo {
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    width: 100%;
 
-  .courseBody {
+    .courseOverview {
+      width: 30%;
+  
+      .title {
+        font-size: 2rem;
+      }
+  
+      .headerInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.25rem;
+      }
 
-    .courseInformation {
+      .professorTitle {
+        font-size: 1.25rem;
+      }
+  
+      .professorList {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
 
+        margin-top: 0.5rem;
+      }
+    }
+
+    .courseInfoTextGrid {
+      display: flex;
+      justify-content: space-evenly;
+      justify-items: center;
+      justify-self: end;
+
+      width: 70%;
+      padding: 0 0.5rem;
+
+      .courseDescriptionColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 40%;
+
+        .courseOverviewBody {
+          white-space: normal;
+        }
+      }
+
+      .courseInfoTitle {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        text-align: center;
+      }
+
+      .courseOutcomesColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        width: 40%;
+      }
     }
   }
 
-  .courseLinkWrapper {
-    @include flex-with-centering;
-    flex-direction: column;
-    row-gap: 0.5rem;
-    width: 100%;
+  .courseBottomRow {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 1rem;
 
     .courseLink {
       @include flex-with-centering;
       flex-direction: row;
-      width: 100%;
+      width: 30%;
+      height: min-content;
       padding: 0.5rem;
-
+  
       border: 0.25rem solid black;
       border-radius: 0.75rem;
-
+  
       background-color: rgb(172, 172, 172);
       box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(88, 88, 88);
-
+  
       .linkText {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         font-weight: 525;
         color: black;
-
+  
         text-align: center;
         width: 75%;
         border-left: 2px solid black;
@@ -53,9 +113,19 @@
       background-color: rgb(208, 208, 208);
       box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(80, 80, 80);
     }
+  
+    .projectGridWrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+  
+      width: 70%;
+      height: min-content;
+  
+      justify-content: space-evenly;
+    }
   }
 }
 
-.courseContainerShadow {
-
-}
+.courseContainerShadow {}

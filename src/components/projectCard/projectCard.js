@@ -19,9 +19,9 @@ export default function ProjectCard(props) {
   }
 
   return (
-    <div className={classNames(styles.projectContainer, openProject ?
-      styles.projectContainerOpen
-      : false)}>
+    <div className={classNames(
+      props.isSchoolProject ? styles.projectContainerSchool : styles.projectContainer,
+      openProject ? styles.projectContainerOpen : false)}>
       <button
         className={
           classNames(styles.buttonWrapper, !openProject ?
@@ -32,7 +32,14 @@ export default function ProjectCard(props) {
         onClick={handleOpenProject}
       >
         {props.project?.displayImg != "" ?
-          <Image priority className={styles.coverImage} height={210} width={417.5} src={props.project?.displayImg ?? ""} />
+          <Image
+            priority
+            className={styles.coverImage}
+            height={props.isSchoolProject ? 155 : 210}
+            width={props.isSchoolProject ? 305 : 417.5}
+            src={props.project?.displayImg ?? ""}
+            alt={"Cover image for " + props.project?.title + "project"}
+          />
           :
           <div className={styles.imagePlaceholder}>Placeholder</div>
         }

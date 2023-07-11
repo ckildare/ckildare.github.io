@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from './home.module.scss'
+import styles from './styles/home.module.scss'
 
 export default function Home() {
 

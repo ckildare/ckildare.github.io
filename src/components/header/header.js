@@ -12,26 +12,26 @@ export default function Header() {
     },
     {
       label: "Schooling",
-      url: "school/school",
+      url: "/school",
     },
     {
       label: "Personal Life",
-      url: "/personalLife/personalLife",
+      url: "/personalLife",
     },
     {
       label: "Personal Projects",
-      url: "/projects/projects",
+      url: "/projects",
     },
     {
       label: "Work Experience",
-      url: "/work/work",
+      url: "/work",
     },
   ];
 
   return (
     <div className={styles.headerContainer}>
       <div className={styles.topRow}>
-        <Image src={headshot} width={90} height={90} as={'div'} className={styles.headshot} />
+        <Image src={headshot} width={90} height={90} as={'div'} className={styles.headshot} alt={"Headshot picture"}/>
         <p as={'div'} className={styles.nameText}>Connor Kildare</p>
       </div>
       <div className={styles.navBarContainer}>

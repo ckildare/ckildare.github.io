@@ -1,4 +1,4 @@
-import styles from './projects.module.scss';
+import styles from './styles/projects.module.scss';
 import React from 'react';
 import ProjectCard from '@/components/projectCard/projectCard';
 

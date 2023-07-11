@@ -1,11 +1,8 @@
 import { ProjectStatus } from '@/public/enums/projectStatus';
 
-import axelWilson from '../../public/card-screenshots/axel-wilson-cover-image.png';
-import buddySystems from '../../public/card-screenshots/buddy-systems-cover-image.png';
 import deprecatedPortfolioSite from '../../public/card-screenshots/portfolio-site-cover-image.png';
-import laundryScheduler from '../../public/card-screenshots/laundry-scheduler-cover-image.png';
 
-export const courseData = [
+export var courseData = [
   {
     semesterName: "Fall 2021",
     courses: [

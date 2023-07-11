@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './footer.module.scss'
-import github from '../../public/link-logos/github.png';
-import gitlab from '../../public/link-logos/gitlab.png';
-import gmail from '../../public/link-logos/gmail.png';
-import linkedin from '../../public/link-logos/linkedin.png';
+import github from '../../public/icons/github.svg';
+import gitlab from '../../public/icons/gitlab.svg';
+import gmail from '../../public/icons/email.svg';
+import linkedin from '../../public/icons/linkedin.svg';
 import oldHeadShot from '../../public/temp-headshot.png';
 
 export default function Footer() {

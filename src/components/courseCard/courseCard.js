@@ -14,13 +14,15 @@ export default function CourseCard(props) {
 
   return (
     <div className={styles.courseBody}>
+      <div className={styles.title}>{props.course?.title}</div>
+      <div className={styles.lineDivider} />
       <div className={styles.courseInfo}>
         <div className={styles.courseOverview}>
-          <div className={styles.title}>{props.course?.title}</div>
           <div className={styles.headerInfo}>
             <p className={styles.courseNumber}>{props.course?.courseNumber}</p>
             <p className={styles.semester}>{props.course?.semester}</p>
           </div>
+          <div className={styles.courseInfoTitleUnderline} />
           <p className={styles.professorTitle}>Instructors</p>
           <div className={styles.professorList}>
             {props.course?.instructors.map((instructor, key) => {
@@ -33,10 +35,12 @@ export default function CourseCard(props) {
         <div className={styles.courseInfoTextGrid}>
           <div className={styles.courseDescriptionColumn}>
             <p className={styles.courseInfoTitle} as={'div'}>Overview</p>
+            <div className={styles.courseInfoTitleUnderline} />
             <p className={styles.courseOverviewBody} as={'div'}>{props.course?.description}</p>
           </div>
           <div className={styles.courseOutcomesColumn}>
             <p className={styles.courseInfoTitle}>Outcomes</p>
+            <div className={styles.courseInfoTitleUnderline} />
             <div className={styles.courseOutcomesBody}>
               {props.course?.outcomes?.map((outcome, key) => {
                 return (

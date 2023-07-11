@@ -7,8 +7,8 @@ import classNames from 'classnames';
 
 import githubLogo from '../../public/icons/github.svg';
 import projectIcon from '../../public/icons/rocket-launch.svg';
-import rightChevron from '../../public/icons/chevron-right.svg';
-import downChevron from '../../public/icons/chevron-down.svg';
+import rightChevron from '../../public/icons/chevron/chevron-right.svg';
+import downChevron from '../../public/icons/chevron/chevron-down.svg';
 
 
 export default function ProjectCard(props) {
@@ -35,8 +35,8 @@ export default function ProjectCard(props) {
           <Image
             priority
             className={styles.coverImage}
-            height={props.isSchoolProject ? 155 : 210}
-            width={props.isSchoolProject ? 305 : 417.5}
+            height={props.isSchoolProject ? 169 : 210}
+            width={props.isSchoolProject ? 336 : 417.5}
             src={props.project?.displayImg ?? ""}
             alt={"Cover image for " + props.project?.title + "project"}
           />

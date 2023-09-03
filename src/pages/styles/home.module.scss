@@ -1,0 +1,28 @@
+.homeContainer {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+  min-height: 48rem;
+  padding: 2rem;
+
+  background-color: #94A191;
+
+  .photoContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+
+    border: 2px black solid;
+    color: black;
+    font-size: 1.25rem;
+  }
+
+  .introductionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    height: min-content;
+    color: black;
+    font-size: 1.375rem;
+  }
+}

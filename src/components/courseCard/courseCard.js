@@ -22,8 +22,8 @@ export default function CourseCard(props) {
             <p className={styles.courseNumber}>{props.course?.courseNumber}</p>
             <p className={styles.semester}>{props.course?.semester}</p>
           </div>
-          <div className={styles.courseInfoTitleUnderline} />
           <p className={styles.professorTitle}>Instructors</p>
+          <div className={styles.courseInfoTitleUnderline} />
           <div className={styles.professorList}>
             {props.course?.instructors.map((instructor, key) => {
               return (

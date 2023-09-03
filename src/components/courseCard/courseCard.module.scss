@@ -12,68 +12,101 @@
     padding-bottom: 0.5rem;
   }
 
+  .headerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+  }
+
+  .professorTitle {
+    font-size: 1.5rem;
+  }
+
+  .professorList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    margin-top: 0.5rem;
+  }
+}
+
+.courseInfoTitle {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.linkText {
+  font-size: 1.25rem;
+  font-weight: 525;
+  color: black;
+
+  text-align: center;
+  width: 75%;
+  border-left: 2px solid black;
+  margin-left: 1rem;
+}
+
+.courseLink:hover {
+  background-color: rgb(208, 208, 208);
+  box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(80, 80, 80);
+}
+
+.projectGridWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-left: 0.25rem;
+
+  width: 70%;
+  height: min-content;
+
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 901px) {
   .courseInfo {
     display: flex;
-    white-space: nowrap;
     flex-direction: row;
-    width: 100%;
+    white-space: nowrap;
+    width: inherit;
 
     .courseOverview {
       width: 30%;
+    }
+  }
 
-      .headerInfo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: 1.25rem;
-        padding-bottom: 0.25rem;
-      }
+  .courseInfoTextGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    justify-self: end;
 
-      .professorTitle {
-        font-size: 1.25rem;
-      }
+    width: 70%;
 
-      .professorList {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+    .courseDescriptionColumn {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
 
-        margin-top: 0.5rem;
+      width: 40%;
+      margin-top: 1rem;
+
+      .courseOverviewBody {
+        white-space: normal;
       }
     }
 
-    .courseInfoTextGrid {
+    .courseOutcomesColumn {
       display: flex;
-      justify-content: space-around;
-      justify-items: center;
-      justify-self: end;
+      flex-direction: column;
+      justify-content: flex-start;
 
-      width: 70%;
-      padding: 0 0.5rem;
-
-      .courseDescriptionColumn {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 40%;
-
-        .courseOverviewBody {
-          white-space: normal;
-        }
-      }
-
-      .courseInfoTitle {
-        font-size: 1.5rem;
-        text-align: center;
-      }
-
-      .courseOutcomesColumn {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        width: 40%;
-      }
+      width: 40%;
+      margin-top: 1rem;
     }
   }
 
@@ -95,41 +128,88 @@
 
       background-color: rgb(172, 172, 172);
       box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(88, 88, 88);
+    }
+  }
+}
 
-      .linkText {
-        font-size: 1.25rem;
-        font-weight: 525;
-        color: black;
+@media screen and (max-width: 900px) {
+  .courseInfo {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    width: inherit;
 
-        text-align: center;
-        width: 75%;
-        border-left: 2px solid black;
-        margin-left: 1rem;
+    align-items: center;
+
+    .courseOverview {
+      width: inherit;
+    }
+
+    .professorTitle {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .courseInfoTextGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    justify-self: end;
+
+    width: inherit;
+
+    .courseDescriptionColumn {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      width: 100%;
+      margin-top: 1rem;
+
+      .courseOverviewBody {
+        white-space: normal;
       }
     }
 
-    .courseLink:hover {
-      background-color: rgb(208, 208, 208);
-      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(80, 80, 80);
-    }
-
-    .projectGridWrapper {
+    .courseOutcomesColumn {
       display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+
+  .courseBottomRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .courseLink {
+      @include flex-with-centering;
       flex-direction: row;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-left: 0.25rem;
 
-      width: 70%;
       height: min-content;
+      width: 70%;
+      margin: 1rem;
+      padding: 0.5rem;
 
-      justify-content: space-evenly;
+      border: 0.25rem solid black;
+      border-radius: 0.75rem;
+
+      background-color: rgb(172, 172, 172);
+      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(88, 88, 88);
     }
   }
 }
 
 .lineDivider {
-  width: 95%;
+  width: 100%;
   height: 5px;
   align-self: center;
   margin-bottom: 0.75rem;
@@ -149,5 +229,3 @@
   background-color: white;
   border-radius: 1px;
 }
-
-.courseContainerShadow {}

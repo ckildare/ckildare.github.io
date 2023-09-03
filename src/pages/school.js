@@ -33,6 +33,7 @@ export default function Schooling() {
       )
     );
   };
+  
   return (
     <div className={styles.coursePageContainer}>
       <p className={styles.title} as={'div'}>Coursework</p>

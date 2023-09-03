@@ -1,15 +1,17 @@
-@use "../../styles/palette.scss" as *;
+@use "../../styles/palette.scss"as *;
 
-.headerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media screen and (min-width: 701px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-    width: 100%;
-    height: 9rem;
+        width: 100%;
+        height: 10rem;
 
-    background-color: $light-blue-palette;
-    font-family: $roboto-font;
+        background-color: #C9B79C;
+        font-family: $roboto-font;
+    }
 
     .topRow {
         display: flex;
@@ -17,49 +19,119 @@
 
         height: 6rem;
         margin-left: 0.125rem;
+    }
 
-        .headshot {
-            border: 0.25rem $dark-blue-palette solid;
-            box-shadow: 0.125rem 0.125rem 0.125rem $shadow-gray-pallete;
-        }
-
-        .nameText {
-            font-size: 5rem;
-            margin-left: 2rem;
-            color: rgb(17, 28, 62);
-        }
+    .nameText {
+        font-size: 5rem;
+        margin-left: 2rem;
+        color: black;
     }
 
     .navBarContainer {
         @include flex-with-centering;
         gap: 0.325rem;
 
-        background-color: $dark-blue-palette;
-        border-top: 0.125rem $dark-blue-palette solid;
+        background-color: #616B5D;
+        border-top: 0.125rem #3F3F3B solid;
 
-        width: 100%;
         height: 3rem;
-    
+        width: 100%;
+
         :last-child {
             margin-right: none;
         }
 
-        @include button-hover;
-
-        .buttonContainer {
-            @include flex-with-centering;
-            width: 10rem;
-            height: 2rem;
-            background-color: rgb(87, 99, 134);
-            box-shadow: 0.125rem 0.125rem 0.125rem rgb(29, 36, 56);
-        
-            .buttonText {
-                @include flex-with-centering;
-                font-size: 1.05rem;
-                width: stretch;
-                height: stretch;
-                color: white;
-            }
+        :hover {
+            background-color: #B3AA91;
         }
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 700px) {
+    .nameText {
+        font-size: 4rem;
+        margin: auto;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 569px) {
+    .nameText {
+        font-size: 3rem;
+        margin: auto;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 100%;
+        height: 12rem;
+
+        background-color: #C9B79C;
+        font-family: $roboto-font;
+    }
+
+    .topRow {
+        display: flex;
+        align-items: center;
+
+        height: 12rem;
+        margin-left: 0.125rem;
+    }
+
+    .navBarContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 0.325rem;
+
+        background-color: #616B5D;
+        border-top: 0.125rem #3F3F3B solid;
+
+        height: 10rem;
+        width: 100%;
+
+        :last-child {
+            margin-right: none;
+        }
+
+        :hover {
+            background-color: #B3AA91;
+        }
+    }
+}
+
+.headshot {
+    border: 0.25rem #50554C solid;
+    box-shadow: 0.125rem 0.125rem 0.125rem #3F3F3B;
+}
+
+.buttonContainer {
+    @include flex-with-centering;
+    width: 10rem;
+    height: 2rem;
+    background-color: #9D9C85;
+    box-shadow: 0.125rem 0.125rem 0.125rem #373433;
+
+    .buttonText {
+        @include flex-with-centering;
+        font-size: 1.05rem;
+        width: stretch;
+        height: stretch;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .nameText {
+        font-size: 2.25rem;
+        margin: auto;
+        color: black;
     }
 }

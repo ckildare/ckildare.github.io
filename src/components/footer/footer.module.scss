@@ -8,7 +8,7 @@
     gap: 1rem;
     position: absolute;
 
-    background-color: $dark-blue-palette;
+    background-color: #754F5B;
     font-family: $roboto-font;
 
     .contactsContainer {
@@ -67,14 +67,14 @@
                 }
             }
 
-            @include button-hover;
+            // @include button-hover;
         }
     }
 
     .githubRepo {
         @include flex-with-centering;
 
-        background-color: rgb(35, 43, 68);
+        background-color: #A0878F;
         box-shadow: 0.25rem 0 0.5rem 0 $dark-blue-palette inset;
 
         width: 50%;
@@ -121,7 +121,7 @@
                     height: 2rem;
                 }
 
-                @include button-hover;
+                // @include button-hover;
             }
         }
     }

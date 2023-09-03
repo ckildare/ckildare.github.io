@@ -1,0 +1,51 @@
+@use "../../styles/palette.scss"as *;
+
+.workPageContainer {
+  @include flex-with-centering;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  padding-bottom: 3rem;
+  background-color: #B7A892;
+  color: black;
+
+  .title {
+    @include flex-with-centering;
+    padding: 2rem 0 0.5rem;
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    @include flex-with-centering;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .workPageBody {
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .jobWrapper {
+      margin-bottom: 1rem;
+    }
+
+    .resume {
+      padding: 0.625rem 4rem;
+      margin-top: 3rem;
+
+      font-size: 1.75rem;
+      background-color: #837969;
+      box-shadow: 0.125rem 0.125rem 0.25rem #564E44;
+      border-radius: 0.25rem;
+    }
+
+    .resume:hover {
+      background-color: #968B79;
+      box-shadow: 0.125rem 0.125rem 0.375rem #564E44;
+    }
+  }
+}

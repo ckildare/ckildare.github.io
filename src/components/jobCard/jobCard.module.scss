@@ -1,0 +1,62 @@
+@use "../../styles/palette.scss"as *;
+
+@mixin section-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.jobBody {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  max-width: 70rem;
+  padding: 0.25rem;
+
+  .jobDescription {
+    display: flex;
+    flex-direction: column;
+
+    .descriptionTopRow {
+      @include section-flex;
+
+      .jobTitle {
+        font-size: 1.75rem;
+      }
+    }
+
+    .descriptionSupervisors {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: baseline;
+
+      margin-top: 0.5rem;
+
+      .supervisor {
+        margin-bottom: 0.125rem;
+      }
+    }
+  }
+
+  .contributions {}
+
+  .outcomes {}
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.lineDivider {
+  width: 100%;
+  height: 5px;
+  align-self: center;
+  margin: 0.75rem 0rem 1rem;
+
+  background-color: #474138;
+  border-radius: 2.5px;
+}

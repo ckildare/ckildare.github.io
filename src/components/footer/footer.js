@@ -46,7 +46,7 @@ export default function Footer() {
       </div>
       <div className={styles.githubRepo}>
         <div className={styles.deprecatedSiteImg}><Image src={oldHeadShot} width={125} height={125} alt={"Photo for my deprecated site"}/></div>
-        <div className={styles.deprecatedSide}>
+        <div className={styles.deprecatedSite}>
           <p as={'div'} className={styles.deprecatedSiteDescription}>
             This current site is built using SASS, React.JS, and Next.JS technologies. You can find my old website and its repository here!
           </p>

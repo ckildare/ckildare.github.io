@@ -21,6 +21,12 @@
         margin-left: 0.125rem;
     }
 
+    .nameText {
+        font-size: 5rem;
+        margin-left: 2rem;
+        color: black;
+    }
+
     .navBarContainer {
         @include flex-with-centering;
         gap: 0.325rem;
@@ -37,6 +43,10 @@
 
         :hover {
             background-color: #B3AA91;
+        }
+
+        :active :focus :visited {
+            background-color: #d1c7ad;
         }
     }
 }
@@ -82,13 +92,28 @@
         :hover {
             background-color: #B3AA91;
         }
+
+        :active :focus {
+            background-color: #d1c7ad;
+        }
     }
 }
 
-.nameText {
-    font-size: 10vw;
-    margin-left: 2rem;
-    color: black;
+@media screen and (max-width: 700px) and (min-width: 320px) {
+    .nameText {
+        font-size: 10vw;
+        margin: 0 auto;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .nameText {
+        font-size: 10vw;
+        width: min-content;
+        margin: 0 auto;
+        color: black;
+    }
 }
 
 .headshot {

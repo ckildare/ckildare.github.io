@@ -1,6 +1,12 @@
 ## Getting Started
 
-First, run the development server:
+To run the development server:
+
+1. Download the repo on github: `https://github.com/ckildare/ckildare.github.io`.
+2. `cd` into `src` directory.
+3. Run `npm i`.
+4. Run `npm run dev`.
+5. Go to `https://localhost:3000` in your browser.
 
 ```bash
 npm run dev

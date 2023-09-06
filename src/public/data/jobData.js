@@ -59,36 +59,57 @@ export const jobData = [
     ]
   },
   {
-    jobTitle: "Job title",
+    jobTitle: "Business Owner",
     companyData: {
-      name: "compnay name",
-      address: "address address 1234 st",
-      link: "www.google.com",
+      name: "Limitless Reality",
+      address: null,
+      link: null,
       contacts: {
-        email: "me@gmail.com",
-        phone: "jhzsdbc",
+        email: null,
+        phone: null,
       }
     },
     supervisors: [
-      "kjfsk wdsdcsdc",
-      "adam frogger",
-      "mitchell sanders"
+      "Myself",
     ],
-    startDate: "March 2000",
-    endDate: "May 2001",
+    startDate: "September 2019",
+    endDate: "February 2020",
     contributions: [
-      "afdh ub b ib bh v u vubjh bkjbii uubibiu iuub.",
-      "iubi bib ib bib inbiu n iun iuniun iubiubiu b.",
-      "j hbb  bijknbk jnij nijnkn kjnkj n jnjknkjn jkjn. hbjbj bijbij n ijni nin niuj.",
-      "jhbjh bjhbkj bkjn kjnkj.",
-      "jhb jhbjhbkj bkjnkjn kjnkjnkjn kn kjn kjnkjn kjn jn kjn kjn."
+      "Developed an efficient virtual reality user \"onboarding\" experience to quickly and effectively help custoemrs use the system.",
+      "Collaborated with Eagle Hollow Haunts during the fall season to deploy two HTC Vive virtual reality attractions.",
+      "Hired, managed, trained, and collaborated with three employees to set up and maintain two booths with HTC Vive virtual reality systems."
     ],
     outcomes: [
-      "afdh ub b ib bh v u vubjh bkjbii uubibiu iuub.",
-      "iubi bib ib bib inbiu n iun iuniun iubiubiu b.",
-      "j hbb  bijknbk jnij nijnkn kjnkj n jnjknkjn jkjn. hbjbj bijbij n ijni nin niuj.",
-      "jhbjh bjhbkj bkjn kjnkj.",
-      "jhb jhbjhbkj bkjnkjn kjnkjnkjn kn kjn kjnkjn kjn jn kjn kjn."
+      "I have learned the process of starting a business and the requirements associated with running the business.",
+      "I have become more confident reaching out to and managing partner relationships between businesses.",
+      "I have become a more effective manager by hiring, managing, training, and collaborating with three employees.",
+      "I have become more considerate of customer experience through experimenting with the virtual reality \"onboarding\" process with mock customers."
+    ]
+  },
+  {
+    jobTitle: "Cart Pusher",
+    companyData: {
+      name: "Walmart",
+      address: "3400 N 85th St, Lincoln, NE 68507",
+      link: "https://www.walmart.com/store/3823-lincoln-ne",
+      contacts: {
+        email: "service@walmartcontacts.com",
+        phone: "402-466-0447",
+      }
+    },
+    supervisors: [
+      "N/A",
+    ],
+    startDate: "October 2019",
+    endDate: "December 2020",
+    contributions: [
+      "Returned carts to Walmart store from the parking lot.",
+      "Help customers carry purchased items to their car when needed.",
+      "Help customers exchange or purchase propane fuel as requested."
+    ],
+    outcomes: [
+      "As a result of working outdoors in adverse, I have developed a stonger work mindset.",
+      "As a result of the self-management nature of cart pushers at Walmart, I have become more efficient in delegating work to other co-workers."
     ]
   },
 ]

@@ -12,11 +12,11 @@ export const projectData = [
     context: "My first portfolio site was built to practice my frontend development skills and show internships as an example of the work I would be able to do.",
     concept: "This site included information on projects that I had completed, a short about me section, a link to my resume, and a few contact links. Although it was small, it was effective in communicating my experiences.",
     outcomes: [
-      "Deploying and managing a live website.",
-      "Communicating my work and school experiences.",
-      "Developing a website to implement responsive sizing.",
-      "Learning HTML, Sass (CSS), Bootstrap",
-      "Acquiring and setting up a custom domain name."
+      "I have learned how to deploy and manage a live website.",
+      "I have learned more efficient ways to communicate my work and school experiences.",
+      "I have continued my mastery in website responsive sizing.",
+      "I have acquired more experience in HTML, Sass (CSS), Bootstrap",
+      "I have gotten the opportunity to acquire and set up a custom domain name."
     ],
     status: ProjectStatus.Finished,
     projectLink: "https://ckildare.github.io",
@@ -37,12 +37,12 @@ export const projectData = [
       "Each selected song will be compiled into a final playlist."
     ],
     outcomes: [
-      "Preparing for a project through research.",
-      "React.js, HTML, Sass (CSS), JS, Python.",
-      "Building API connections.",
-      "Manipulating GraphQL queries.",
-      "Managing state in a dynamic website.",
-      "Working in a team environment."
+      "I am more efficient about preparing for a project through research.",
+      "I have acquired more experience with React.js, HTML, Sass (CSS), JS, Python.",
+      "I have become more efficient at building API connections and endpoints.",
+      "I have gained more confidence manipulating GraphQL queries.",
+      "I have acquired more expereince in managing state in a dynamic website.",
+      "I have developed stronger development collaboration skills."
     ],
     status: ProjectStatus.Paused,
     projectLink: "https://axel-wilsons-mixtape-maker.herokuapp.com",
@@ -55,8 +55,8 @@ export const projectData = [
     context: "This site was designed after the 2022 Cornhacks event, where my team members and I formed \"Buddy Systems\" to organize the work we do together as a group.",
     concept: "This website is designed to showcase the members of Buddy Systems and the work we do together.",
     outcomes: [
-      "Stronger development collaboration skills.",
-      "Experience in React.js, HTML, Sass (CSS)."
+      "I have developed stronger development collaboration skills.",
+      "I have acquired more experience in React.js, HTML, Sass (CSS)."
     ],
     status: ProjectStatus.Abandoned,
     projectLink: "https://buddysystems.github.io",
@@ -66,12 +66,17 @@ export const projectData = [
   {
     title: "UNL Laundry Scheduler",
     displayImg: laundryScheduler,
-    context: "",
-    concept: "",
-    outcomes: [],
+    context: "This is a Buddy Systems project started in a Human-Computer Interaction course and evolved to a project sponsored by UNL Housing that would later be abandoned.",
+    concept: "This product would allow users to schedule a load of laundry ( either single or reoccuring occurrence ), view laundry status, and recieve push notifications about laundry.",
+    outcomes: [
+      "I have developed stronger development collaboration skills.",
+      "I have gained more confidence in speaking to stakeholders and negotiating requirements",
+      "I have become more efficient in leading user interaction testing to verify wireframes and proposed UI elements",
+      "I have acquired more experience in React.js, HTML, Sass (CSS)."
+    ],
     status: ProjectStatus.Abandoned,
-    projectLink: "",
-    githubLink: "",
+    projectLink: null,
+    githubLink: "https://github.com/CodeCricut/laundry-scheduler",
     supportingImgs: [],
   },
   {

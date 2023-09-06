@@ -15,12 +15,12 @@ export const projectData = [
       "Deploying and managing a live website.",
       "Communicating my work and school experiences.",
       "Developing a website to implement responsive sizing.",
-      "HTML",
-      "Sass ( CSS )"
+      "Learning HTML, Sass (CSS), Bootstrap",
+      "Acquiring and setting up a custom domain name."
     ],
     status: ProjectStatus.Finished,
-    projectLink: "",
-    githubLink: "",
+    projectLink: "https://ckildare.github.io",
+    githubLink: "https://github.com/ckildare/deprecated-portfolio-site",
     supportingImgs: [],
   },
   {
@@ -38,7 +38,7 @@ export const projectData = [
     ],
     outcomes: [
       "Preparing for a project through research.",
-      "React.js, HTML, Sass ( CSS ), JS, Python.",
+      "React.js, HTML, Sass (CSS), JS, Python.",
       "Building API connections.",
       "Manipulating GraphQL queries.",
       "Managing state in a dynamic website.",
@@ -50,14 +50,17 @@ export const projectData = [
     supportingImgs: [],
   },
   {
-    title: "BuddySystem's Portfolio Site",
+    title: "BuddySystem\'s Portfolio Site",
     displayImg: buddySystems,
-    context: "",
-    concept: "",
-    outcomes: [],
+    context: "This site was designed after the 2022 Cornhacks event, where my team members and I formed \"Buddy Systems\" to organize the work we do together as a group.",
+    concept: "This website is designed to showcase the members of Buddy Systems and the work we do together.",
+    outcomes: [
+      "Stronger development collaboration skills.",
+      "Experience in React.js, HTML, Sass (CSS)."
+    ],
     status: ProjectStatus.Abandoned,
-    projectLink: "",
-    githubLink: "",
+    projectLink: "https://buddysystems.github.io",
+    githubLink: "https://github.com/buddysystems/buddysystems.github.io",
     supportingImgs: [],
   },
   {
@@ -66,7 +69,7 @@ export const projectData = [
     context: "",
     concept: "",
     outcomes: [],
-    status: ProjectStatus.Paused,
+    status: ProjectStatus.Abandoned,
     projectLink: "",
     githubLink: "",
     supportingImgs: [],

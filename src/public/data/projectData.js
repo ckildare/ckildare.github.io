@@ -29,13 +29,13 @@ export const projectData = [
       "I have acquired more experience in React.js, HTML, Sass (CSS)."
     ],
     status: ProjectStatus.Abandoned,
-    projectLink: null,
+    projectLink: "",
     githubLink: "https://github.com/CodeCricut/laundry-scheduler",
     supportingImgs: [],
   },
   {
     title: "Cookie Jar",
-    displayImg: null,
+    displayImg: "",
     context: "This is a Buddy Systems project completed in the summer of 2022 that allowed us to learn how to hook into the Google API and manage our cookies.",
     concept: "This product would allow users to view, search, manipulate, import, export, and store cookies on Google's storage system where cookies can only be accessed by the user.",
     outcomes: [

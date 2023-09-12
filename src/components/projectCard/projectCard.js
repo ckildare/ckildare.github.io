@@ -58,7 +58,7 @@ export default function ProjectCard(props) {
       {openProject ?
         <div className={styles.projectBody}>
           <hr className={styles.lineDivider} />
-          <CardWrapper>
+          <CardWrapper status={props.project?.status}>
             <p className={styles.status} as={'div'}>Status: {props.project?.status}</p>
           </CardWrapper>
           <CardWrapper>

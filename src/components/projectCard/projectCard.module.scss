@@ -16,6 +16,7 @@ $clicked: false;
   width: 90%;
   height: 3px;
   align-self: center;
+  margin: 0.125rem auto;
   background-color: black;
 }
 
@@ -67,8 +68,13 @@ $clicked: false;
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.75rem;
-  background: linear-gradient(to bottom, #C5C5C5, #626262);
+  background: linear-gradient(to bottom, #C5C5C5, #747474);
   color: black;
+
+  .status {
+    font-size: 1.25rem;
+    font-weight: 550;
+  }
 
   .projectTextHeader {
     font-size: 1.5rem;

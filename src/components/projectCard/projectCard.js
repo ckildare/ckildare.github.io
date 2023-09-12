@@ -3,6 +3,7 @@ import styles from './projectCard.module.scss';
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import CardWrapper from '../cardWrapper/cardWrapper';
 import classNames from 'classnames';
 
 import githubLogo from '../../public/icons/github.svg';
@@ -57,21 +58,30 @@ export default function ProjectCard(props) {
       {openProject ?
         <div className={styles.projectBody}>
           <hr className={styles.lineDivider} />
-          <p className={styles.projectTextHeader} as={'div'}>Context</p>
-          <p className={styles.projectText}>{props.project?.context}</p>
-          <hr className={styles.lineDivider} />
-          <p className={styles.projectTextHeader} as={'div'}>Concept</p>
-          <p className={styles.projectText}>{props.project?.concept}</p>
-          {props.project?.conceptStepList?.length > 0 ?
-            <div className={styles.projectTextList}>
-              {props.project?.conceptStepList.map((stepText, key) => {
-                return (
-                  <p className={styles.projectListItem} as={'div'} key={key}>{(key + 1) + ".\t" + stepText}</p>
-                )
-              })}
-            </div>
-            : false
-          }
+          <CardWrapper>
+            <p className={styles.status} as={'div'}>Status: {props.project?.status}</p>
+          </CardWrapper>
+          <CardWrapper>
+            <p className={styles.projectTextHeader} as={'div'}>Context</p>
+            <hr className={styles.lineDivider} />
+            <p className={styles.projectText}>{props.project?.context}</p>
+          </CardWrapper>
+          <CardWrapper>
+            <p className={styles.projectTextHeader} as={'div'}>Concept</p>
+            <hr className={styles.lineDivider} />
+            <p className={styles.projectText}>{props.project?.concept}</p>
+            {props.project?.conceptStepList?.length > 0 ?
+              <div className={styles.projectTextList}>
+                <hr className={styles.lineDivider} />
+                {props.project?.conceptStepList.map((stepText, key) => {
+                  return (
+                    <p className={styles.projectListItem} as={'div'} key={key}>{(key + 1) + ".\t" + stepText}</p>
+                  )
+                })}
+              </div>
+              : false
+            }
+          </CardWrapper>
           <hr className={styles.lineDivider} />
           <div className={styles.projectLinkWrapper}>
             <Link class={styles.projectLink} href={props.project?.githubLink}>

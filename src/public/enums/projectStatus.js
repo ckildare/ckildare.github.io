@@ -1,6 +1,6 @@
 export const ProjectStatus = {
-  Finished: 'Completed',
-  InProgress: 'In Progress',
-  Paused: 'Development Is Temp. Paused',
-  Abandoned: 'Development has Been Abandoned'
+  Finished: 'Development Is Completed',
+  InProgress: 'Development Is In Progress',
+  Paused: 'Development Is Temporarily Paused',
+  Abandoned: 'Development Has been Abandoned'
 };

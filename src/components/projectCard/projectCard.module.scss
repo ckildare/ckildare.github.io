@@ -5,6 +5,8 @@ $clicked: false;
 .projectContainer {
   width: 27rem;
   height: min-content;
+  border: 1px solid white;
+  border-radius: 0.325rem;
 }
 
 .projectContainerSchool {
@@ -51,7 +53,8 @@ $clicked: false;
     .title {
       justify-self: center;
 
-      font-size: 1.375rem;
+      font-size: 1.425rem;
+      font-style: bold;
       color: black;
     }
   }
@@ -60,7 +63,7 @@ $clicked: false;
 .imagePlaceholder {
   @include flex-with-centering;
   height: 210px;
-  width: 420px;
+  width: 412.5px;
 
   background-color: red;
   color: black;

@@ -37,7 +37,7 @@ export default function ProjectCard(props) {
             priority
             className={styles.coverImage}
             height={props.isSchoolProject ? 169 : 210}
-            width={props.isSchoolProject ? 336 : 417.5}
+            width={props.isSchoolProject ? 336 : 412.5}
             src={props.project?.displayImg ?? ""}
             alt={"Cover image for " + props.project?.title + "project"}
           />

@@ -101,8 +101,8 @@ export default function ProjectCard(props) {
           {props.project?.supportingImgs != null || props.project?.supportingImgs > 0 ?
             props.project?.supportingImgs.map((supportImg, key) => {
               return (
-                <div className={styles.supportImg}>
-                  <Image className={styles.coverImage} src={supportImg.img ?? ""} height={210} width={420} key={key} />
+                <div key={key} className={styles.supportImg}>
+                  <Image className={styles.coverImage} src={supportImg.img ?? ""} height={210} width={420} key={key} alt={"Supporting image for project"}/>
                   <p className={styles.supportImgCaption}>{supportImg.caption}</p>
                 </div>
               )

@@ -8,6 +8,7 @@ import rightChevron from '@/public/icons/chevron/chevron-right-white.svg';
 import downChevron from '@/public/icons/chevron/chevron-down-white.svg';
 
 import React from 'react';
+import CardWrapper from '@/components/cardWrapper/cardWrapper';
 
 export default function Schooling() {
   var semesterDataMapping = [];
@@ -73,7 +74,7 @@ function SemesterCard(props) {
   }
 
   return (
-    <div ref={semesterCardItem} className={classNames(styles.semester, !props.isOpen && styles.semesterHover)}>
+    <CardWrapper ref={semesterCardItem} classNames={classNames(styles.semester, !props.isOpen && styles.semesterHover)}>
       <div className={
         classNames(styles.semesterTitleWrapper, props.isOpen && styles.semesterTitleWrapperOpen)}
         onClick={onSemesterClick}>
@@ -93,6 +94,6 @@ function SemesterCard(props) {
         </div>
         : false
       }
-    </div>
+    </CardWrapper>
   )
 }

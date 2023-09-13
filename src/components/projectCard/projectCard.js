@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import CardWrapper from '../cardWrapper/cardWrapper';
+import { ProjectStatus } from '@/public/enums/projectStatus';
 import classNames from 'classnames';
 
 import githubLogo from '../../public/icons/github.svg';
@@ -17,6 +18,20 @@ export default function ProjectCard(props) {
 
   function handleOpenProject() {
     toggleOpen(!openProject);
+  }
+
+  function getColorClass(status) {
+    if (status == ProjectStatus.InProgress) {
+      return styles.inProgress;
+    } else if (status == ProjectStatus.Finished) {
+      return styles.finished;
+    } else if (status == ProjectStatus.Paused) {
+      return styles.paused;
+    } else if (status == ProjectStatus.Abandoned) {
+      return styles.abandoned;
+    } else {
+      return styles.cardWrapper;
+    }
   }
 
   return (
@@ -61,7 +76,7 @@ export default function ProjectCard(props) {
       {openProject ?
         <div className={styles.projectBody}>
           <hr className={styles.lineDivider} />
-          <CardWrapper status={props.project?.status}>
+          <CardWrapper classNames={getColorClass(props.project?.status)}>
             <p className={styles.status} as={'div'}>Status: {props.project?.status}</p>
           </CardWrapper>
           <CardWrapper>

@@ -1,4 +1,5 @@
 import styles from './projectCard.module.scss';
+import statusStyles from './statusStyles.module.scss';
 
 import Link from 'next/link';
 import React from 'react';
@@ -22,15 +23,13 @@ export default function ProjectCard(props) {
 
   function getColorClass(status) {
     if (status == ProjectStatus.InProgress) {
-      return styles.inProgress;
+      return statusStyles.inProgress;
     } else if (status == ProjectStatus.Finished) {
-      return styles.finished;
+      return statusStyles.finished;
     } else if (status == ProjectStatus.Paused) {
-      return styles.paused;
+      return statusStyles.paused;
     } else if (status == ProjectStatus.Abandoned) {
-      return styles.abandoned;
-    } else {
-      return styles.cardWrapper;
+      return statusStyles.abandoned;
     }
   }
 

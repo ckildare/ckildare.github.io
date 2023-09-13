@@ -1,0 +1,24 @@
+.inProgress {
+  background-color: #95eaff;
+  border: 1px solid #00ccff;
+}
+
+.abandoned {
+  background-color: #ff9595;
+  border: 1px solid #ff0000;
+}
+
+.finished {
+  background-color: #8dffa8;
+  border: 1px solid #00ff3c;
+}
+
+.paused {
+  background-color: #ffcb71;
+  border: 1px solid #ffa200;
+}
+
+.default {
+  background-color: #e0e0e0;
+  border: 1px solid white;
+}

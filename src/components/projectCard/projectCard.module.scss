@@ -2,16 +2,23 @@
 
 $clicked: false;
 
-.projectContainer {
-  width: 27rem;
-  height: min-content;
-  border: 1px solid white;
-  border-radius: 0.325rem;
+.buttonWrapperShadow {
+  box-shadow: 0.25rem 0.25rem 0.375rem 0.125rem rgb(100, 78, 60);
+
+  :hover {
+    .projectContainer {
+      box-shadow: 0.325rem 0.325rem 0.375rem 0.25rem rgb(94, 73, 56);
+      background-color: rgb(130, 130, 130);
+    }
+  }
 }
 
-.projectContainerSchool {
-  width: 22rem;
-  height: min-content;
+.projectContainer:hover {
+  box-shadow: 0.325rem 0.325rem 0.375rem 0.25rem rgb(94, 73, 56);
+}
+
+.projectContainerOpen {
+  box-shadow: 0.25rem 0.25rem 0.375rem 0.125rem rgb(100, 78, 60);
 }
 
 .lineDivider {
@@ -22,32 +29,6 @@ $clicked: false;
   background-color: black;
 }
 
-.buttonWrapper {
-  padding: 0.5rem;
-  width: 100%;
-  background-color: #C5C5C5;
-  border: none;
-
-  .coverImage {
-    @include flex-with-centering;
-    box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem #8f8f8f;
-  }
-
-  .coverImage:hover {
-    box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem #7f7f7f;
-  }
-}
-
-.imagePlaceholder {
-  @include flex-with-centering;
-  height: 210px;
-  width: 412.5px;
-
-  background-color: red;
-  color: black;
-  font-size: 3rem;
-}
-
 .projectBody {
   display: flex;
   flex-direction: column;
@@ -55,11 +36,6 @@ $clicked: false;
   padding: 0.75rem;
   background: linear-gradient(to bottom, #C5C5C5, #747474);
   color: black;
-
-  .status {
-    font-size: 1.25rem;
-    font-weight: 550;
-  }
 
   .projectTextHeader {
     font-size: 1.5rem;
@@ -118,26 +94,10 @@ $clicked: false;
   }
 }
 
-.buttonWrapperShadow {
-  box-shadow: 0.25rem 0.25rem 0.375rem 0.125rem rgb(100, 78, 60);
 
-  :hover {
-    .projectContainer {
-      box-shadow: 0.325rem 0.325rem 0.375rem 0.25rem rgb(94, 73, 56);
-      background-color: rgb(130, 130, 130);
-    }
-  }
-}
 
-.projectContainer:hover {
-  box-shadow: 0.325rem 0.325rem 0.375rem 0.25rem rgb(94, 73, 56);
-}
 
-.projectContainerOpen {
-  box-shadow: 0.25rem 0.25rem 0.375rem 0.125rem rgb(100, 78, 60);
-}
-
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 501px) {
   .titleWrapper {
     display: grid;
     align-items: center;
@@ -154,14 +114,56 @@ $clicked: false;
     .title {
       justify-self: center;
 
-      font-size: 1.425rem;
+      font-size: 1.25rem;
       font-style: bold;
       color: black;
     }
   }
+
+  .projectContainer {
+    width: 27rem;
+    height: min-content;
+    border: 1px solid white;
+    border-radius: 0.325rem;
+  }
+
+  .projectContainerSchool {
+    width: 22rem;
+  }
+
+  .buttonWrapper {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #C5C5C5;
+    border: none;
+
+    .coverImage {
+      @include flex-with-centering;
+      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem #8f8f8f;
+    }
+
+    .coverImage:hover {
+      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem #7f7f7f;
+    }
+  }
+
+  .imagePlaceholder {
+    @include flex-with-centering;
+    height: 210px;
+    width: 412.5px;
+
+    background-color: red;
+    color: black;
+    font-size: 3rem;
+  }
+
+  .status {
+    font-size: 1.25rem;
+    font-weight: 550;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
   .titleWrapper {
     display: grid;
     align-items: center;
@@ -172,15 +174,55 @@ $clicked: false;
       width: 1.25rem;
       position: absolute;
       justify-self: flex-start;
-      margin-left: 1rem;
+      margin-left: 0.75rem;
     }
 
     .title {
       justify-self: center;
 
-      font-size: 1.425rem;
+      font-size: 1.25rem;
       font-style: bold;
       color: black;
     }
+  }
+
+  .projectContainer {
+    width: 20rem;
+    height: min-content;
+    border: 1px solid white;
+    border-radius: 0.325rem;
+  }
+
+  .buttonWrapper {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #C5C5C5;
+    border: none;
+
+    .coverImage {
+      @include flex-with-centering;
+      height: 153.5px;
+      width: 302px;
+      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem #8f8f8f;
+    }
+
+    .coverImage:hover {
+      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem #7f7f7f;
+    }
+  }
+
+  .imagePlaceholder {
+    @include flex-with-centering;
+    height: 153.5px;
+    width: 302px;
+
+    background-color: red;
+    color: black;
+    font-size: 3rem;
+  }
+
+  .status {
+    font-size: 1.15rem;
+    font-weight: 550;
   }
 }

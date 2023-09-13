@@ -20,9 +20,12 @@ export default function ProjectCard(props) {
   }
 
   return (
-    <div className={classNames(
-      props.isSchoolProject ? styles.projectContainerSchool : styles.projectContainer,
-      openProject ? styles.projectContainerOpen : false)}>
+    <div
+      className={classNames(
+        classNames(props.isSchoolProject ? styles.projectContainerSchool : false, 
+          styles.projectContainer),
+        openProject ? styles.projectContainerOpen : false)}
+    >
       <button
         className={
           classNames(styles.buttonWrapper, !openProject ?
@@ -102,7 +105,7 @@ export default function ProjectCard(props) {
             props.project?.supportingImgs.map((supportImg, key) => {
               return (
                 <div key={key} className={styles.supportImg}>
-                  <Image className={styles.coverImage} src={supportImg.img ?? ""} height={210} width={420} key={key} alt={"Supporting image for project"}/>
+                  <Image className={styles.coverImage} src={supportImg.img ?? ""} height={210} width={420} key={key} alt={"Supporting image for project"} />
                   <p className={styles.supportImgCaption}>{supportImg.caption}</p>
                 </div>
               )

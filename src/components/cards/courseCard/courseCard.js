@@ -6,7 +6,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import ProjectCard from '../projectCard/projectCard';
-import schoolIcon from '../../public/icons/school.svg';
+import schoolIcon from '../../../public/icons/school.svg';
 
 export default function CourseCard(props) {
 

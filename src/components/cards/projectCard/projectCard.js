@@ -8,10 +8,10 @@ import CardWrapper from '../cardWrapper/cardWrapper';
 import { ProjectStatus } from '@/public/enums/projectStatus';
 import classNames from 'classnames';
 
-import githubLogo from '../../public/icons/github.svg';
-import projectIcon from '../../public/icons/rocket-launch.svg';
-import rightChevron from '../../public/icons/chevron/chevron-right.svg';
-import downChevron from '../../public/icons/chevron/chevron-down.svg';
+import githubLogo from '../../../public/icons/github.svg';
+import projectIcon from '../../../public/icons/rocket-launch.svg';
+import rightChevron from '../../../public/icons/chevron/chevron-right.svg';
+import downChevron from '../../../public/icons/chevron/chevron-down.svg';
 
 
 export default function ProjectCard(props) {

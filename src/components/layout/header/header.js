@@ -1,5 +1,5 @@
 import styles from './header.module.scss';
-import headshot from '../../public/my-photos/temp-headshot.png';
+import headshot from '../../../public/my-photos/temp-headshot.png';
 import Link from 'next/link';
 import Image from 'next/image';
 

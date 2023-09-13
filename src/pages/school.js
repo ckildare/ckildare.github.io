@@ -1,6 +1,6 @@
 import styles from './styles/school.module.scss';
 import classNames from 'classnames';
-import CourseCard from '@/components/courseCard/courseCard';
+import CourseCard from '@/components/cards/courseCard/courseCard';
 import Image from 'next/image';
 
 import { courseData } from '@/public/data/courseData';
@@ -8,7 +8,7 @@ import rightChevron from '@/public/icons/chevron/chevron-right-white.svg';
 import downChevron from '@/public/icons/chevron/chevron-down-white.svg';
 
 import React from 'react';
-import CardWrapper from '@/components/cardWrapper/cardWrapper';
+import CardWrapper from '@/components/cards/cardWrapper/cardWrapper';
 
 export default function Schooling() {
   var semesterDataMapping = [];

@@ -1,5 +1,5 @@
 import styles from './styles/work.module.scss';
-import JobCard from '@/components/jobCard/jobCard';
+import JobCard from '@/components/cards/jobCard/jobCard';
 
 import { jobData } from '@/public/data/jobData';
 //import resume from '@/public/resume.pdf';

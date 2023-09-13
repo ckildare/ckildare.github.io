@@ -9,106 +9,35 @@ export var courseData = [
       {
         title: "Software Engineering I",
         courseNumber: "Soft 160",
-        semester: "Fall 2021",
         instructors: [
           "Dr. Christopher Bohn",
           "Dr. Suzanne Person"
         ],
-        description: "as jhdbu dshcbus bsiubhb ibsijcd skjv. dv sjdv KSDCNS IJDVN SIJDVCNSI. IUAINCIU CBNIUnis vnsiu vcns iuvn ius vn isnvsid.",
+        description: "Soft 160 is an introductory course into the Software Engineering program, teaching collaborative programming fundamentals and the basics of coding.",
+        outcomes: [
+          "I developed basic problem-solving skills within the context of computing and collaborative work",
+          "I gained experience working on a project with real-life applications.",
+          "I developed common techniques for debugging, testing, and writing code.",
+          "I learned how to make code maintainable with a variety of coding artifacts such as documentation or requirements."
+        ],
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=160-,Software%20Engineering%20I,-Prerequisites%3A%C2%A0MATH",
         projects: [
           {
-            title: "Deprecated Portfolio Site",
-            displayImg: deprecatedPortfolioSite,
-            context: "My first portfolio site was built to practice my frontend development skills and show internships as an example of the work I would be able to do.",
-            concept: "This site included information on projects that I had completed, a short about me section, a link to my resume, and a few contact links. Although it was small, it was effective in communicating my experiences.",
+            title: "UNL Controlled Burn Planner",
+            displayImg: null,
+            context: "This project was the capstone / final project for the course. We built the project using Java on a virtual machine running Ubuntu alongside four classmates.",
+            concept: "This project hooked into the Open-Source Weather API to gather configurations from a user in command-line and data about the weather in a specific location to determine if a controlled burn was viable by regulative standards.",
             outcomes: [
-              "Deploying and managing a live website.",
-              "Communicating my work and school experiences.",
-              "Developing a website to implement responsive sizing.",
-              "HTML",
-              "Sass ( CSS )"
+              "I learned basic software collaboration skills by working with classmates as a development group.",
+              "I improved my ability to decompose requirements into tasks and issues.",
+              "I became more efficient in building unit and integration testing suites.",
+              "I acquired real-world experience in applying object-oriented programming with Java."
             ],
             status: ProjectStatus.Finished,
             projectLink: "",
             githubLink: "",
-            supportingImgs: [],
-          },
-          {
-            title: "Deprecated Portfolio Site",
-            displayImg: deprecatedPortfolioSite,
-            context: "My first portfolio site was built to practice my frontend development skills and show internships as an example of the work I would be able to do.",
-            concept: "This site included information on projects that I had completed, a short about me section, a link to my resume, and a few contact links. Although it was small, it was effective in communicating my experiences.",
-            outcomes: [
-              "Deploying and managing a live website.",
-              "Communicating my work and school experiences.",
-              "Developing a website to implement responsive sizing.",
-              "HTML",
-              "Sass ( CSS )"
-            ],
-            status: ProjectStatus.Finished,
-            projectLink: "",
-            githubLink: "",
-            supportingImgs: [],
           }
         ],
-        outcomes: [
-          "outcome 1",
-          "outcome 2",
-          "outcome 3"
-        ],
-        courseLink: ""
-      },
-      {
-        title: "Software Engineering I",
-        courseNumber: "Soft 160",
-        semester: "Fall 2021",
-        instructors: [
-          "Dr. Christopher Bohn",
-          "Dr. Suzanne Person"
-        ],
-        description: "as jhdbu dshcbus bsiubhb ibsijcd skjv. dv sjdv KSDCNS IJDVN SIJDVCNSI. IUAINCIU CBNIUnis vnsiu vcns iuvn ius vn isnvsid.",
-        projects: [
-          {
-            title: "Deprecated Portfolio Site",
-            displayImg: deprecatedPortfolioSite,
-            context: "My first portfolio site was built to practice my frontend development skills and show internships as an example of the work I would be able to do.",
-            concept: "This site included information on projects that I had completed, a short about me section, a link to my resume, and a few contact links. Although it was small, it was effective in communicating my experiences.",
-            outcomes: [
-              "Deploying and managing a live website.",
-              "Communicating my work and school experiences.",
-              "Developing a website to implement responsive sizing.",
-              "HTML",
-              "Sass ( CSS )"
-            ],
-            status: ProjectStatus.Finished,
-            projectLink: "",
-            githubLink: "",
-            supportingImgs: [],
-          },
-          {
-            title: "Deprecated Portfolio Site",
-            displayImg: deprecatedPortfolioSite,
-            context: "My first portfolio site was built to practice my frontend development skills and show internships as an example of the work I would be able to do.",
-            concept: "This site included information on projects that I had completed, a short about me section, a link to my resume, and a few contact links. Although it was small, it was effective in communicating my experiences.",
-            outcomes: [
-              "Deploying and managing a live website.",
-              "Communicating my work and school experiences.",
-              "Developing a website to implement responsive sizing.",
-              "HTML",
-              "Sass ( CSS )"
-            ],
-            status: ProjectStatus.Finished,
-            projectLink: "",
-            githubLink: "",
-            supportingImgs: [],
-          }
-        ],
-        outcomes: [
-          "outcome 1",
-          "outcome 2",
-          "outcome 3"
-        ],
-        courseLink: ""
       }
     ]
   },
@@ -117,45 +46,50 @@ export var courseData = [
     courses: [
       {
         title: "Software Engineering II",
-        courseNumber: "Soft 260",
-        semester: "Spring 2022",
+        courseNumber: "Soft 161",
+        semester: "Spring 2021",
         instructors: [
           "Dr. Christopher Bohn",
-          "Dr. Suzanne Person"
+          "Dr. Shruti Bolman"
         ],
-        description: "jhbgjhdf wef f t w rgewf ergw  erg dege erg ergergw fwfwfdvghhuyko ltgbdcw.",
+        description: "Soft 161 extended concepts learned in Soft 160 by teaching database systems, mutli-layer programming, and event-driven programming.",
+        outcomes: [
+          "I was exposed to good database design and learned basic concepts of persistent data storage.",
+          "I learned how to separate code into different layers, allowing for better maintainabaility and efficiency.",
+          "I learned how to drive programs with events and more types of user interaction.",
+          "I more gained experience with texting complex software systems to promote safety."
+        ],
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=161-,Software%20Engineering%20II,-Prerequisites%3A%C2%A0A%20grade",
         projects: [
           {
-            title: "",
-            description: "",
-            link: ""
+            title: "UNL Travel Planning App",
+            displayImg: null,
+            context: "This project was the capstone / final project for the course. We built the project using Java and Python on a virtual machine running Ubuntu alongside four classmates. This project implemented using MariaDB for data storage and Kivy for the frontend.",
+            concept: "This app is designed to help a user plan a trip, including scheduling venues, airplanes, and activities for the trip. Our app was capable of storing user data and mocked integration with external airline / venue systems.",
+            outcomes: [
+              "I learned how to build a multi-layer application.",
+              "I gained experience making user-facing frontend design decisions.",
+              "I learned how to design a frontend system using GUIs.",
+              "I extended my understanding of Java, Python, and SQL.",
+              "I extended my collaboration abilities by working with other students."
+            ],
+            status: ProjectStatus.Finished,
+            projectLink: null,
+            githubLink: "",
           }
         ],
-        outcomes: [
-          ""
-        ],
-        courseLink: ""
       },
       {
-        title: "Software Engineering II",
-        courseNumber: "Soft 260",
-        semester: "Spring 2022",
+        title: "Honors Introduction to Discrete Structures",
+        courseNumber: "CSCE 235H",
         instructors: [
-          "Dr. Christopher Bohn",
-          "Dr. Suzanne Person"
+          "Dr. Berthe Choueiry"
         ],
-        description: "jhbgjhdf wef f t w rgewf ergw  erg dege erg ergergw fwfwfdvghhuyko ltgbdcw.",
-        projects: [
-          {
-            title: "",
-            description: "",
-            link: ""
-          }
-        ],
+        description: "Intro to discrete structures covered operations and proofs on data collections such as matricies, recursions, sets, graphs, etc. The course also covered a variety of boolean properties with research applications.",
         outcomes: [
           ""
         ],
-        courseLink: ""
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=Honors%3A%20Introduction%20to%20Discrete%20Structures",
       }
     ]
   },

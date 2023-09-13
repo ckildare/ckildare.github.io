@@ -25,7 +25,7 @@ export default function CourseCard(props) {
           <p className={styles.professorTitle}>Instructors</p>
           <div className={styles.courseInfoTitleUnderline} />
           <div className={styles.professorList}>
-            {props.course?.instructors.map((instructor, key) => {
+            {props.course?.instructors?.map((instructor, key) => {
               return (
                 <p className={styles.professorText} key={key}>{tabbedBullet}{instructor}</p>
               )
@@ -57,7 +57,7 @@ export default function CourseCard(props) {
           <p as={'div'} className={styles.linkText}>Course on UNL Website</p>
         </Link>
         <div className={styles.projectGridWrapper}>
-          {props.course?.projects.map((project, key) => { return (<ProjectCard project={project} key={key} isSchoolProject={true} />) })}
+          {props.course?.projects?.map((project, key) => { return (<ProjectCard project={project} key={key} isSchoolProject={true} />) })}
         </div>
       </div>
     </div>

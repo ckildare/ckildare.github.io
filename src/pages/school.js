@@ -4,8 +4,8 @@ import CourseCard from '@/components/cards/courseCard/courseCard';
 import Image from 'next/image';
 
 import { courseData } from '@/public/data/courseData';
-import rightChevron from '@/public/icons/chevron/chevron-right-white.svg';
-import downChevron from '@/public/icons/chevron/chevron-down-white.svg';
+import rightChevron from '@/public/icons/chevron/chevron-right.svg';
+import downChevron from '@/public/icons/chevron/chevron-down.svg';
 
 import React from 'react';
 import CardWrapper from '@/components/cards/cardWrapper/cardWrapper';
@@ -34,7 +34,7 @@ export default function Schooling() {
       )
     );
   };
-  
+
   return (
     <div className={styles.coursePageContainer}>
       <p className={styles.title} as={'div'}>Coursework</p>
@@ -74,7 +74,10 @@ function SemesterCard(props) {
   }
 
   return (
-    <CardWrapper ref={semesterCardItem} classNames={classNames(styles.semester, !props.isOpen && styles.semesterHover)}>
+    <CardWrapper
+      ref={semesterCardItem}
+      classNames={classNames(styles.semester, !props.isOpen ? styles.semesterClosed : false)}
+    >
       <div className={
         classNames(styles.semesterTitleWrapper, props.isOpen && styles.semesterTitleWrapperOpen)}
         onClick={onSemesterClick}>

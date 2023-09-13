@@ -7,7 +7,7 @@
 
   min-height: 130vh;
   padding-bottom: 3rem;
-  background-color: white;
+  background-color: #717c93;
   color: black;
 
   .title {
@@ -30,33 +30,38 @@
     justify-self: center;
 
     .semester {
-      background-color: rgb(123, 123, 123);
-      border-radius: 1rem;
-      box-shadow: 0.25rem 0.25rem 0.325rem 0.25rem rgb(96, 96, 96);
+      background: linear-gradient(to bottom, #dadadd, #9c9ca4, #7a859a);
+      border: 1px solid #d6d6d9;
+      border-radius: 0.5rem;
+      box-shadow: 0.15rem 0.15rem 0.25rem 0.15rem #545d6f;
+      padding: 0;
 
       .semesterTitleWrapper {
         display: flex;
         padding: 1rem 2rem 1rem;
+        background-color: #dcdbdc;
+        color: black;
         border-radius: inherit;
+        border-bottom: 1px solid #d6d6d9;
         align-items: center;
         gap: 1rem;
         width: 100%;
         font-size: 3rem;
       }
 
+      .semesterTitleWrapper:hover {
+        background-color: #f4f4f4;
+        box-shadow: 0.175rem 0.175rem 0.275rem 0.175rem #545d6f;
+      }
+
       .semesterTitleWrapperOpen {
-        box-shadow: 0 0.125rem rgb(173, 173, 173);
+        box-shadow: 0 0.2rem #908d90;
       }
 
       .semesterTitleWrapperOpen:hover {
-        background-color: rgb(239, 239, 239);
-        box-shadow: 0 0.25rem rgb(132, 132, 132);
+        background-color: #f0f0f0;
+        box-shadow: 0 0.275rem #908d90;
       }
-    }
-
-    .semesterHover:hover {
-      background-color: rgb(229, 229, 229);
-      box-shadow: 0.325rem 0.325rem 0.5rem 0.325rem rgb(143, 143, 143);
     }
   }
 }

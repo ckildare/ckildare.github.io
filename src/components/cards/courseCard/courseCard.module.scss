@@ -17,6 +17,7 @@
     flex-direction: row;
     justify-content: space-between;
     font-size: 1.5rem;
+    height: 2rem;
   }
 
   .professorTitle {
@@ -67,146 +68,63 @@
   justify-content: space-evenly;
 }
 
-@media screen and (min-width: 901px) {
-  .courseInfo {
-    display: flex;
-    flex-direction: row;
-    white-space: nowrap;
-    width: inherit;
+.courseDescriptionColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
-    .courseOverview {
-      width: 30%;
-    }
-  }
+  width: 100%;
+  margin-top: 2rem;
 
-  .courseInfoTextGrid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-items: center;
-    justify-self: end;
-
-    width: 70%;
-
-    .courseDescriptionColumn {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-
-      width: 40%;
-      margin-top: 1rem;
-
-      .courseOverviewBody {
-        white-space: normal;
-      }
-    }
-
-    .courseOutcomesColumn {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-
-      width: 40%;
-      margin-top: 1rem;
-    }
-  }
-
-  .courseBottomRow {
-    display: flex;
-    flex-direction: row;
-
-    margin-top: 1rem;
-
-    .courseLink {
-      @include flex-with-centering;
-      flex-direction: row;
-      width: 30%;
-      height: min-content;
-      padding: 0.5rem;
-
-      border: 0.25rem solid black;
-      border-radius: 0.75rem;
-
-      background-color: rgb(172, 172, 172);
-      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(88, 88, 88);
-    }
+  .courseOverviewBody {
+    white-space: normal;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .courseInfo {
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    width: inherit;
+.courseOutcomesColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
-    align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
 
-    .courseOverview {
-      width: inherit;
-    }
+.courseInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  white-space: nowrap;
+  width: 100%;
+  gap: auto;
+  line-height: normal;
 
-    .professorTitle {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-    }
+  .courseOverview {
+    width: 30%;
   }
+}
 
-  .courseInfoTextGrid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-items: center;
-    justify-self: end;
+.courseInfoTextGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  justify-self: end;
 
-    width: inherit;
+  width: 70%;
+}
 
-    .courseDescriptionColumn {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+.courseLink {
+  @include flex-with-centering;
+  flex-direction: row;
+  width: 30%;
+  height: min-content;
+  padding: 0.5rem;
 
-      width: 100%;
-      margin-top: 1rem;
+  border: 0.25rem solid black;
+  border-radius: 0.75rem;
 
-      .courseOverviewBody {
-        white-space: normal;
-      }
-    }
-
-    .courseOutcomesColumn {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-
-      width: 100%;
-      margin-top: 1rem;
-    }
-  }
-
-  .courseBottomRow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .courseLink {
-      @include flex-with-centering;
-      flex-direction: row;
-
-      height: min-content;
-      width: 70%;
-      margin: 1rem;
-      padding: 0.5rem;
-
-      border: 0.25rem solid black;
-      border-radius: 0.75rem;
-
-      background-color: rgb(172, 172, 172);
-      box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(88, 88, 88);
-    }
-  }
+  background-color: rgb(172, 172, 172);
+  box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem rgb(88, 88, 88);
 }
 
 .lineDivider {
@@ -221,7 +139,7 @@
 }
 
 .courseInfoTitleUnderline {
-  width: 100%;
+  width: 95%;
   height: 2px;
   align-self: center;
   margin-bottom: 0.5rem;

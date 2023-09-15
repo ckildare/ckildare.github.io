@@ -60,7 +60,10 @@ export default function CourseCard(props) {
           <Image src={schoolIcon} height={40} width={40} className={styles.courseLinkImage} alt={"Icon for project"} />
           <p as={'div'} className={styles.linkText}>Course on UNL Website</p>
         </Link>
-        {props.course?.projects?.map((project, key) => { return (<ProjectCard project={project} key={key} isSchoolProject={true} />) })}
+        {props.course?.projects?.map((project, key) => { return (
+        <div key={key} className={styles.courseProject}>
+          <ProjectCard project={project} isSchoolProject={true} />
+        </div>) })}
       </div>
     </div>
   )

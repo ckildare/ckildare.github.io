@@ -8,39 +8,39 @@
   padding: 1rem;
 
   color: black;
+}
 
-  .title {
-    font-size: 2rem;
-    padding-bottom: 0.5rem;
+.title {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
 
-    color: white;
-  }
+  color: white;
+}
 
-  .headerInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 1.5rem;
+.headerInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
 
-    width: 95%;
-    height: 2rem;
-    margin: 0 auto;
-  }
+  width: 95%;
+  height: 2rem;
+  margin: 0 auto;
+}
 
-  .professorTitle {
-    font-size: 1.5rem;
-    text-align: center;
+.professorTitle {
+  font-size: 1.5rem;
+  text-align: center;
 
-    margin-top: 0.75rem;
-  }
+  margin-top: 0.75rem;
+}
 
-  .professorList {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+.professorList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 
-    margin-top: 0.75rem;
-  }
+  margin-top: 0.75rem;
 }
 
 .courseInfoTitle {
@@ -55,9 +55,10 @@
   color: black;
 
   text-align: center;
-  width: 75%;
+  width: minmax(75%, 12rem);
   border-left: 0.125rem solid black;
-  margin-left: 1rem;
+  padding-left: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 .courseLink:hover {
@@ -94,19 +95,6 @@
     width: 95%;
     margin: 0 auto;
     white-space: normal;
-  }
-}
-
-.courseInfo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  white-space: nowrap;
-  width: 100%;
-  gap: 1rem;
-  line-height: normal;
-
-  .courseOverview {
-    width: 30%;
   }
 }
 
@@ -160,4 +148,56 @@
 .cardExtension {
   background-color: #e0e0e0 !important;
   border: 2px solid white !important;
+}
+
+.courseProject {
+  justify-self: center;
+}
+
+@media screen and (min-width: 1001px) {
+
+  .courseInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    white-space: nowrap;
+    width: 100%;
+    gap: 1rem;
+    line-height: normal;
+
+    .courseOverview {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+
+  .courseInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    white-space: nowrap;
+    width: 100%;
+    gap: 1rem;
+    line-height: normal;
+
+    .courseOverview {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .courseInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    white-space: nowrap;
+    width: 100%;
+    gap: 1rem;
+    line-height: normal;
+
+    .courseOverview {
+      width: 30%;
+    }
+  }
 }

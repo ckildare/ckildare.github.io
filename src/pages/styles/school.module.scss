@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 1151px) {
   .courseWrapper {
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 951px) and (max-width: 1150px) {
   .courseWrapper {
     display: flex;
     flex-direction: column;

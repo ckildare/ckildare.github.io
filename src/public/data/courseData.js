@@ -1,6 +1,7 @@
 import { ProjectStatus } from '@/public/enums/projectStatus';
 
 import csePhoto from '../card-screenshots/cse-background.jpg';
+import laundryScheduler from '../../public/card-screenshots/laundry-scheduler-cover-image.png';
 
 export var courseData = [
   {
@@ -87,7 +88,10 @@ export var courseData = [
         ],
         description: "Intro to discrete structures covered operations and proofs on data collections such as matricies, recursions, sets, graphs, etc. The course also covered a variety of boolean properties with research applications.",
         outcomes: [
-          ""
+          "I gained a greater understanding of how to implement and measure the time of recursion problems.",
+          "I have gained confidence in working with boolean properties and laws.",
+          "I have gained confidence in working with set properties and laws.",
+          "I am now able to use set and boolean laws to reduce the amount of operations applied to collections and conditionals."
         ],
         courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=Honors%3A%20Introduction%20to%20Discrete%20Structures",
       }
@@ -100,27 +104,69 @@ export var courseData = [
         title: "Software Engineering III",
         courseNumber: "Soft 260",
         instructors: [
-          ""
+          "Dr. Brady Garvin",
+          "Dr. Rahul Purandare"
         ],
-        description: "",
+        description: "Software Engineering III cvered topics such as formal verification of code with Dafny, exploring common function patters such as recursion and different graph-searches. We studied worst-case and best-case scenarios of algorithms inclusive of recurion and graph search. The final project for the corse involved extending a game created by the professors called 'Boost Board Mobile' where we were taksed to implement a graph search to track how close a user is to winning or losing a game.",
         outcomes: [
-          ""
+          "I learned how to prevent bugs in my code by using formal verification tools.",
+          "I have become more confident using react-redux through some web dev assignments throughout the course.",
+          "I have learned the benefits of using graph-search to optimize operations on collections and node systems.",
+          "I have become very aware of performance pain-points in my style of coding and now give more thought into the types of algorithms I implement.",
+          "I have acquied more tools for analyzing the performance of my code."
         ],
-        courseLink: "",
-        projects: []
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=260-,Software%20Engineering%20III,-Prerequisites%3A%C2%A0A%20grade",
+        projects: [
+          {
+            title: "Boost Board Mobile",
+            displayImg: csePhoto,
+            context: "This was the final project for Software Engineering III to test student understanding of react-redux, performance, and graph-search applications.",
+            concept: "This project involved students working in groups to determine which user is closest to winning and by how much through implementation of different graph-search functions and node management.",
+            outcomes: [
+              "I have developed stronger development collaboration skills.",
+              "I have acquired the ability to apply graph-search algorithms in a real-life scenario.",
+              "I have become more self-aware when writing code to prevent bad performance.",
+              "I have acquired more experience in React.js, React-Redux, HTML, CSS, and JS."
+            ],
+            status: ProjectStatus.Finished,
+            projectLink: "",
+            githubLink: "https://github.com/CodeCricut/laundry-scheduler",
+            supportingImgs: [],
+          }
+        ]
       },
       {
         title: "Human-Computer Interaction",
-        courseNumber: "",
+        courseNumber: "CSCE 378",
         instructors: [
-          ""
+          "Dr. Alisha Bevins"
         ],
-        description: "",
+        description: "Human-Computer Interaction focused on designing and testing user interfaces for accessibility and usability. These testing methods include frameworking, mocking, user interviews through each step of the design process, gathering metrics on user interaction with a system, and deriving action items / requirements from user interaction with an interface. The final project of this course included designing a web app that had been heavily tested by users.",
         outcomes: [
-          ""
+          "I practiced conducting effective interviews with customers to acquire helpful feedback.",
+          "I learned to test on wireframes and mock interfaces before writing code to reduce development costs.",
+          "I practiced deriving requirements from analyzing how users interact with an interface.",
+          "I practiced gathering metrics from a user interview to derive a more effetive user interface."
         ],
-        courseLink: "",
-        projects: []
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=378-,Human%2DComputer%20Interaction,-Prerequisites%3A%C2%A0A%20grade",
+        projects: [
+          {
+            title: "UNL Laundry Scheduler",
+            displayImg: laundryScheduler,
+            context: "This is a Buddy Systems project started in a Human-Computer Interaction course and evolved to a project sponsored by UNL Housing that would later be abandoned.",
+            concept: "This product would allow users to schedule a load of laundry ( either single or reoccuring occurrence ), view laundry status, and recieve push notifications about laundry.",
+            outcomes: [
+              "I have developed stronger development collaboration skills.",
+              "I have gained more confidence in speaking to stakeholders and negotiating requirements",
+              "I have become more efficient in leading user interaction testing to verify wireframes and proposed UI elements",
+              "I have acquired more experience in React.js, HTML, Sass (CSS)."
+            ],
+            status: ProjectStatus.Abandoned,
+            projectLink: "",
+            githubLink: "https://github.com/CodeCricut/laundry-scheduler",
+            supportingImgs: [],
+          }
+        ]
       }
     ]
   },

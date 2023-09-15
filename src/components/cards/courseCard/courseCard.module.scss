@@ -57,7 +57,7 @@
   text-align: center;
   width: minmax(75%, 12rem);
   border-left: 0.125rem solid black;
-  padding-left: 0.25rem;
+  padding-left: 7.5%;
   margin-left: 0.25rem;
 }
 
@@ -110,6 +110,7 @@
 
 .courseLink {
   @include flex-with-centering;
+  justify-content: space-evenly;
   flex-direction: row;
   width: 100%;
   height: min-content;

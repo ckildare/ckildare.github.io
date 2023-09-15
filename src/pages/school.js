@@ -93,7 +93,7 @@ function SemesterCard(props) {
       {props.isOpen ?
         <div className={styles.courseWrapper}>
           {props.semester?.courses?.length > 0 &&
-            props.semester.courses.map((course, key) => { return (<CourseCard course={course} key={key} />) })}
+            props.semester.courses.map((course, key) => { return (<CourseCard course={course} semesterName={props.semester.semesterName} key={key} />) })}
         </div>
         : false
       }

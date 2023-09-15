@@ -6,11 +6,14 @@ import React from 'react';
 import classNames from 'classnames';
 
 import ProjectCard from '../projectCard/projectCard';
+import CardWrapper from '../cardWrapper/cardWrapper';
 import schoolIcon from '../../../public/icons/school.svg';
 
 export default function CourseCard(props) {
 
-  const tabbedBullet = <>&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;</>;
+  const tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>
+
+  const tabbedBullet = <>{tab}- &nbsp;</>;
 
   return (
     <div className={styles.courseBody}>
@@ -19,11 +22,12 @@ export default function CourseCard(props) {
         <div className={styles.lineDivider} />
       </>
       <div className={styles.courseInfo}>
-        <div>
+        <CardWrapper classNames={styles.cardExtension}>
           <div className={styles.headerInfo}>
             <p className={styles.courseNumber}>{props.course?.courseNumber}</p>
-            <p className={styles.semester}>{props.course?.semester}</p>
+            <p className={styles.semester}>{props.semesterName}</p>
           </div>
+          <div className={styles.courseInfoTitleUnderline} />
           <div>
             <p className={styles.professorTitle}>Instructors</p>
             <div className={styles.courseInfoTitleUnderline} />
@@ -35,28 +39,28 @@ export default function CourseCard(props) {
               })}
             </div>
           </div>
-        </div>
-        <div className={styles.courseDescriptionColumn}>
-          <p className={styles.courseInfoTitle} as={'div'}>Overview</p>
-          <div className={styles.courseInfoTitleUnderline} />
-          <p className={styles.courseOverviewBody} as={'div'}>{props.course?.description}</p>
-        </div>
-        <div className={styles.courseOutcomesColumn}>
+        </CardWrapper>
+        <CardWrapper classNames={classNames(styles.cardExtension, styles.courseColumn)}>
+            <p className={styles.courseInfoTitle} as={'div'}>Overview</p>
+            <div className={styles.courseInfoTitleUnderline} />
+            <p className={styles.courseColumnBody} as={'div'}>{tab}{props.course?.description}</p>
+        </CardWrapper>
+        <CardWrapper classNames={classNames(styles.cardExtension, styles.courseColumn)}>
           <p className={styles.courseInfoTitle}>Outcomes</p>
           <div className={styles.courseInfoTitleUnderline} />
-          <div className={styles.courseOutcomesBody}>
+          <div className={styles.courseColumnBody}>
             {props.course?.outcomes?.map((outcome, key) => {
               return (
                 <p className={styles.outcome} key={key}>{tabbedBullet}{outcome}</p>
               );
             })}
           </div>
-        </div>
+        </CardWrapper>
         <Link className={styles.courseLink} href={props.course?.courseLink}>
           <Image src={schoolIcon} height={40} width={40} className={styles.courseLinkImage} alt={"Icon for project"} />
           <p as={'div'} className={styles.linkText}>Course on UNL Website</p>
         </Link>
-        {props.course?.projects.map((project, key) => { return (<ProjectCard project={project} key={key} isSchoolProject={true} />) })}
+        {props.course?.projects?.map((project, key) => { return (<ProjectCard project={project} key={key} isSchoolProject={true} />) })}
       </div>
     </div>
   )

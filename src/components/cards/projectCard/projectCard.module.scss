@@ -2,19 +2,8 @@
 
 $clicked: false;
 
-.buttonWrapperShadow {
-  box-shadow: 0.25rem 0.25rem 0.375rem 0.125rem rgb(100, 78, 60);
-
-  :hover {
-    .projectContainer {
-      box-shadow: 0.325rem 0.325rem 0.375rem 0.25rem rgb(94, 73, 56);
-      background-color: rgb(130, 130, 130);
-    }
-  }
-}
-
 .projectContainer:hover {
-  box-shadow: 0.325rem 0.325rem 0.375rem 0.25rem rgb(94, 73, 56);
+  box-shadow: 0.325rem 0.325rem 0.375rem #696969;
 }
 
 .projectContainerOpen {
@@ -120,7 +109,7 @@ $clicked: false;
   .projectContainer {
     width: 27rem;
     height: min-content;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 0.325rem;
   }
 

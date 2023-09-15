@@ -54,7 +54,7 @@ export default function ProjectCard(props) {
             priority
             className={styles.coverImage}
             height={props.isSchoolProject ? 169 : 210}
-            width={props.isSchoolProject ? 336 : 412.5}
+            width={props.isSchoolProject ? 333 : 412.5}
             src={props.project?.displayImg ?? ""}
             alt={"Cover image for " + props.project?.title + "project"}
           />
@@ -64,7 +64,7 @@ export default function ProjectCard(props) {
         <div className={styles.titleWrapper}>
           <Image
             src={openProject ? downChevron : rightChevron}
-            className={styles.projectChevron}
+            className={props.isSchoolProject ? styles.courseProjectChevron : styles.projectChevron}
             alt={'Project Chevron'}
             height={20}
             width={20}

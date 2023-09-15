@@ -12,10 +12,11 @@ $clicked: false;
 
 .lineDivider {
   width: 90%;
-  height: 3px;
+  height: 2px;
   align-self: center;
   margin: 0.125rem auto;
   background-color: black;
+  border: none;
 }
 
 .projectBody {
@@ -97,6 +98,13 @@ $clicked: false;
       margin-left: 2rem;
     }
 
+    .courseProjectChevron {
+      width: 1.25rem;
+      position: absolute;
+      justify-self: flex-start;
+      margin-left: 0.75rem;
+    }
+
     .title {
       justify-self: center;
 
@@ -161,6 +169,13 @@ $clicked: false;
       position: absolute;
       justify-self: flex-start;
       margin-left: 0.75rem;
+    }
+
+    .courseProjectChevron {
+      width: 1.25rem;
+      position: absolute;
+      justify-self: flex-start;
+      margin-left: 0.5rem;
     }
 
     .title {

@@ -1,6 +1,6 @@
 import { ProjectStatus } from '@/public/enums/projectStatus';
 
-import deprecatedPortfolioSite from '../../public/card-screenshots/portfolio-site-cover-image.png';
+import csePhoto from '../card-screenshots/cse-background.jpg';
 
 export var courseData = [
   {
@@ -24,7 +24,7 @@ export var courseData = [
         projects: [
           {
             title: "UNL Controlled Burn Planner",
-            displayImg: null,
+            displayImg: csePhoto,
             context: "This project was the capstone / final project for the course. We built the project using Java on a virtual machine running Ubuntu alongside four classmates.",
             concept: "This project hooked into the Open-Source Weather API to gather configurations from a user in command-line and data about the weather in a specific location to determine if a controlled burn was viable by regulative standards.",
             outcomes: [
@@ -63,7 +63,7 @@ export var courseData = [
         projects: [
           {
             title: "UNL Travel Planning App",
-            displayImg: null,
+            displayImg: csePhoto,
             context: "This project was the capstone / final project for the course. We built the project using Java and Python on a virtual machine running Ubuntu alongside four classmates. This project implemented using MariaDB for data storage and Kivy for the frontend.",
             concept: "This app is designed to help a user plan a trip, including scheduling venues, airplanes, and activities for the trip. Our app was capable of storing user data and mocked integration with external airline / venue systems.",
             outcomes: [

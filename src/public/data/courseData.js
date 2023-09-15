@@ -74,7 +74,7 @@ export var courseData = [
               "I extended my collaboration abilities by working with other students."
             ],
             status: ProjectStatus.Finished,
-            projectLink: null,
+            projectLink: "",
             githubLink: "",
           }
         ],
@@ -95,14 +95,165 @@ export var courseData = [
   },
   {
     semesterName: "Fall 2022",
-    courses: []
+    courses: [
+      {
+        title: "Software Engineering III",
+        courseNumber: "Soft 260",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "Human-Computer Interaction",
+        courseNumber: "",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      }
+    ]
   },
   {
     semesterName: "Spring 2023",
-    courses: []
+    courses: [
+      {
+        title: "Software Engineering IV",
+        courseNumber: "Soft 261",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "Programming Language Concepts",
+        courseNumber: "CSCE 231",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "Computer Systems Engineering",
+        courseNumber: "CSCE 235",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "Technical Comunication",
+        courseNumber: "JGEN 200",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      }
+    ]
+  },
+  {
+    semesterName: "Summer 2023",
+    courses: [
+      {
+        title: "Speedway Motors Internship Reflection",
+        courseNumber: "",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      }
+    ]
   },
   {
     semesterName: "Fall 2023",
-    courses: []
+    courses: [
+      {
+        title: "Modeling Data Systems",
+        courseNumber: "CSCE 411",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "Algorithm Design and Analysis",
+        courseNumber: "CSCE 423",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "Testing and Verification",
+        courseNumber: "CSCE 467",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "DMSi Senior Design",
+        courseNumber: "CSCE 487",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      }
+    ]
   }
-]
+];

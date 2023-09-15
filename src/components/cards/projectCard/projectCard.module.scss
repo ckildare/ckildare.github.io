@@ -131,6 +131,8 @@ $clicked: false;
     .coverImage {
       @include flex-with-centering;
       box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem #8f8f8f;
+      border: 2px solid white;
+      border-radius: 0.25rem;
     }
 
     .coverImage:hover {
@@ -199,6 +201,8 @@ $clicked: false;
       height: 153.5px;
       width: 302px;
       box-shadow: 0.125rem 0.125rem 0.25rem 0.125rem #8f8f8f;
+      border: 2px solid white;
+      border-radius: 0.125rem;
     }
 
     .coverImage:hover {

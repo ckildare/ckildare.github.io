@@ -5,8 +5,7 @@ import Image from 'next/image';
 import React from 'react';
 import classNames from 'classnames';
 
-import ProjectCard from '../projectCard/projectCard';
-import schoolIcon from '../../../public/icons/school.svg';
+import CardWrapper from '../cardWrapper/cardWrapper';
 
 export default function jobCard(props) {
 
@@ -14,40 +13,44 @@ export default function jobCard(props) {
 
   return (
     <>
-      <div className={styles.jobBody}>
+      <CardWrapper classNames={styles.jobBody}>
         <div className={styles.jobDescription}>
-          <div className={styles.descriptionTopRow}>
-            <div className={styles.jobTitle}>{props.job?.jobTitle}</div>
-            <div className={styles.jobDuration}>{props.job?.startDate} to {props.job?.endDate}</div>
-          </div>
-          <div className={styles.descriptionMiddleRow}>
+          <CardWrapper classNames={styles.jobTitle}>{props.job?.jobTitle}</CardWrapper>
+          <CardWrapper>
             <div className={styles.companyName}>{props.job?.companyData?.name}</div>
+            <div className={styles.sectionLineDivider} />
+            <div className={styles.jobDuration}>{props.job?.startDate} to {props.job?.endDate}</div>
             <div className={styles.companyAddress}>{props.job?.companyData?.address}</div>
-          </div>
-          <div className={styles.descriptionSupervisors}>
+          </CardWrapper>
+          <CardWrapper classNames={styles.descriptionSupervisors}>
             <div className={styles.sectionTitle}>Supervisors</div>
-            {props.job?.supervisors?.map((supervisor, key) => {
-              return (<div key={key} className={styles.supervisor}>{tabbedBullet}{supervisor}</div>)
-            })}
-          </div>
+            <div className={styles.sectionLineDivider} />
+            <div className={styles.listWrapper}>
+              {props.job?.supervisors?.map((supervisor, key) => {
+                return (<div key={key} className={styles.supervisor}>{tabbedBullet}{supervisor}</div>)
+              })}
+            </div>
+          </CardWrapper>
         </div>
-        <div className={styles.contributions}>
+        <CardWrapper classNames={styles.contributions}>
           <div className={styles.sectionTitle}>Contributions</div>
-          <div className={styles.contributionListWrapper}>
+          <div className={styles.sectionLineDivider} />
+          <div className={styles.listWrapper}>
             {props.job?.contributions?.map((contribution, key) => {
               return (<div key={key} className={styles.contribution}>{tabbedBullet}{contribution}</div>)
             })}
           </div>
-        </div>
-        <div className={styles.outcomes}>
+        </CardWrapper>
+        <CardWrapper classNames={styles.outcomes}>
           <div className={styles.sectionTitle}>Outcomes</div>
-          <div className={styles.outcomesListWrapper}>
+          <div className={styles.sectionLineDivider} />
+          <div className={styles.listWrapper}>
             {props.job?.outcomes?.map((outcome, key) => {
               return (<div key={key} className={styles.outcome}>{tabbedBullet}{outcome}</div>)
             })}
           </div>
-        </div>
-      </div>
+        </CardWrapper>
+      </CardWrapper>
       <div className={styles.lineDivider} />
     </>
   )

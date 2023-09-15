@@ -64,7 +64,7 @@ export default function ProjectCard(props) {
         <div className={styles.titleWrapper}>
           <Image
             src={openProject ? downChevron : rightChevron}
-            className={props.isSchoolProject ? styles.courseProjectChevron : styles.projectChevron}
+            className={classNames(props.isSchoolProject ? styles.courseProjectChevron : false, styles.projectChevron)}
             alt={'Project Chevron'}
             height={20}
             width={20}

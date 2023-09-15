@@ -7,49 +7,38 @@
   align-items: baseline;
 }
 
-.jobBody {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+.jobDescription {
+  display: flex;
+  flex-direction: column;
 
-  max-width: 70rem;
-  padding: 0.5rem;
+  .descriptionTopRow {
+    @include section-flex;
+  }
 
-  background-color: #a4a1a1;
+  .jobTitle {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
 
-  .jobDescription {
+  .companyAddress {
+    margin-top: 0.25rem;
+  }
+
+  .companyName {
+    font-size: 1.325rem;
+  }
+
+  .descriptionSupervisors {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
 
-    .descriptionTopRow {
-      @include section-flex;
-    }
+    margin-top: 0.5rem;
 
-    .jobTitle {
-      font-size: 1.75rem;
-      text-align: center;
-      margin-bottom: 0.5rem;
-    }
-
-    .companyAddress {
-      margin-top: 0.25rem;
-    }
-
-    .companyName {
-      font-size: 1.325rem;
-    }
-
-    .descriptionSupervisors {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: baseline;
-
-      margin-top: 0.5rem;
-
-      .supervisor {
-        margin-bottom: 0.125rem;
-      }
+    .supervisor {
+      margin-bottom: 0.125rem;
     }
   }
 }
@@ -83,4 +72,43 @@
 
   background-color: #474138;
   border-radius: 2.5px;
+}
+
+@media screen and (min-width: 951px) {
+  .jobBody {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  
+    max-width: 70rem;
+    padding: 0.5rem;
+  
+    background-color: #a4a1a1;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 950px) {
+  .jobBody {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  
+    max-width: 70rem;
+    padding: 0.5rem;
+  
+    background-color: #a4a1a1;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .jobBody {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+  
+    max-width: 70rem;
+    padding: 0.5rem;
+  
+    background-color: #a4a1a1;
+  }
 }

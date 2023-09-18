@@ -263,16 +263,18 @@ export var courseData = [
         projects: []
       },
       {
-        title: "Technical Comunication",
+        title: "Technical Comunication I",
         courseNumber: "JGEN 200",
         instructors: [
-          ""
+          "Laura Madeline Wiseman"
         ],
-        description: "",
+        description: "Technical Communication I is a course that prepares student for activities they may perform in the industry such as writing memos, holding meetings, practicing proper communication and coordination with students on a project, preparing a research proposal, and conducting research for a project with acquired stakeholders.",
         outcomes: [
-          ""
+          "I have bceome confident in framing a project proposal with appeal to investors / stakeholders.",
+          "I have become more confident in my collaboration skills for a project.",
+          "I have learned the compnenents necessary for documents such as memos, project proposals, research status updates, and research results."
         ],
-        courseLink: "",
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/jgen/#:~:text=Technical%20Communication%20I",
         projects: []
       }
     ]

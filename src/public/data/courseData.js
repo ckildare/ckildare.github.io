@@ -107,7 +107,7 @@ export var courseData = [
           "Dr. Brady Garvin",
           "Dr. Rahul Purandare"
         ],
-        description: "Software Engineering III cvered topics such as formal verification of code with Dafny, exploring common function patters such as recursion and different graph-searches. We studied worst-case and best-case scenarios of algorithms inclusive of recurion and graph search. The final project for the corse involved extending a game created by the professors called 'Boost Board Mobile' where we were taksed to implement a graph search to track how close a user is to winning or losing a game.",
+        description: "Software Engineering III covered topics such as formal verification of code with Dafny, exploring common function patters such as recursion and different graph-searches. We studied worst-case and best-case scenarios of algorithms inclusive of recurion and graph search. The final project for the corse involved extending a game created by the professors called 'Boost Board Mobile' where we were taksed to implement a graph search to track how close a user is to winning or losing a game.",
         outcomes: [
           "I learned how to prevent bugs in my code by using formal verification tools.",
           "I have become more confident using react-redux through some web dev assignments throughout the course.",
@@ -177,14 +177,59 @@ export var courseData = [
         title: "Software Engineering IV",
         courseNumber: "Soft 261",
         instructors: [
-          ""
+          "Dr. Brady Garvin",
+          "Dr. Robert Dyer"
         ],
-        description: "",
+        description: "Software Engineering IV covered topics such as product management, scrum / agile development, common industry meetings for software development, release planning, and open-source contributions. We studied building diagrams and visual elements in respect to visual design principles such as Gestalt rules to efficiently communicate a message to developers, users, or stakeholders. For the final project, we were tasked to contribute and release two features for the Pitivi video-editing platform.",
         outcomes: [
-          ""
+          "I am confident in planning and coordinating meetings for standups, project status, retrospectives, sprint planning, and feature releases.",
+          "I have become more confident working with a team under scrum developemnt practices.",
+          "I have become condifent when working with a sprint planning board to show project / issue status.",
+          "I have learned common practices when contributing to open-source code",
+          "I have become moree efficient with collaborative development.",
+          "I have improved my visual design skills.",
+          "I have become more confident in working with Python."
         ],
-        courseLink: "",
-        projects: []
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=261-,Software%20Engineering%20IV,-Prerequisites%3A%C2%A0A%20grade",
+        projects: [
+          {
+            title: "Pitivi Aspect Ratio Reset Feature",
+            displayImg: csePhoto,
+            context: "For the first half of Soft 261, we were tasked to work with classmates to add a feature to Pitivi using Python and release it, practicing Scrum development and common industry meetings such as sprint updates.",
+            concept: "The feature we added to Pitivi provides the user options to reset the aspect ratio. The user is able to reset the aspect ratio by fixing its position on a corner or the center of the visual element by the following methods:",
+            conceptStepList: [
+              "Fixed Width: Maintain the width of a visual element and shrink or grow the height to achieve the original aspect ratio.",
+              "Fixed Height: Maintain the height of a visual element and shrink or grow the width to achieve the original aspect ratio.",
+            ],
+            outcomes: [
+              "I have learned the process of open-source feature releases.",
+              "I have gotten practice with Scrum development on a software team",
+              "I have practiced communicating with stakeholders to gather / negotiate requirements and provide updates.",
+              "I have practiced coding in Python and building GUIs with Python libraries."
+            ],
+            status: ProjectStatus.Finished,
+            projectLink: "",
+            githubLink: "",
+            supportingImgs: [],
+          },
+          {
+            title: "Pitivi Clip Loop Feature",
+            displayImg: csePhoto,
+            context: "For the second half of Soft 261, we were tasked to work with classmates to research then add a feature to Pitivi and release it, continuing to practice Scrum development and common industry meetings such as sprint updates.",
+            concept: "The feature that we researched for addition to Pitivi would allow users to loop any clip on the timeline, including audio, visual, empty clips, or properties of clips. This feature is substantial as it allows users to spend less time looping a clip with effects, improving the editing experience.",
+            outcomes: [
+              "I have become confident researching prospective features for a product in respect to similar, popular projects.",
+              "I have become confident in the process of open-source feature releases.",
+              "I have become confident with Scrum development on a software team",
+              "I have become confident when communicating with stakeholders to gather / negotiate requirements and provide updates.",
+              "I have become confident coding in Python and building GUIs with Python libraries."
+            ],
+            status: ProjectStatus.Finished,
+            projectLink: "",
+            githubLink: "",
+            supportingImgs: [],
+          }
+        ]
       },
       {
         title: "Programming Language Concepts",

@@ -233,28 +233,33 @@ export var courseData = [
       },
       {
         title: "Programming Language Concepts",
-        courseNumber: "CSCE 231",
+        courseNumber: "CSCE 322",
         instructors: [
-          ""
+          "Dr. Dung Hoang Tran"
         ],
-        description: "",
+        description: "Programming Language Concepts covered topics such as RegEx, parsing / analyzing strings or collections, grammars, and high-level programming language concepts.",
         outcomes: [
-          ""
+          "I learned how to define grammars, check if a string is a part of that grammar, and generate valid strings from the grammar.",
+          "I learned how different types of programming languages are used and basic concepts about their use cases.",
+          "I learned how to design lexers and parsers."
         ],
-        courseLink: "",
-        projects: []
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=322-,Programming%20Language%20Concepts,-Prerequisites%3A%C2%A0A%20grade",
       },
       {
         title: "Computer Systems Engineering",
-        courseNumber: "CSCE 235",
+        courseNumber: "CSCE 231",
         instructors: [
-          ""
+          "Dr. Christopher Bohn"
         ],
-        description: "",
+        description: "Computer Systems Engineering covered low-level computing topics such as bitwise arithmetic, manipulating bits, machine language, I/0, embedded systems, memory management, and hardware-software interaction. The course also taught programming in C and Assembly.",
         outcomes: [
-          ""
+          "I learned how to recreate common library arithmetic through manipulating the bits of numerical inputs.",
+          "I learned how to create embedded systems by programming an Arduino Uno for a variety of applications.",
+          "I learned basic machine-code osftware vulnerabilities and re-created these attacks in a safe environment.",
+          "I learned how to manage memory when working with low-level code.",
+          "I have gained confidence in working with C and Assembly."
         ],
-        courseLink: "",
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=Computer%20Systems%20Engineering",
         projects: []
       },
       {

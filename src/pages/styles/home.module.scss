@@ -10,6 +10,7 @@
   .photoContainer {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 40rem;
     gap: 2.5rem;
 
     border: 2px black solid;

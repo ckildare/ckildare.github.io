@@ -280,24 +280,6 @@ export var courseData = [
     ]
   },
   {
-    semesterName: "Summer 2023",
-    courses: [
-      {
-        title: "Speedway Motors Internship Reflection",
-        courseNumber: "",
-        instructors: [
-          ""
-        ],
-        description: "",
-        outcomes: [
-          ""
-        ],
-        courseLink: "",
-        projects: []
-      }
-    ]
-  },
-  {
     semesterName: "Fall 2023",
     courses: [
       {

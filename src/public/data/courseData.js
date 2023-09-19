@@ -193,7 +193,7 @@ export var courseData = [
         courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=261-,Software%20Engineering%20IV,-Prerequisites%3A%C2%A0A%20grade",
         projects: [
           {
-            title: "Pitivi Aspect Ratio Reset Feature",
+            title: "Pitivi Aspect Ratio Features",
             displayImg: csePhoto,
             context: "For the first half of Soft 261, we were tasked to work with classmates to add a feature to Pitivi using Python and release it, practicing Scrum development and common industry meetings such as sprint updates.",
             concept: "The feature we added to Pitivi provides the user options to reset the aspect ratio. The user is able to reset the aspect ratio by fixing its position on a corner or the center of the visual element by the following methods:",

@@ -9,6 +9,7 @@ import { ProjectStatus } from '@/public/enums/projectStatus';
 import classNames from 'classnames';
 
 import githubLogo from '../../../public/icons/github.svg';
+import gitlabLogo from '../../../public/icons/gitlab.svg';
 import projectIcon from '../../../public/icons/rocket-launch.svg';
 import rightChevron from '../../../public/icons/chevron/chevron-right.svg';
 import downChevron from '../../../public/icons/chevron/chevron-down.svg';
@@ -32,6 +33,8 @@ export default function ProjectCard(props) {
       return statusStyles.abandoned;
     }
   }
+
+  const repoSvg = props.repoLink?.includes("github.com") ? githubLogo : gitlabLogo;
 
   return (
     <div
@@ -101,8 +104,8 @@ export default function ProjectCard(props) {
           </CardWrapper>
           <hr className={styles.lineDivider} />
           <div className={styles.projectLinkWrapper}>
-            <Link class={styles.projectLink} href={props.project?.githubLink}>
-              <Image src={githubLogo} height={40} width={40} alt={"Github logo"} />
+            <Link class={styles.projectLink} href={props.project?.repoLink}>
+              <Image src={repoSvg} height={40} width={40} alt={"Github or gitlab logo"} />
               <p as={'div'} className={styles.linkText}>Github</p>
             </Link>
             {props.project?.projectLink != "" ?

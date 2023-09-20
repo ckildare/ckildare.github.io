@@ -2,13 +2,16 @@
 
 .projectPageContainer {
   @include flex-with-centering;
+  justify-content: flex-start;
   flex-direction: column;
-  min-height: 130vh;
-  background-color: $coffee-palette;
+
+  padding-bottom: 3rem;
+  background-color: #74799e;
+  color: black;
 
   .title {
     @include flex-with-centering;
-    padding: 1rem 0 0.5rem;
+    padding: 2rem 0 0.5rem;
     font-size: 3.5rem;
   }
 

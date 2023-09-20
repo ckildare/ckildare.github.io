@@ -3,6 +3,8 @@ import headshot from '../../../public/my-photos/temp-headshot.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import CardWrapper from '@/components/cards/cardWrapper/cardWrapper';
+
 export default function Header() {
 
   const navBarData = [
@@ -32,8 +34,10 @@ export default function Header() {
       </div>
       <div className={styles.navBarContainer}>
         {navBarData.map(((linkData, key) =>
-          <Link className={styles.buttonContainer} href={linkData.url ?? ""} key={key}>
-            <div className={styles.buttonText}>{linkData.label}</div>
+          <Link href={linkData.url ?? ""} key={key}>
+            <CardWrapper classNames={styles.buttonContainer}>
+              <div className={styles.buttonText}>{linkData.label}</div>
+            </CardWrapper>
           </Link>
         ))}
       </div>

@@ -14,7 +14,7 @@ export const projectData = [
     outcomes: [],
     status: ProjectStatus.InProgress,
     projectLink: "",
-    githubLink: "",
+    repolink: "",
     supportingImgs: [],
   },
   {
@@ -30,7 +30,7 @@ export const projectData = [
     ],
     status: ProjectStatus.Abandoned,
     projectLink: "",
-    githubLink: "https://github.com/CodeCricut/laundry-scheduler",
+    repoLink: "https://github.com/CodeCricut/laundry-scheduler",
     supportingImgs: [],
   },
   {
@@ -46,7 +46,7 @@ export const projectData = [
     ],
     status: ProjectStatus.Finished,
     projectLink: "https://bit.ly/freemycookies",
-    githubLink: "https://github.com/buddysystems/CookieJar",
+    repoLink: "https://github.com/buddysystems/CookieJar",
     supportingImgs: [],
   },
   {
@@ -60,7 +60,7 @@ export const projectData = [
     ],
     status: ProjectStatus.Abandoned,
     projectLink: "https://buddysystems.github.io",
-    githubLink: "https://github.com/buddysystems/buddysystems.github.io",
+    repoLink: "https://github.com/buddysystems/buddysystems.github.io",
     supportingImgs: [],
   },
   {
@@ -86,7 +86,7 @@ export const projectData = [
     ],
     status: ProjectStatus.Paused,
     projectLink: "https://axel-wilsons-mixtape-maker.herokuapp.com",
-    githubLink: "https://github.com/CodeCricut/RetroPlaylistGenerator",
+    repoLink: "https://github.com/CodeCricut/RetroPlaylistGenerator",
     supportingImgs: [],
   },
   {
@@ -103,7 +103,7 @@ export const projectData = [
     ],
     status: ProjectStatus.Finished,
     projectLink: "https://ckildare.github.io",
-    githubLink: "https://github.com/ckildare/deprecated-portfolio-site",
+    repoLink: "https://github.com/ckildare/deprecated-portfolio-site",
     supportingImgs: [],
   }
 ]

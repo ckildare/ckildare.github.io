@@ -36,7 +36,7 @@ export var courseData = [
             ],
             status: ProjectStatus.Finished,
             projectLink: "",
-            githubLink: "",
+            repoLink: "",
           }
         ],
       }
@@ -76,7 +76,7 @@ export var courseData = [
             ],
             status: ProjectStatus.Finished,
             projectLink: "",
-            githubLink: "",
+            repoLink: "",
           }
         ],
       },

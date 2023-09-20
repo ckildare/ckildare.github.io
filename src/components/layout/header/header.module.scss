@@ -9,7 +9,7 @@
         width: 100%;
         height: 9rem;
 
-        background-color: #C9B79C;
+        background-color: #bfbfbf;
         font-family: $roboto-font;
     }
 
@@ -31,7 +31,7 @@
         @include flex-with-centering;
         gap: 0.325rem;
 
-        background-color: #616B5D;
+        background-color: #8e8e8e;
         border-top: 0.125rem #3F3F3B solid;
 
         height: 3rem;
@@ -42,7 +42,7 @@
         }
 
         :hover {
-            background-color: #B3AA91;
+            background-color: #f4f4f4;
         }
 
         :active :focus :visited {
@@ -80,21 +80,12 @@
         gap: 0.325rem;
 
         background-color: #616B5D;
-        border-top: 0.125rem #3F3F3B solid;
 
         height: 10rem;
         width: 100%;
 
         :last-child {
             margin-right: none;
-        }
-
-        :hover {
-            background-color: #B3AA91;
-        }
-
-        :active :focus {
-            background-color: #d1c7ad;
         }
     }
 }
@@ -124,15 +115,19 @@
 .buttonContainer {
     @include flex-with-centering;
     width: 10rem;
-    height: 2rem;
-    background-color: #9D9C85;
-    box-shadow: 0.125rem 0.125rem 0.125rem #373433;
+    height: 2.25rem;
+    background-color: #bfbfbf;
+    border-radius: 0.25rem;
 
     .buttonText {
         @include flex-with-centering;
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         width: stretch;
         height: stretch;
         color: black;
     }
+}
+
+.buttonContainer:hover {
+    border-radius: 0.25rem;
 }

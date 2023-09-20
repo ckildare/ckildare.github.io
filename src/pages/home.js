@@ -18,13 +18,8 @@ export default function Home() {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.photoContainer}>
-        <Image width={1000} height={450} src={cornHacks} alt={"Picture is of team mates and I during a hackathon event looking tired."}/>
-        <Image src={speedway} alt={"Me with my little brother and some friends."}/>
-        <Image src={jobFair} alt={"Me with my little brother and some friends."}/>
-        <Image width={900} height={700} src={prom} alt={"Me with my little brother and some friends."}/>
-        <Image src={wilbur} alt={"Me with my little brother and some friends."}/>
-        <Image src={spriteCranberry} alt={"Me with my little brother and some friends."}/>
-        <Image width={500} height={500} src={photoWithGageFriends} alt={"Me with my little brother and some friends."}/>
+        <Image width={600} height={360} src={speedway} alt={"Me with my little brother and some friends."}/>
+        <Image width={600} height={360} src={prom} alt={"Me with my little brother and some friends."}/>
       </div>
       <div className={styles.introductionContainer}>
         <p>{tab}My name is Connor Kildare. I am a Junior in Software Engineering at the University of Nebraska - Lincoln. I am proficient in C#, React, and JavaScript. I am also familiar with C, Python, Jave, etc. </p>

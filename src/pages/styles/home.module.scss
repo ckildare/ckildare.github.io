@@ -8,8 +8,9 @@
   background-color: #f0f0f0;
 
   .photoContainer {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 40rem;
     gap: 2.5rem;
 
@@ -26,7 +27,7 @@
   .introductionContainer {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.5rem;
     height: inherit;
     color: black;
     font-size: 1.375rem;
@@ -63,7 +64,7 @@
     flex-direction: column;
     gap: 2.5rem;
     min-height: 48rem;
-    padding: 2rem;
+    padding: 1.5rem 0.5rem 0.5rem;
   
     background-color: #f0f0f0;
   

@@ -102,16 +102,25 @@ export default function ProjectCard(props) {
               : false
             }
           </CardWrapper>
-          <hr className={styles.lineDivider} />
+          {props.project?.repoLink != null && props.project?.projectLink != null ?
+            <hr className={styles.lineDivider} />
+            : false
+          }
           <div className={styles.projectLinkWrapper}>
-            <Link class={styles.projectLink} href={props.project?.repoLink ?? ""}>
-              <Image src={repoSvg} height={40} width={40} alt={"Github or gitlab logo"} />
-              <p as={'div'} className={styles.linkText}>Github</p>
-            </Link>
-            <Link class={styles.projectLink} href={props.project?.projectLink ?? ""}>
-              <Image src={projectIcon} height={40} width={40} className={styles.projectLinkImage} alt={"Icon for project"} />
-              <p as={'div'} className={styles.linkText}>Project</p>
-            </Link>
+            {props.project?.repoLink != null ?
+              <Link class={styles.projectLink} href={props.project?.repoLink ?? ""}>
+                <Image src={repoSvg} height={40} width={40} alt={"Github or gitlab logo"} />
+                <p as={'div'} className={styles.linkText}>Github</p>
+              </Link>
+              : false
+            }
+            {props.project?.projectLink != null ?
+              <Link class={styles.projectLink} href={props.project?.projectLink ?? ""}>
+                <Image src={projectIcon} height={40} width={40} className={styles.projectLinkImage} alt={"Icon for project"} />
+                <p as={'div'} className={styles.linkText}>Project</p>
+              </Link>
+              : false
+            }
           </div>
           {props.project?.supportingImgs != null || props.project?.supportingImgs > 0 ?
             props.project?.supportingImgs.map((supportImg, key) => {

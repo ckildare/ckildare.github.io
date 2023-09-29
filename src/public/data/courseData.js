@@ -5,6 +5,63 @@ import laundryScheduler from '../../public/card-screenshots/laundry-scheduler-co
 
 export var courseData = [
   {
+    semesterName: "Fall 2023",
+    courses: [
+      {
+        title: "Modeling Data Systems",
+        courseNumber: "CSCE 411",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "Algorithm Design and Analysis",
+        courseNumber: "CSCE 423",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "Testing and Verification",
+        courseNumber: "CSCE 467",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      },
+      {
+        title: "DMSi Senior Design",
+        courseNumber: "CSCE 487",
+        instructors: [
+          ""
+        ],
+        description: "",
+        outcomes: [
+          ""
+        ],
+        courseLink: "",
+        projects: []
+      }
+    ]
+  },
+  {
     semesterName: "Spring 2023",
     courses: [
       {
@@ -42,8 +99,6 @@ export var courseData = [
               "I have practiced coding in Python and building GUIs with Python libraries."
             ],
             status: ProjectStatus.Finished,
-            projectLink: "",
-            githubLink: "",
             supportingImgs: [],
           },
           {
@@ -59,8 +114,6 @@ export var courseData = [
               "I have become confident coding in Python and building GUIs with Python libraries."
             ],
             status: ProjectStatus.Finished,
-            projectLink: "",
-            githubLink: "",
             supportingImgs: [],
           }
         ]
@@ -145,7 +198,6 @@ export var courseData = [
               "I have acquired more experience in React.js, React-Redux, HTML, CSS, and JS."
             ],
             status: ProjectStatus.Finished,
-            projectLink: "",
             githubLink: "https://github.com/CodeCricut/laundry-scheduler",
             supportingImgs: [],
           }
@@ -219,8 +271,6 @@ export var courseData = [
               "I extended my collaboration abilities by working with other students."
             ],
             status: ProjectStatus.Finished,
-            projectLink: "",
-            repoLink: "",
           }
         ],
       },
@@ -271,9 +321,7 @@ export var courseData = [
               "I became more efficient in building unit and integration testing suites.",
               "I acquired real-world experience in applying object-oriented programming with Java."
             ],
-            status: ProjectStatus.Finished,
-            projectLink: "",
-            repoLink: "",
+            status: ProjectStatus.Finished
           }
         ],
       }

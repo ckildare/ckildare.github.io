@@ -39,7 +39,7 @@ export default function ProjectCard(props) {
   return (
     <div
       className={classNames(
-        classNames(props.isSchoolProject ? styles.projectContainerSchool : false, 
+        classNames(props.isSchoolProject ? styles.projectContainerSchool : false,
           styles.projectContainer),
         openProject ? styles.projectContainerOpen : false)}
     >
@@ -104,19 +104,14 @@ export default function ProjectCard(props) {
           </CardWrapper>
           <hr className={styles.lineDivider} />
           <div className={styles.projectLinkWrapper}>
-            <Link class={styles.projectLink} href={props.project?.repoLink}>
+            <Link class={styles.projectLink} href={props.project?.repoLink ?? ""}>
               <Image src={repoSvg} height={40} width={40} alt={"Github or gitlab logo"} />
               <p as={'div'} className={styles.linkText}>Github</p>
             </Link>
-            {props.project?.projectLink != "" ?
-              <>
-                <Link class={styles.projectLink} href={props.project?.projectLink}>
-                  <Image src={projectIcon} height={40} width={40} className={styles.projectLinkImage} alt={"Icon for project"} />
-                  <p as={'div'} className={styles.linkText}>Project</p>
-                </Link>
-              </>
-              : false
-            }
+            <Link class={styles.projectLink} href={props.project?.projectLink ?? ""}>
+              <Image src={projectIcon} height={40} width={40} className={styles.projectLinkImage} alt={"Icon for project"} />
+              <p as={'div'} className={styles.linkText}>Project</p>
+            </Link>
           </div>
           {props.project?.supportingImgs != null || props.project?.supportingImgs > 0 ?
             props.project?.supportingImgs.map((supportImg, key) => {

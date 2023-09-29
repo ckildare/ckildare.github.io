@@ -5,172 +5,6 @@ import laundryScheduler from '../../public/card-screenshots/laundry-scheduler-co
 
 export var courseData = [
   {
-    semesterName: "Fall 2021",
-    courses: [
-      {
-        title: "Software Engineering I",
-        courseNumber: "Soft 160",
-        instructors: [
-          "Dr. Christopher Bohn",
-          "Dr. Suzanne Person"
-        ],
-        description: "Soft 160 is an introductory course into the Software Engineering program, teaching collaborative programming fundamentals and the basics of coding.",
-        outcomes: [
-          "I developed basic problem-solving skills within the context of computing and collaborative work",
-          "I gained experience working on a project with real-life applications.",
-          "I developed common techniques for debugging, testing, and writing code.",
-          "I learned how to make code maintainable with a variety of coding artifacts such as documentation or requirements."
-        ],
-        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=160-,Software%20Engineering%20I,-Prerequisites%3A%C2%A0MATH",
-        projects: [
-          {
-            title: "UNL Controlled Burn Planner",
-            displayImg: csePhoto,
-            context: "This project was the capstone / final project for the course. We built the project using Java on a virtual machine running Ubuntu alongside four classmates.",
-            concept: "This project hooked into the Open-Source Weather API to gather configurations from a user in command-line and data about the weather in a specific location to determine if a controlled burn was viable by regulative standards.",
-            outcomes: [
-              "I learned basic software collaboration skills by working with classmates as a development group.",
-              "I improved my ability to decompose requirements into tasks and issues.",
-              "I became more efficient in building unit and integration testing suites.",
-              "I acquired real-world experience in applying object-oriented programming with Java."
-            ],
-            status: ProjectStatus.Finished,
-            projectLink: "",
-            repoLink: "",
-          }
-        ],
-      }
-    ]
-  },
-  {
-    semesterName: "Spring 2022",
-    courses: [
-      {
-        title: "Software Engineering II",
-        courseNumber: "Soft 161",
-        semester: "Spring 2021",
-        instructors: [
-          "Dr. Christopher Bohn",
-          "Dr. Shruti Bolman"
-        ],
-        description: "Soft 161 extended concepts learned in Soft 160 by teaching database systems, mutli-layer programming, and event-driven programming.",
-        outcomes: [
-          "I was exposed to good database design and learned basic concepts of persistent data storage.",
-          "I learned how to separate code into different layers, allowing for better maintainabaility and efficiency.",
-          "I learned how to drive programs with events and more types of user interaction.",
-          "I more gained experience with texting complex software systems to promote safety."
-        ],
-        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=161-,Software%20Engineering%20II,-Prerequisites%3A%C2%A0A%20grade",
-        projects: [
-          {
-            title: "UNL Travel Planning App",
-            displayImg: csePhoto,
-            context: "This project was the capstone / final project for the course. We built the project using Java and Python on a virtual machine running Ubuntu alongside four classmates. This project implemented using MariaDB for data storage and Kivy for the frontend.",
-            concept: "This app is designed to help a user plan a trip, including scheduling venues, airplanes, and activities for the trip. Our app was capable of storing user data and mocked integration with external airline / venue systems.",
-            outcomes: [
-              "I learned how to build a multi-layer application.",
-              "I gained experience making user-facing frontend design decisions.",
-              "I learned how to design a frontend system using GUIs.",
-              "I extended my understanding of Java, Python, and SQL.",
-              "I extended my collaboration abilities by working with other students."
-            ],
-            status: ProjectStatus.Finished,
-            projectLink: "",
-            repoLink: "",
-          }
-        ],
-      },
-      {
-        title: "Honors Introduction to Discrete Structures",
-        courseNumber: "CSCE 235H",
-        instructors: [
-          "Dr. Berthe Choueiry"
-        ],
-        description: "Intro to discrete structures covered operations and proofs on data collections such as matricies, recursions, sets, graphs, etc. The course also covered a variety of boolean properties with research applications.",
-        outcomes: [
-          "I gained a greater understanding of how to implement and measure the time of recursion problems.",
-          "I have gained confidence in working with boolean properties and laws.",
-          "I have gained confidence in working with set properties and laws.",
-          "I am now able to use set and boolean laws to reduce the amount of operations applied to collections and conditionals."
-        ],
-        courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=Honors%3A%20Introduction%20to%20Discrete%20Structures",
-      }
-    ]
-  },
-  {
-    semesterName: "Fall 2022",
-    courses: [
-      {
-        title: "Software Engineering III",
-        courseNumber: "Soft 260",
-        instructors: [
-          "Dr. Brady Garvin",
-          "Dr. Rahul Purandare"
-        ],
-        description: "Software Engineering III covered topics such as formal verification of code with Dafny, exploring common function patters such as recursion and different graph-searches. We studied worst-case and best-case scenarios of algorithms inclusive of recurion and graph search. The final project for the corse involved extending a game created by the professors called 'Boost Board Mobile' where we were taksed to implement a graph search to track how close a user is to winning or losing a game.",
-        outcomes: [
-          "I learned how to prevent bugs in my code by using formal verification tools.",
-          "I have become more confident using react-redux through some web dev assignments throughout the course.",
-          "I have learned the benefits of using graph-search to optimize operations on collections and node systems.",
-          "I have become very aware of performance pain-points in my style of coding and now give more thought into the types of algorithms I implement.",
-          "I have acquied more tools for analyzing the performance of my code."
-        ],
-        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=260-,Software%20Engineering%20III,-Prerequisites%3A%C2%A0A%20grade",
-        projects: [
-          {
-            title: "Boost Board Mobile",
-            displayImg: csePhoto,
-            context: "This was the final project for Software Engineering III to test student understanding of react-redux, performance, and graph-search applications.",
-            concept: "This project involved students working in groups to determine which user is closest to winning and by how much through implementation of different graph-search functions and node management.",
-            outcomes: [
-              "I have developed stronger development collaboration skills.",
-              "I have acquired the ability to apply graph-search algorithms in a real-life scenario.",
-              "I have become more self-aware when writing code to prevent bad performance.",
-              "I have acquired more experience in React.js, React-Redux, HTML, CSS, and JS."
-            ],
-            status: ProjectStatus.Finished,
-            projectLink: "",
-            githubLink: "https://github.com/CodeCricut/laundry-scheduler",
-            supportingImgs: [],
-          }
-        ]
-      },
-      {
-        title: "Human-Computer Interaction",
-        courseNumber: "CSCE 378",
-        instructors: [
-          "Dr. Alisha Bevins"
-        ],
-        description: "Human-Computer Interaction focused on designing and testing user interfaces for accessibility and usability. These testing methods include frameworking, mocking, user interviews through each step of the design process, gathering metrics on user interaction with a system, and deriving action items / requirements from user interaction with an interface. The final project of this course included designing a web app that had been heavily tested by users.",
-        outcomes: [
-          "I practiced conducting effective interviews with customers to acquire helpful feedback.",
-          "I learned to test on wireframes and mock interfaces before writing code to reduce development costs.",
-          "I practiced deriving requirements from analyzing how users interact with an interface.",
-          "I practiced gathering metrics from a user interview to derive a more effetive user interface."
-        ],
-        courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=378-,Human%2DComputer%20Interaction,-Prerequisites%3A%C2%A0A%20grade",
-        projects: [
-          {
-            title: "UNL Laundry Scheduler",
-            displayImg: laundryScheduler,
-            context: "This is a Buddy Systems project started in a Human-Computer Interaction course and evolved to a project sponsored by UNL Housing that would later be abandoned.",
-            concept: "This product would allow users to schedule a load of laundry ( either single or reoccuring occurrence ), view laundry status, and recieve push notifications about laundry.",
-            outcomes: [
-              "I have developed stronger development collaboration skills.",
-              "I have gained more confidence in speaking to stakeholders and negotiating requirements",
-              "I have become more efficient in leading user interaction testing to verify wireframes and proposed UI elements",
-              "I have acquired more experience in React.js, HTML, Sass (CSS)."
-            ],
-            status: ProjectStatus.Abandoned,
-            projectLink: "",
-            githubLink: "https://github.com/CodeCricut/laundry-scheduler",
-            supportingImgs: [],
-          }
-        ]
-      }
-    ]
-  },
-  {
     semesterName: "Spring 2023",
     courses: [
       {
@@ -280,60 +114,169 @@ export var courseData = [
     ]
   },
   {
-    semesterName: "Fall 2023",
+    semesterName: "Fall 2022",
     courses: [
       {
-        title: "Modeling Data Systems",
-        courseNumber: "CSCE 411",
+        title: "Software Engineering III",
+        courseNumber: "Soft 260",
         instructors: [
-          ""
+          "Dr. Brady Garvin",
+          "Dr. Rahul Purandare"
         ],
-        description: "",
+        description: "Software Engineering III covered topics such as formal verification of code with Dafny, exploring common function patters such as recursion and different graph-searches. We studied worst-case and best-case scenarios of algorithms inclusive of recurion and graph search. The final project for the corse involved extending a game created by the professors called 'Boost Board Mobile' where we were taksed to implement a graph search to track how close a user is to winning or losing a game.",
         outcomes: [
-          ""
+          "I learned how to prevent bugs in my code by using formal verification tools.",
+          "I have become more confident using react-redux through some web dev assignments throughout the course.",
+          "I have learned the benefits of using graph-search to optimize operations on collections and node systems.",
+          "I have become very aware of performance pain-points in my style of coding and now give more thought into the types of algorithms I implement.",
+          "I have acquied more tools for analyzing the performance of my code."
         ],
-        courseLink: "",
-        projects: []
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=260-,Software%20Engineering%20III,-Prerequisites%3A%C2%A0A%20grade",
+        projects: [
+          {
+            title: "Boost Board Mobile",
+            displayImg: csePhoto,
+            context: "This was the final project for Software Engineering III to test student understanding of react-redux, performance, and graph-search applications.",
+            concept: "This project involved students working in groups to determine which user is closest to winning and by how much through implementation of different graph-search functions and node management.",
+            outcomes: [
+              "I have developed stronger development collaboration skills.",
+              "I have acquired the ability to apply graph-search algorithms in a real-life scenario.",
+              "I have become more self-aware when writing code to prevent bad performance.",
+              "I have acquired more experience in React.js, React-Redux, HTML, CSS, and JS."
+            ],
+            status: ProjectStatus.Finished,
+            projectLink: "",
+            githubLink: "https://github.com/CodeCricut/laundry-scheduler",
+            supportingImgs: [],
+          }
+        ]
       },
       {
-        title: "Algorithm Design and Analysis",
-        courseNumber: "CSCE 423",
+        title: "Human-Computer Interaction",
+        courseNumber: "CSCE 378",
         instructors: [
-          ""
+          "Dr. Alisha Bevins"
         ],
-        description: "",
+        description: "Human-Computer Interaction focused on designing and testing user interfaces for accessibility and usability. These testing methods include frameworking, mocking, user interviews through each step of the design process, gathering metrics on user interaction with a system, and deriving action items / requirements from user interaction with an interface. The final project of this course included designing a web app that had been heavily tested by users.",
         outcomes: [
-          ""
+          "I practiced conducting effective interviews with customers to acquire helpful feedback.",
+          "I learned to test on wireframes and mock interfaces before writing code to reduce development costs.",
+          "I practiced deriving requirements from analyzing how users interact with an interface.",
+          "I practiced gathering metrics from a user interview to derive a more effetive user interface."
         ],
-        courseLink: "",
-        projects: []
-      },
-      {
-        title: "Testing and Verification",
-        courseNumber: "CSCE 467",
-        instructors: [
-          ""
-        ],
-        description: "",
-        outcomes: [
-          ""
-        ],
-        courseLink: "",
-        projects: []
-      },
-      {
-        title: "DMSi Senior Design",
-        courseNumber: "CSCE 487",
-        instructors: [
-          ""
-        ],
-        description: "",
-        outcomes: [
-          ""
-        ],
-        courseLink: "",
-        projects: []
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=378-,Human%2DComputer%20Interaction,-Prerequisites%3A%C2%A0A%20grade",
+        projects: [
+          {
+            title: "UNL Laundry Scheduler",
+            displayImg: laundryScheduler,
+            context: "This is a Buddy Systems project started in a Human-Computer Interaction course and evolved to a project sponsored by UNL Housing that would later be abandoned.",
+            concept: "This product would allow users to schedule a load of laundry ( either single or reoccuring occurrence ), view laundry status, and recieve push notifications about laundry.",
+            outcomes: [
+              "I have developed stronger development collaboration skills.",
+              "I have gained more confidence in speaking to stakeholders and negotiating requirements",
+              "I have become more efficient in leading user interaction testing to verify wireframes and proposed UI elements",
+              "I have acquired more experience in React.js, HTML, Sass (CSS)."
+            ],
+            status: ProjectStatus.Abandoned,
+            projectLink: "",
+            githubLink: "https://github.com/CodeCricut/laundry-scheduler",
+            supportingImgs: [],
+          }
+        ]
       }
     ]
-  }
+  },
+  {
+    semesterName: "Spring 2022",
+    courses: [
+      {
+        title: "Software Engineering II",
+        courseNumber: "Soft 161",
+        semester: "Spring 2021",
+        instructors: [
+          "Dr. Christopher Bohn",
+          "Dr. Shruti Bolman"
+        ],
+        description: "Soft 161 extended concepts learned in Soft 160 by teaching database systems, mutli-layer programming, and event-driven programming.",
+        outcomes: [
+          "I was exposed to good database design and learned basic concepts of persistent data storage.",
+          "I learned how to separate code into different layers, allowing for better maintainabaility and efficiency.",
+          "I learned how to drive programs with events and more types of user interaction.",
+          "I more gained experience with texting complex software systems to promote safety."
+        ],
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=161-,Software%20Engineering%20II,-Prerequisites%3A%C2%A0A%20grade",
+        projects: [
+          {
+            title: "UNL Travel Planning App",
+            displayImg: csePhoto,
+            context: "This project was the capstone / final project for the course. We built the project using Java and Python on a virtual machine running Ubuntu alongside four classmates. This project implemented using MariaDB for data storage and Kivy for the frontend.",
+            concept: "This app is designed to help a user plan a trip, including scheduling venues, airplanes, and activities for the trip. Our app was capable of storing user data and mocked integration with external airline / venue systems.",
+            outcomes: [
+              "I learned how to build a multi-layer application.",
+              "I gained experience making user-facing frontend design decisions.",
+              "I learned how to design a frontend system using GUIs.",
+              "I extended my understanding of Java, Python, and SQL.",
+              "I extended my collaboration abilities by working with other students."
+            ],
+            status: ProjectStatus.Finished,
+            projectLink: "",
+            repoLink: "",
+          }
+        ],
+      },
+      {
+        title: "Honors Introduction to Discrete Structures",
+        courseNumber: "CSCE 235H",
+        instructors: [
+          "Dr. Berthe Choueiry"
+        ],
+        description: "Intro to discrete structures covered operations and proofs on data collections such as matricies, recursions, sets, graphs, etc. The course also covered a variety of boolean properties with research applications.",
+        outcomes: [
+          "I gained a greater understanding of how to implement and measure the time of recursion problems.",
+          "I have gained confidence in working with boolean properties and laws.",
+          "I have gained confidence in working with set properties and laws.",
+          "I am now able to use set and boolean laws to reduce the amount of operations applied to collections and conditionals."
+        ],
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/csce/#:~:text=Honors%3A%20Introduction%20to%20Discrete%20Structures",
+      }
+    ]
+  },
+  {
+    semesterName: "Fall 2021",
+    courses: [
+      {
+        title: "Software Engineering I",
+        courseNumber: "Soft 160",
+        instructors: [
+          "Dr. Christopher Bohn",
+          "Dr. Suzanne Person"
+        ],
+        description: "Soft 160 is an introductory course into the Software Engineering program, teaching collaborative programming fundamentals and the basics of coding.",
+        outcomes: [
+          "I developed basic problem-solving skills within the context of computing and collaborative work",
+          "I gained experience working on a project with real-life applications.",
+          "I developed common techniques for debugging, testing, and writing code.",
+          "I learned how to make code maintainable with a variety of coding artifacts such as documentation or requirements."
+        ],
+        courseLink: "https://catalog.unl.edu/undergraduate/courses/soft/#:~:text=160-,Software%20Engineering%20I,-Prerequisites%3A%C2%A0MATH",
+        projects: [
+          {
+            title: "UNL Controlled Burn Planner",
+            displayImg: csePhoto,
+            context: "This project was the capstone / final project for the course. We built the project using Java on a virtual machine running Ubuntu alongside four classmates.",
+            concept: "This project hooked into the Open-Source Weather API to gather configurations from a user in command-line and data about the weather in a specific location to determine if a controlled burn was viable by regulative standards.",
+            outcomes: [
+              "I learned basic software collaboration skills by working with classmates as a development group.",
+              "I improved my ability to decompose requirements into tasks and issues.",
+              "I became more efficient in building unit and integration testing suites.",
+              "I acquired real-world experience in applying object-oriented programming with Java."
+            ],
+            status: ProjectStatus.Finished,
+            projectLink: "",
+            repoLink: "",
+          }
+        ],
+      }
+    ]
+  },
 ];

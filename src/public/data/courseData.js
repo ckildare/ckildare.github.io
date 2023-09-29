@@ -5,63 +5,6 @@ import laundryScheduler from '../../public/card-screenshots/laundry-scheduler-co
 
 export var courseData = [
   {
-    semesterName: "Fall 2023",
-    courses: [
-      {
-        title: "Modeling Data Systems",
-        courseNumber: "CSCE 411",
-        instructors: [
-          ""
-        ],
-        description: "",
-        outcomes: [
-          ""
-        ],
-        courseLink: "",
-        projects: []
-      },
-      {
-        title: "Algorithm Design and Analysis",
-        courseNumber: "CSCE 423",
-        instructors: [
-          ""
-        ],
-        description: "",
-        outcomes: [
-          ""
-        ],
-        courseLink: "",
-        projects: []
-      },
-      {
-        title: "Testing and Verification",
-        courseNumber: "CSCE 467",
-        instructors: [
-          ""
-        ],
-        description: "",
-        outcomes: [
-          ""
-        ],
-        courseLink: "",
-        projects: []
-      },
-      {
-        title: "DMSi Senior Design",
-        courseNumber: "CSCE 487",
-        instructors: [
-          ""
-        ],
-        description: "",
-        outcomes: [
-          ""
-        ],
-        courseLink: "",
-        projects: []
-      }
-    ]
-  },
-  {
     semesterName: "Spring 2023",
     courses: [
       {

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import CardWrapper from '@/components/cards/cardWrapper/cardWrapper';
 import styles from './footer.module.scss'
+
 import github from '../../../public/icons/github.svg';
 import gitlab from '../../../public/icons/gitlab.svg';
 import gmail from '../../../public/icons/email.svg';
@@ -37,15 +39,17 @@ export default function Footer() {
         <p as={'div'} className={styles.contactHeader}>Here&apos;s Where You Can Find Me!</p>
         <div className={styles.contacts}>
           {contactCardData.map(((contact, key) =>
-            <Link className={styles.contactCard} href={contact.url} key={key}>
-              <div className={styles.contactImage}><Image src={contact.displayImg} width={35} height={35} alt={"Contact card image / logo"}/></div>
-              <p as={'div'} className={styles.contactText}>{contact.label}</p>
-            </Link>
+            <CardWrapper key={key}>
+              <Link className={styles.contactCard} href={contact.url}>
+                <div className={styles.contactImage}><Image src={contact.displayImg} width={35} height={35} alt={"Contact card image / logo"} /></div>
+                <p as={'div'} className={styles.contactText}>{contact.label}</p>
+              </Link>
+            </CardWrapper>
           ))}
         </div>
       </div>
       <div className={styles.githubRepo}>
-        <div className={styles.deprecatedSiteImg}><Image src={oldHeadShot} width={125} height={125} alt={"Photo for my deprecated site"}/></div>
+        <div className={styles.deprecatedSiteImg}><Image src={oldHeadShot} width={125} height={125} alt={"Photo for my deprecated site"} /></div>
         <div className={styles.deprecatedSite}>
           <p as={'div'} className={styles.deprecatedSiteDescription}>
             This current site is built using SASS, React.JS, and Next.JS technologies. You can find my old website and its repository here!

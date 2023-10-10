@@ -32,15 +32,6 @@ export default function Schooling() {
         {jobData.map((job, key) => {
           return (<div key={key} className={styles.jobWrapper}><JobCard job={job} /></div>)
         })}
-        <a
-          href={""}
-          download={"resume.pdf"}
-        >
-          <CardWrapper classNames={styles.resume}>
-            <Image src={resumeSvg} height={40} width={40} alt={"Resume icon"} />
-            <p>Resume</p>
-          </CardWrapper>
-        </a>
       </div>
     </div>
   )

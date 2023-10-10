@@ -19,6 +19,7 @@
 
       .contactText {
         @include flex-with-centering;
+        color: black;
         width: 100%;
 
         font-size: 1.25rem;
@@ -49,6 +50,7 @@
 
       .contactText {
         @include flex-with-centering;
+        color: black;
         width: 100%;
 
         font-size: 1rem;
@@ -169,6 +171,7 @@
 
           .contactText {
             @include flex-with-centering;
+            color: black;
             width: inherit;
 
             font-size: 1rem;
@@ -303,21 +306,12 @@
   }
 }
 
-.deprecatedSiteLink {
+.deprecatedSiteLinkText {
   @include flex-with-centering;
-  width: 15rem;
-  height: 2rem;
+  width: inherit;
+  padding: 0.125rem;
 
-  margin: 0 1rem;
-
-  box-shadow: 0.125rem 0.125rem 0.125rem rgb(29, 36, 56);
-  background-color: rgb(87, 99, 134);
-
-  .deprecatedSiteLinkText {
-    @include flex-with-centering;
-    width: stretch;
-    height: 2rem;
-  }
+  font-size: 1.125rem;
 }
 
 .contactHeader {

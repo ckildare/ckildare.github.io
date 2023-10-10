@@ -54,9 +54,11 @@ export default function Footer() {
           <p as={'div'} className={styles.deprecatedSiteDescription}>
             This current site is built using SASS, React.JS, and Next.JS technologies. You can find my old website and its repository here!
           </p>
-          <Link className={styles.deprecatedSiteLink} href={""}>
-            <p as={'div'} className={styles.deprecatedSiteLinkText}>View Deprecated Site</p>
-          </Link>
+          <CardWrapper>
+            <Link className={styles.contactCard} href={""}>
+              <p as={'div'} className={styles.deprecatedSiteLinkText}>View Deprecated Site</p>
+            </Link>
+          </CardWrapper>
         </div>
       </div>
     </div>

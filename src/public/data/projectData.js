@@ -2,19 +2,20 @@ import { ProjectStatus } from '@/public/enums/projectStatus';
 
 import axelWilson from '../../public/card-screenshots/axel-wilson-cover-image.png';
 import buddySystems from '../../public/card-screenshots/buddy-systems-cover-image.png';
-import deprecatedPortfolioSite from '../../public/card-screenshots/portfolio-site-cover-image.png';
+import csePhoto from '../card-screenshots/cse-background.jpg';
 import laundryScheduler from '../../public/card-screenshots/laundry-scheduler-cover-image.png';
+import deprecatedPortfolioSite from '../../public/card-screenshots/portfolio-site-cover-image.png';
 
 export const projectData = [
   {
     title: "Current Portfolio Site",
-    displayImg: "",
-    context: "",
-    concept: "",
-    outcomes: [],
-    status: ProjectStatus.InProgress,
-    projectLink: "",
-    repolink: "",
+    displayImg: csePhoto,
+    context: "This is the upgrade to my previous portfolio site. I wanted to create a more dynamic site that would allow me to add more projects and information about myself. I also wanted to create a site that would allow me to practice my frontend development skills and learn more about React.js.",
+    concept: "This project is built using React.js, HTML, Sass (CSS), and JavaScript. I have also used the Next.js framework to help with routing and deployment. I have also used the Vercel platform to deploy my site. As I continue in my carrer, I will continue to add more projects and information about myself to this site.",
+    outcomes: ["I have learned how to deploy and manage a live website.", "I have learned more efficient ways to communicate my work and school experiences.", "I have continued my mastery in website responsive sizing.", "I have acquired more experience in React.js, HTML, Sass (CSS), and JavaScript.", "I have gotten the opportunity to acquire and set up a custom domain name."],
+    status: ProjectStatus.Finished,
+    projectLink: "https://connorkildare.com",
+    repolink: "https://github.com/ckildare/ckildare.github.io",
     supportingImgs: [],
   },
   {
@@ -35,7 +36,7 @@ export const projectData = [
   },
   {
     title: "Cookie Jar",
-    displayImg: "",
+    displayImg: csePhoto,
     context: "This is a Buddy Systems project completed in the summer of 2022 that allowed us to learn how to hook into the Google API and manage our cookies.",
     concept: "This product would allow users to view, search, manipulate, import, export, and store cookies on Google's storage system where cookies can only be accessed by the user.",
     outcomes: [
@@ -84,7 +85,7 @@ export const projectData = [
       "I have acquired more expereince in managing state in a dynamic website.",
       "I have developed stronger development collaboration skills."
     ],
-    status: ProjectStatus.Paused,
+    status: ProjectStatus.InProgress,
     projectLink: "https://axel-wilsons-mixtape-maker.herokuapp.com",
     repoLink: "https://github.com/CodeCricut/RetroPlaylistGenerator",
     supportingImgs: [],
@@ -102,7 +103,6 @@ export const projectData = [
       "I have gotten the opportunity to acquire and set up a custom domain name."
     ],
     status: ProjectStatus.Finished,
-    projectLink: "https://ckildare.github.io",
     repoLink: "https://github.com/ckildare/deprecated-portfolio-site",
     supportingImgs: [],
   }

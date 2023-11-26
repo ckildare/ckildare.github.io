@@ -52,11 +52,11 @@ export default function Footer() {
         <div className={styles.deprecatedSiteImg}><Image src={oldHeadShot} width={125} height={125} alt={"Photo for my deprecated site"} /></div>
         <div className={styles.deprecatedSite}>
           <p as={'div'} className={styles.deprecatedSiteDescription}>
-            This current site is built using SASS, React.JS, and Next.JS technologies. You can find my old website and its repository here!
+            This site was built using HTML, Sass (CSS), and Bootstrap. You can find the source code for this site here!
           </p>
           <CardWrapper>
-            <Link className={styles.contactCard} href={""}>
-              <p as={'div'} className={styles.deprecatedSiteLinkText}>View Deprecated Site</p>
+            <Link className={styles.contactCard} href={"https://github.com/ckildare/deprecated-portfolio-site"}>
+              <p as={'div'} className={styles.deprecatedSiteLinkText}>View Deprecated Site GitHub</p>
             </Link>
           </CardWrapper>
         </div>

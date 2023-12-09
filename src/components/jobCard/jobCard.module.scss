@@ -1,0 +1,85 @@
+@use "../../styles/palette.module.scss"as *;
+
+.jobCardWrapper {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: min-content;
+
+  .jobHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+    .jobDate {
+      gap: 5px;
+      display: flex;
+      flex-direction: row;
+      color: $white;
+      font-weight: $light;
+      font-size: 0.875rem;
+      font-family: $roboto-font;
+    }
+  }
+
+  .jobTitle {
+    color: $lime;
+    font-weight: $bold;
+    font-size: 1rem;
+    font-family: $roboto-font;
+  }
+
+  .jobCompany {
+    color: $white;
+    font-weight: $light;
+    font-weight: 400;
+    font-size: 0.875rem;
+    font-family: $roboto-font;
+  }
+
+  .jobDescriptionSection {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .jobSectionTitle {
+      color: $white;
+      font-weight: $bold;
+      font-size: 0.875rem;
+      font-family: $roboto-font;
+    }
+
+    .listDescription {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: $regular;
+      font-size: 0.875rem;
+      gap: 0.5rem;
+
+      .listItem {
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: row;
+
+        .bullet {
+          margin-left: 0.5rem;
+          color: $gray;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .techPillSection {
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: stretch;
+  }
+}

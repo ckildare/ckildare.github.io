@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import Header from '@/components/layout/header/header';
-import { Inter } from '@next/font/google';
 import styles from '@/styles/index.module.scss';
 import About from '@/components/layout/about';
-
-const inter = Inter({ subsets: ['latin'] })
+import Work from '@/components/layout/work';
 
 export default function Index() {
   return (
@@ -21,6 +19,7 @@ export default function Index() {
         <Header />
         <div className={styles.pageContent}>
           <About />
+          <Work />
         </div>
       </main>
     </>

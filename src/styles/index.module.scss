@@ -1,4 +1,4 @@
-@use "./palette.module.scss" as *;
+@use "./palette.module.scss"as *;
 
 .main {
   width: auto;
@@ -9,9 +9,10 @@
   background-color: $purple;
 }
 
-.content {
+.pageContent {
   display: flex;
+  height: min-content;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
 }

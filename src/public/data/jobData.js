@@ -1,8 +1,9 @@
 export const jobData = [
   {
-    jobTitle: "Software Engineering Intern",
+    title: "Software Engineering Intern",
     companyData: {
       name: "Speedway Motors Inc.",
+      shortName: "Speedway Motors",
       address: "340 Victory Ln, Lincoln, NE 68528",
       link: "https://www.speedwaymotors.com",
       contacts: {
@@ -29,12 +30,14 @@ export const jobData = [
       "I have learned to develop a complex testing suite using several tools such as dotnet, Postman, Selenium, and Playwright to ensure the validity of code.",
       "I have become more comfortable interviewing customers about their experience with my team's products and gathering feedback on how our work can be improved.",
       "I have become more experienced designing and executing experiments using feature flags to find the most profitable recommendation configurations."
-    ]
+    ],
+    technologies: ["JavaScript", "C#", "Rest API", "React.js", "Next.js", "GraphQL", "Google Analytics", "Selenium", "Postman", "Azure DevOps"]
   },
   {
-    jobTitle: "Web Developer for Yao Labs",
+    title: "Web Developer for Yao Labs",
     companyData: {
       name: "UNL First Year Research Experience (FYRE) Program,",
+      shortName: "FYRE",
       address: "225 Nebraska Union Lincoln, NE 68588-0451",
       link: "https://cse.unl.edu/~qyao/",
       contacts: {
@@ -56,12 +59,14 @@ export const jobData = [
       "I achieved fundamental knowledge for using HTML, CSS, Python, JavaScript, and Bootstrap technologies.",
       "I have gotten the opportunity monitoring current events to determine project plans and effecive technologies to implement.",
       "I have become more comfortable working hands-on with a superior to learn new skills and fortify existing ones."
-    ]
+    ],
+    technologies: ["HTML", "CSS", "Python", "JavaScript", "Bootstrap", "d3.py", "Flask", "Conda"]
   },
   {
-    jobTitle: "Business Owner",
+    title: "Business Owner",
     companyData: {
       name: "Limitless Reality",
+      shortName: "Limitless Reality",
       address: null,
       link: null,
       contacts: {
@@ -84,10 +89,11 @@ export const jobData = [
       "I have become more confident reaching out to and managing partner relationships between businesses.",
       "I have become a more effective manager by hiring, managing, training, and collaborating with three employees.",
       "I have become more considerate of customer experience through experimenting with the virtual reality \"onboarding\" process with mock customers."
-    ]
+    ],
+    technologies: ["HTC Vive", "Unity", "SteamVR", "Virtual Reality"]
   },
   {
-    jobTitle: "Cart Pusher",
+    title: "Cart Pusher",
     companyData: {
       name: "Walmart",
       address: "3400 N 85th St, Lincoln, NE 68507",
@@ -110,6 +116,7 @@ export const jobData = [
     outcomes: [
       "As a result of working outdoors in adverse, I have developed a stonger work mindset.",
       "As a result of the self-management nature of cart pushers at Walmart, I have become more efficient in delegating work to other co-workers."
-    ]
+    ],
+    technologies: []
   },
 ]

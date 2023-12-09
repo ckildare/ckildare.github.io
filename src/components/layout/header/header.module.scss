@@ -1,143 +1,47 @@
-@use "../../../styles/palette.scss"as *;
+@use "../../../styles/palette.module.scss"as *;
 
-@media screen and (min-width: 701px) {
-  .headerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.header {
+  display: flex;
+  height: min-content;
+  padding-bottom: 4.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: inherit;
 
-    width: 100%;
-    height: 9rem;
-
-    background-color: #bfbfbf;
+  .name {
     font-family: $roboto-font;
+    font-weight: $bold;
+    font-size: 3rem;
+    color: $white;
   }
 
-  .topRow {
-    display: flex;
-    align-items: center;
-
-    height: 6rem;
-    margin-left: 0.125rem;
-  }
-
-  .nameText {
-    font-size: 5rem;
-    margin-left: 2rem;
-    color: black;
-  }
-
-  .navBarContainer {
-    @include flex-with-centering;
-    gap: 0.325rem;
-
-    background-color: #8e8e8e;
-    border-top: 0.125rem #3F3F3B solid;
-
-    height: 3rem;
-    width: 100%;
-
-    :last-child {
-      margin-right: none;
-    }
-
-    :hover {
-      background-color: #f4f4f4;
-    }
-
-    :active :focus :visited {
-      background-color: #d1c7ad;
-    }
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .headerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 100%;
-    height: 13rem;
-
-    background-color: #bfbfbf;
+  .profession {
     font-family: $roboto-font;
+    font-weight: $bold;
+    font-size: 1.5rem;
+    color: $white;
   }
 
-  .topRow {
+  .studies {
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    color: $gray;
+  }
+
+  .contactInfo {
     display: flex;
-    align-items: center;
-
-    height: 12rem;
-    margin-left: 0.125rem;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1rem 0;
   }
 
-  .navBarContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    gap: 0.325rem;
+  .placeholderContact {
+    height: 25px;
+    width: 25px;
 
-    background-color: #8e8e8e;
-
-    height: 11rem;
-    width: 100%;
-
-    :last-child {
-      margin-right: none;
-    }
-
-    :hover {
-      background-color: #f4f4f4;
-    }
-
-    :active :focus :visited {
-      background-color: #d1c7ad;
-    }
+    background-color: $green;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
-}
-
-@media screen and (max-width: 700px) and (min-width: 320px) {
-  .nameText {
-    font-size: 10vw;
-    margin: 0 auto;
-    color: black;
-  }
-}
-
-@media screen and (max-width: 319px) {
-  .nameText {
-    font-size: 10vw;
-    width: min-content;
-    margin: 0 auto;
-    color: black;
-  }
-}
-
-.headshot {
-  border-radius: 50%;
-  border: 0.25rem rgb(22, 27, 43) solid;
-  box-shadow: 0.25rem 0.25rem 0.25rem #999999,
-    -0.125rem -0.125rem 0.125rem #999999;
-}
-
-.buttonContainer {
-  @include flex-with-centering;
-  width: 10rem;
-  height: 2.25rem;
-  background-color: #bfbfbf;
-  border-radius: 0.25rem;
-
-  .buttonText {
-    @include flex-with-centering;
-    font-size: 1.1rem;
-    width: stretch;
-    height: stretch;
-    color: black;
-  }
-}
-
-.buttonContainer:hover {
-  border-radius: 0.25rem;
 }

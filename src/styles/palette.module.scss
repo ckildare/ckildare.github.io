@@ -1,0 +1,22 @@
+$purple: #81738C;
+$green: #43F193;
+$lime: #C1E4C8;
+$white: #FAFFFE;
+$gray: #2F2F2F;
+
+// Text weights
+$bold: 700;
+$regular: 400;
+$light: 300;
+
+
+$sans-font: 'Open Sans',
+sans-serif;
+$roboto-font: 'Roboto',
+sans-serif;
+
+@mixin flex-with-centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

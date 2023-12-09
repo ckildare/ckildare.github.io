@@ -18,6 +18,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.58.3",
-    "sharp": "^0.32.5"
+    "sharp": "^0.32.5",
+    "styled": "^1.0.0",
+    "styled-components": "^6.1.1"
   }
 }

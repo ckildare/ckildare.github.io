@@ -1,8 +1,8 @@
-$purple: #81738C;
+$gray: #2F2F2F;
 $green: #43F193;
 $lime: #C1E4C8;
+$purple: #81738C;
 $white: #FAFFFE;
-$gray: #2F2F2F;
 
 // Text weights
 $bold: 700;
@@ -17,6 +17,15 @@ sans-serif;
 
 @mixin flex-with-centering {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+@mixin section-title {
+  color: $white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: normal;
+  font-family: $roboto-font;
 }

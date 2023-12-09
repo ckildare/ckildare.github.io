@@ -1,0 +1,24 @@
+@use "../../../styles/palette.module.scss"as *;
+
+.aboutWrapper {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  height: min-content;
+
+  .title {
+    @include section-title
+  }
+
+  p {
+    margin: 0;
+    color: $gray;
+    font-style: normal;
+    font-weight: $regular;
+    font-size: 0.875rem;
+    line-height: normal;
+    font-family: $roboto-font;
+  }
+}

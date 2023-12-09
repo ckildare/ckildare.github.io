@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '@/components/layout/header/header';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/index.module.scss';
+import About from '@/components/layout/about';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,7 @@ export default function Index() {
       <main className={styles.main}>
         <Header />
         <div className={styles.pageContent}>
-          hi
+          <About />
         </div>
       </main>
     </>

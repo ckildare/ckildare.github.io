@@ -1,9 +1,9 @@
 @use "./palette.module.scss" as *;
 
 .main {
-  width: 100%;
+  width: auto;
   min-height: 100vh;
-  padding: 0.5rem;
+  padding: 1rem;
 
   color: $gray;
   background-color: $purple;

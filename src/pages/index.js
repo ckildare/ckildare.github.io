@@ -3,6 +3,7 @@ import Header from '@/components/layout/header/header';
 import styles from '@/styles/index.module.scss';
 import About from '@/components/layout/about';
 import Work from '@/components/layout/work';
+import Projects from '@/components/layout/projects';
 
 export default function Index() {
   return (
@@ -20,6 +21,7 @@ export default function Index() {
         <div className={styles.pageContent}>
           <About />
           <Work />
+          <Projects />
         </div>
       </main>
     </>

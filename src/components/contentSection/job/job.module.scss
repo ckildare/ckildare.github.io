@@ -1,4 +1,4 @@
-@use "../../styles/palette.module.scss"as *;
+@use "../../../styles/palette.module.scss"as *;
 
 .jobCardWrapper {
   gap: 1rem;
@@ -6,6 +6,11 @@
   flex-direction: column;
   align-items: flex-start;
   height: min-content;
+  padding: 0.5rem;
+  border: solid 1px #50455775;
+  border-radius: 5px;
+  background-color: #50455750;
+  box-shadow: 1px 1px 1px 1px #50455775;
 
   .jobHeader {
     display: flex;

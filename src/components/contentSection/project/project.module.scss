@@ -1,0 +1,170 @@
+@use "../../../styles/palette.module.scss"as *;
+
+.projectCardWrapper {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: min-content;
+  padding: 0.5rem;
+  border: solid 1px #50455775;
+  border-radius: 5px;
+  background-color: #50455750;
+  box-shadow: 1px 1px 1px 1px #50455775;
+
+  .projectHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+    .projectDate {
+      gap: 5px;
+      display: flex;
+      flex-direction: row;
+      color: $white;
+      font-weight: $light;
+      font-size: 0.875rem;
+      font-family: $roboto-font;
+    }
+  }
+
+  .projectTitle {
+    color: $lime;
+    font-weight: $bold;
+    font-size: 1rem;
+    font-family: $roboto-font;
+  }
+
+  .projectCompany {
+    color: $white;
+    font-weight: $light;
+    font-weight: 400;
+    font-size: 0.875rem;
+    font-family: $roboto-font;
+  }
+
+  .projectDescriptionSection {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .slide-in-top {
+      -webkit-animation: slide-in-top .5s cubic-bezier(.165, .84, .44, 1.000);
+      animation: slide-in-top .5s cubic-bezier(.165, .84, .44, 1.000);
+    }
+
+    @-webkit-keyframes slide-in-top {
+      0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+    }
+
+    @keyframes slide-in-top {
+      0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+    }
+
+    .slide-out-top {
+      -webkit-animation: slide-out-top .5s cubic-bezier(.165, .84, .44, 1.000) reverse;
+      animation: slide-out-top .5s cubic-bezier(.165, .84, .44, 1.000) reverse
+    }
+
+    @-webkit-keyframes slide-out-top {
+      0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+    }
+
+    @keyframes slide-out-top {
+      0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0
+      }
+
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+      }
+    }
+
+    .projectSectionTitle {
+      color: $white;
+      font-weight: $bold;
+      font-size: 0.875rem;
+      font-family: $roboto-font;
+    }
+
+    .listDescription {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: $regular;
+      font-size: 0.875rem;
+      gap: 0.5rem;
+
+      .listItem {
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: row;
+
+        .bullet {
+          margin-left: 0.5rem;
+          color: $gray;
+          font-size: 1rem;
+        }
+
+        .number {
+          margin-left: 0.5rem;
+          color: $gray;
+        }
+      }
+    }
+  }
+
+  .linkPillSection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: stretch;
+    gap: 0.5rem;
+  }
+
+  .techPillSection {
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: stretch;
+  }
+}

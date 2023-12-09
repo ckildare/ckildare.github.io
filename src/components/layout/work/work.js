@@ -1,4 +1,4 @@
-import JobCard from '@/components/jobCard';
+import Job from '@/components/contentSection/job';
 import { jobData } from '../../../public/data/jobData';
 import styles from './work.module.scss';
 import CircleDivider from '@/components/circleDivider';
@@ -11,7 +11,7 @@ const Work = () => {
         {jobData.map((job, key) => {
           return (
             <div className={styles.workSection} key={key}>
-              <JobCard job={job} />
+              <Job job={job} />
               {key != jobData.length - 1 && <CircleDivider />}
             </div>
           )

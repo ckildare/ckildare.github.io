@@ -1,7 +1,7 @@
-import TechPill from '../pills/techPill';
-import styles from './jobCard.module.scss';
+import TechPill from '../../pills/techPill';
+import styles from './job.module.scss';
 
-const JobCard = ({ job }) => {
+const Job = ({ job }) => {
   return (
     <div className={styles.jobCardWrapper}>
       <div className={styles.jobHeader}>
@@ -54,4 +54,4 @@ const JobCard = ({ job }) => {
   );
 };
 
-export default JobCard;
+export default Job;

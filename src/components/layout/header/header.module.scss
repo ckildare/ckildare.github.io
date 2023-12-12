@@ -9,39 +9,37 @@
   max-width: inherit;
 
   .name {
-    
     font-weight: $bold;
     font-size: 3rem;
     color: $white;
   }
 
   .profession {
-    
     font-weight: $bold;
     font-size: 1.5rem;
     color: $white;
   }
 
   .studies {
-    
-    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: $gray;
     font-style: normal;
     font-weight: 400;
-    color: $gray;
+    font-size: 1rem;
   }
 
-  .contactInfo {
+  .links {
+    gap: 1rem;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 15rem;
     margin: 1rem 0;
-  }
 
-  .placeholderContact {
-    height: 25px;
-    width: 25px;
-
-    background-color: $green;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    .linkSvg {
+      width: 2rem;
+      height: auto;
+    }
   }
 }

@@ -18,30 +18,22 @@
     align-items: flex-start;
     gap: 0;
 
-    .projectDate {
-      gap: 5px;
-      display: flex;
-      flex-direction: row;
-      color: $white;
-      font-weight: $light;
-      font-size: 0.875rem;
-      font-family: $roboto-font;
+    .projectTitle {
+      color: $lime;
+      font-weight: $bold;
+      font-size: 1rem;
     }
   }
 
-  .projectTitle {
-    color: $lime;
-    font-weight: $bold;
-    font-size: 1rem;
-    font-family: $roboto-font;
-  }
-
-  .projectCompany {
-    color: $white;
-    font-weight: $light;
-    font-weight: 400;
-    font-size: 0.875rem;
-    font-family: $roboto-font;
+  .topPillRow {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: stretch;
   }
 
   .projectDescriptionSection {
@@ -120,7 +112,23 @@
       color: $white;
       font-weight: $bold;
       font-size: 0.875rem;
-      font-family: $roboto-font;
+      
+    }
+  }
+
+  .projectImageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    .supportingImg {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px #50455775;
+      border: 1px solid #ffffff50;
     }
   }
 

@@ -9,12 +9,6 @@ $bold: 700;
 $regular: 400;
 $light: 200;
 
-
-$sans-font: 'Open Sans',
-sans-serif;
-$roboto-font: 'Roboto',
-sans-serif;
-
 @mixin flex-with-centering {
   display: flex;
   justify-content: center;
@@ -27,5 +21,4 @@ sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: normal;
-  font-family: $roboto-font;
 }

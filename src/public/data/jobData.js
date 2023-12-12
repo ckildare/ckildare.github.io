@@ -9,7 +9,8 @@ export const jobData = [
       contacts: {
         email: "speedwaymotors@email.speedwaymotors.com",
         phone: "(800) 979-0122",
-      }
+      },
+      description: "Speedway Motors is America's Oldest Speed Shop® and has been a trusted source for high performance parts for street rods and racing for over 68 years. Speedway Motors has built a reputation for superior service, heavily aided by a strong online shopping experience."
     },
     supervisors: [
       "Chris Stevenson",
@@ -25,7 +26,7 @@ export const jobData = [
       "Aided in development of a Selenium test suite to ensure the validity of code across all environments."
     ],
     outcomes: [
-      "By developing a microservice for all recommendations from the ground up, I learned how to effectively initialise a microservice.",
+      "By developing a microservice for all recommendations from the ground up, I learned how to effectively initialize a microservice.",
       "I have been able to justify smart decisions around issue creation and work prioritization by providing gathered metrics from Google Analytics.",
       "I have learned to develop a complex testing suite using several tools such as dotnet, Postman, Selenium, and Playwright to ensure the validity of code.",
       "I have become more comfortable interviewing customers about their experience with my team's products and gathering feedback on how our work can be improved.",
@@ -43,7 +44,8 @@ export const jobData = [
       contacts: {
         email: "careerservices@unl.edu",
         phone: "402-472-3145",
-      }
+      },
+      description: "The First Year Research Experience (FYRE) Program is a program designed to give first-year students the opportunity to work with faculty on research projects. The program is designed to help students develop research skills, learn about research opportunities at UNL, and engage with faculty and other students in a research community."
     },
     supervisors: [
       "Dr. Qiuming Yao"
@@ -57,7 +59,7 @@ export const jobData = [
     ],
     outcomes: [
       "I achieved fundamental knowledge for using HTML, CSS, Python, JavaScript, and Bootstrap technologies.",
-      "I have gotten the opportunity monitoring current events to determine project plans and effecive technologies to implement.",
+      "I have gotten the opportunity monitoring current events to determine project plans and effective technologies to implement.",
       "I have become more comfortable working hands-on with a superior to learn new skills and fortify existing ones."
     ],
     technologies: ["HTML", "CSS", "Python", "JavaScript", "Bootstrap", "d3.py", "Flask", "Conda"]
@@ -72,7 +74,8 @@ export const jobData = [
       contacts: {
         email: null,
         phone: null,
-      }
+      },
+      description: "Limitless Reality is a virtual reality business that I created and ran at the ages of 15-16 before the Covid-19 pandemic. Limitless Reality allowed me to explore my interests of virtual reality and running a business at a young age, giving my career a head-start."
     },
     supervisors: [
       "Myself",
@@ -80,7 +83,7 @@ export const jobData = [
     startDate: "September 2019",
     endDate: "February 2020",
     contributions: [
-      "Developed an efficient virtual reality user \"onboarding\" experience to quickly and effectively help custoemrs use the system.",
+      "Developed an efficient virtual reality user \"onboarding\" experience to quickly and effectively help customers use the system.",
       "Collaborated with Eagle Hollow Haunts during the fall season to deploy two HTC Vive virtual reality attractions.",
       "Hired, managed, trained, and collaborated with three employees to set up and maintain two booths with HTC Vive virtual reality systems."
     ],
@@ -114,7 +117,7 @@ export const jobData = [
       "Help customers exchange or purchase propane fuel as requested."
     ],
     outcomes: [
-      "As a result of working outdoors in adverse, I have developed a stonger work mindset.",
+      "As a result of working outdoors in adverse, I have developed a stronger work mindset.",
       "As a result of the self-management nature of cart pushers at Walmart, I have become more efficient in delegating work to other co-workers."
     ],
     technologies: []

@@ -13,10 +13,12 @@ const Job = ({ job }) => {
         <div className={styles.jobTitle}>{job.title}</div>
         <div className={styles.jobCompany}>{job.companyData.name}</div>
       </div>
-      <div className={styles.jobDescriptionSection}>
-        <div className={styles.jobSectionTitle}>About {job.companyData.shortName}</div>
-        <div className={styles.jobDescription}>{job.companyData.description}</div>
-      </div>
+      {job.companyData?.description &&
+        <div className={styles.jobDescriptionSection}>
+          <div className={styles.jobSectionTitle}>About {job.companyData.shortName}</div>
+          <div className={styles.jobDescription}>{job.companyData.description}</div>
+        </div>
+      }
       <div className={styles.jobDescriptionSection}>
         <div className={styles.jobSectionTitle}>My Contributions</div>
         <div className={styles.listDescription}>

@@ -93,7 +93,7 @@ export const jobData = [
       "I have become a more effective manager by hiring, managing, training, and collaborating with three employees.",
       "I have become more considerate of customer experience through experimenting with the virtual reality \"onboarding\" process with mock customers."
     ],
-    technologies: ["HTC Vive", "Unity", "SteamVR", "Virtual Reality"]
+    technologies: ["HTC Vive", "Unity", "SteamVR", "Virtual Reality", "LLC Formation", "Business Management", "Equipment Maintenance"]
   },
   {
     title: "Cart Pusher",
@@ -120,6 +120,6 @@ export const jobData = [
       "As a result of working outdoors in adverse, I have developed a stronger work mindset.",
       "As a result of the self-management nature of cart pushers at Walmart, I have become more efficient in delegating work to other co-workers."
     ],
-    technologies: []
+    technologies: ["My Legs ( To Push the Cart )", "My Arms ( Also to Push the Cart )", "My Brain ( To Think About Pushing the Cart )", "Walkie-Talkie ༼⌐■ل͜■༽"]
   },
 ]

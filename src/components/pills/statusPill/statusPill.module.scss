@@ -1,0 +1,18 @@
+@use "../../../styles/palette.module.scss"as *;
+
+.statusPill {
+  gap: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0.375rem;
+  border: 1px solid $white;
+  border-radius: 0.625rem;
+  background: $lime;
+  color: $gray;
+  font-weight: $bold;
+  font-size: 0.875rem;
+  font-family: $roboto-font;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

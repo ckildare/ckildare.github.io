@@ -15,7 +15,7 @@ export const projectData = [
     concept: "This project is built using React.js, HTML, Sass (CSS), and JavaScript. I have also used the Next.js framework to help with routing and deployment. I have also used the Vercel platform to deploy my site. As I continue in my carrer, I will continue to add more projects and information about myself to this site.",
     outcomes: ["I have learned how to deploy and manage a live website.", "I have learned more efficient ways to communicate my work and school experiences.", "I have continued my mastery in website responsive sizing.", "I have acquired more experience in React.js, HTML, Sass (CSS), and JavaScript.", "I have gotten the opportunity to acquire and set up a custom domain name."],
     technologies: ["React.js", "Next.js", "HTML", "Sass (CSS)", "JavaScript", "Vercel", "Vercel Analytics"],
-    status: ProjectStatus.Finished,
+    status: ProjectStatus.FINISHED,
     projectLink: "https://connorkildare.com",
     repolink: "https://github.com/ckildare/ckildare.github.io",
     supportingImgs: [],
@@ -24,7 +24,7 @@ export const projectData = [
     title: "UNL Laundry Scheduler",
     shortTitle: "Laundry Scheduler",
     displayImg: laundryScheduler,
-    context: "This is a Buddy Systems project started in a Human-Computer Interaction course and evolved to a project sponsored by UNL Housing that would later be abandoned.",
+    context: "This is a Buddy Systems project started in a Human-Computer Interaction course and evolved to a project sponsored by UNL Housing that would later be ABANDONED.",
     concept: "This product would allow users to schedule a load of laundry ( either single or reoccuring occurrence ), view laundry status, and recieve push notifications about laundry.",
     outcomes: [
       "I have developed stronger development collaboration skills.",
@@ -33,7 +33,7 @@ export const projectData = [
       "I have acquired more experience in React.js, HTML, Sass (CSS)."
     ],
     technologies: ["React.js", "HTML", "Sass (CSS)", "JavaScript", "Figma", "User Interaction Testing"],
-    status: ProjectStatus.Abandoned,
+    status: ProjectStatus.ABANDONED,
     projectLink: "",
     repoLink: "https://github.com/CodeCricut/laundry-scheduler",
     supportingImgs: [],
@@ -51,7 +51,7 @@ export const projectData = [
       "I have acquired more experience in HTML, CSS, and JavaScript.",
     ],
     technologies: ["HTML", "Sass (CSS)", "JavaScript", "Google API", "Google Storage", "Google Extension", "Memory Management"],
-    status: ProjectStatus.Finished,
+    status: ProjectStatus.FINISHED,
     projectLink: "https://bit.ly/freemycookies",
     repoLink: "https://github.com/buddysystems/CookieJar",
     supportingImgs: [],
@@ -67,7 +67,7 @@ export const projectData = [
       "I have acquired more experience in React.js, HTML, Sass (CSS)."
     ],
     technologies: ["React.js", "HTML", "Sass (CSS)", "JavaScript"],
-    status: ProjectStatus.Abandoned,
+    status: ProjectStatus.ABANDONED,
     projectLink: "https://buddysystems.github.io",
     repoLink: "https://github.com/buddysystems/buddysystems.github.io",
     supportingImgs: [],
@@ -95,7 +95,7 @@ export const projectData = [
       "I have developed stronger development collaboration skills."
     ],
     technologies: ["React.js", "HTML", "Sass (CSS)", "JavaScript", "Python", "GraphQL"],
-    status: ProjectStatus.InProgress,
+    status: ProjectStatus.IN_PROGRESS,
     projectLink: "https://axel-wilsons-mixtape-maker.herokuapp.com",
     repoLink: "https://github.com/CodeCricut/RetroPlaylistGenerator",
     supportingImgs: [],
@@ -114,7 +114,7 @@ export const projectData = [
       "I have gotten the opportunity to acquire and set up a custom domain name."
     ],
     technologies: ["HTML", "Sass (CSS)", "Bootstrap", "JavaScript"],
-    status: ProjectStatus.Finished,
+    status: ProjectStatus.FINISHED,
     repoLink: "https://github.com/ckildare/deprecated-portfolio-site",
     supportingImgs: [],
   }

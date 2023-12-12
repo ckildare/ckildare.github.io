@@ -7,7 +7,7 @@ const CircleDivider = () => {
         return (
           <div key={key} className={styles.circle}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <g filter="url(#filter0_d_13_50)">
+              <g>
                 <circle cx="8" cy="8" r="8" fill="#FAFFFE" />
               </g>
               <defs>

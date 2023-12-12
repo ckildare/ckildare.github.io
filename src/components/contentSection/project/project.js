@@ -2,6 +2,7 @@ import LinkPill from '@/components/pills/linkPill';
 import TechPill from '../../pills/techPill';
 import styles from './project.module.scss';
 import { useState } from 'react';
+import StatusPill from '@/components/pills/statusPill';
 
 const Project = ({ project }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,6 +13,7 @@ const Project = ({ project }) => {
         <div className={styles.projectTitle}>{project.title}</div>
       </div>
       <div className={styles.projectDescriptionSection}>
+        <StatusPill projectStatus={project.status} />
         <div className={styles.projectSectionTitle}>About {project.shortTitle}</div>
         <div className={styles.projectDescription}>{project.context}</div>
         <div className={styles.projectDescription}>{project.concept}</div>

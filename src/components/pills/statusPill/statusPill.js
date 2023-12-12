@@ -22,8 +22,8 @@ const StatusPill = ({ projectStatus }) => {
 
   return (
     <div className={styles.statusPill}>
-      <Image src={statusSvg()} height={20} width={20} alt={"In progress status svg"} />
-      {projectStatus}
+      <Image src={statusSvg()} height={16} width={16} alt={"In progress status svg"} />
+      <div className={styles.statusPillText}>{projectStatus}</div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const LinkPill = ({ name, link, svg }) => {
   return (
     <Link href={link} className={styles.linkPill}>
       <Image src={svg} height={20} width={20} alt={"Svg for link"} />
-      {name}
+      <div className={styles.linkPillText}>{name}</div>
     </Link>
   );
 }

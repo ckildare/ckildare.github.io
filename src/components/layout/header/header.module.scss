@@ -2,22 +2,22 @@
 
 .header {
   display: flex;
-  height: min-content;
-  padding-bottom: 4.5rem;
   flex-direction: column;
   align-items: flex-start;
   max-width: inherit;
+  height: min-content;
+  padding-bottom: 4.5rem;
 
   .name {
+    color: $white;
     font-weight: $bold;
     font-size: 3rem;
-    color: $white;
   }
 
   .profession {
+    color: $white;
     font-weight: $bold;
     font-size: 1.5rem;
-    color: $white;
   }
 
   .studies {

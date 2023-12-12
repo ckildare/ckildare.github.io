@@ -168,3 +168,12 @@
     align-self: stretch;
   }
 }
+
+.projectBody:before {
+  max-height: 10rem;
+  overflow: hidden;
+}
+
+.projectBodyOpen {
+  
+}

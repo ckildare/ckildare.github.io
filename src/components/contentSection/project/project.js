@@ -12,33 +12,22 @@ const Project = ({ project }) => {
       <div className={styles.projectHeader}>
         <div className={styles.projectTitle}>{project.title}</div>
       </div>
-      <div className={styles.projectDescriptionSection}>
-        <StatusPill projectStatus={project.status} />
-        <div className={styles.projectSectionTitle}>About {project.shortTitle}</div>
-        <div className={styles.projectDescription}>{project.context}</div>
-        <div className={styles.projectDescription}>{project.concept}</div>
-        <div className={styles.listDescription}>
-          {(project.conceptStepList ?? []).map((step, key) => {
-            return (
-              <div key={key} className={styles.listItem}>
-                <div className={styles.number}>{key + 1}.</div>
-                <div className={styles.listItemText}>{step}</div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
-      <div className={styles.projectDescriptionSection}>
-        <div className={styles.projectSectionTitle}>Outcomes</div>
-        <div className={styles.listDescription}>
-          {project.outcomes.map((outcome, key) => {
-            return (
-              <div key={key} className={styles.listItem}>
-                <div className={styles.bullet}>&#x2022;</div>
-                <div className={styles.listItemText}>{outcome}</div>
-              </div>
-            )
-          })}
+      <StatusPill projectStatus={project.status} />
+      <div className={isExpanded ? styles.projectBodyOpen : styles.projectBody }>
+        <div className={styles.projectDescriptionSection}>
+          <div className={styles.projectSectionTitle}>About {project.shortTitle}</div>
+          <div className={styles.projectDescription}>{project.context}</div>
+          <div className={styles.projectDescription}>{project.concept}</div>
+          <div className={styles.listDescription}>
+            {(project.conceptStepList ?? []).map((step, key) => {
+              return (
+                <div key={key} className={styles.listItem}>
+                  <div className={styles.number}>{key + 1}.</div>
+                  <div className={styles.listItemText}>{step}</div>
+                </div>
+              )
+            })}
+          </div>
         </div>
       </div>
       <div className={styles.linkPillSection}>

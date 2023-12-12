@@ -4,6 +4,8 @@ import axelWilson from '../../public/card-screenshots/axel-wilson-cover-image.pn
 import buddySystems from '../../public/card-screenshots/buddy-systems-cover-image.png';
 import laundryScheduler from '../../public/card-screenshots/laundry-scheduler-cover-image.png';
 import deprecatedPortfolioSite from '../../public/card-screenshots/portfolio-site-cover-image.png';
+import cookiePantry from '../../public/card-screenshots/cookie-pantry.png';
+import microsoftCookies from '../../public/card-screenshots/microsoft-cookies.png';
 
 export const projectData = [
   {
@@ -34,7 +36,7 @@ export const projectData = [
     status: ProjectStatus.FINISHED,
     projectLink: "https://bit.ly/freemycookies",
     repoLink: "https://github.com/buddysystems/CookieJar",
-    supportingImgs: [],
+    supportingImgs: [cookiePantry, microsoftCookies],
   },
   {
     title: "BuddySystem\'s Portfolio Site",

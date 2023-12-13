@@ -3,6 +3,8 @@
 .jobCardWrapper {
   gap: 1rem;
   display: flex;
+  min-width: 18rem;
+  max-width: 30rem;
   flex-direction: column;
   align-items: flex-start;
   height: min-content;
@@ -25,7 +27,6 @@
       color: $white;
       font-weight: $light;
       font-size: 0.875rem;
-      
     }
   }
 

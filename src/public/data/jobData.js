@@ -22,14 +22,12 @@ export const jobData = [
       "Increased customer conversions and product impressions by expanding recommendations across the majority of Speedway Motors pages.",
       "Improved the performance of checkout and shopping cart read / write operations by optimizing related API calls.",
       "Collaborated with intern cohort to extend the Speedway Motors onboarding process.",
-      "Monitored code deployed into production to ensure no resulting negative customer interactions.",
       "Aided in development of a Selenium test suite to ensure the validity of code across all environments."
     ],
     outcomes: [
       "By developing a microservice for all recommendations from the ground up, I learned how to effectively initialize a microservice.",
       "I have been able to justify smart decisions around issue creation and work prioritization by providing gathered metrics from Google Analytics.",
       "I have learned to develop a complex testing suite using several tools such as dotnet, Postman, Selenium, and Playwright to ensure the validity of code.",
-      "I have become more comfortable interviewing customers about their experience with my team's products and gathering feedback on how our work can be improved.",
       "I have become more experienced designing and executing experiments using feature flags to find the most profitable recommendation configurations."
     ],
     technologies: ["JavaScript", "C#", "Rest API", "React.js", "Next.js", "GraphQL", "Google Analytics", "Selenium", "Postman", "Azure DevOps"]
@@ -90,36 +88,8 @@ export const jobData = [
     outcomes: [
       "I have learned the process of starting a business and the requirements associated with running the business.",
       "I have become more confident reaching out to and managing partner relationships between businesses.",
-      "I have become a more effective manager by hiring, managing, training, and collaborating with three employees.",
-      "I have become more considerate of customer experience through experimenting with the virtual reality \"onboarding\" process with mock customers."
+      "I have become a more effective manager by hiring, managing, training, and collaborating with three employees."
     ],
     technologies: ["HTC Vive", "Unity", "SteamVR", "Virtual Reality", "LLC Formation", "Business Management", "Equipment Maintenance"]
-  },
-  {
-    title: "Cart Pusher",
-    companyData: {
-      name: "Walmart",
-      address: "3400 N 85th St, Lincoln, NE 68507",
-      link: "https://www.walmart.com/store/3823-lincoln-ne",
-      contacts: {
-        email: "service@walmartcontacts.com",
-        phone: "402-466-0447",
-      }
-    },
-    supervisors: [
-      "N/A",
-    ],
-    startDate: "October 2019",
-    endDate: "December 2020",
-    contributions: [
-      "Returned carts to Walmart store from the parking lot.",
-      "Help customers carry purchased items to their car when needed.",
-      "Help customers exchange or purchase propane fuel as requested."
-    ],
-    outcomes: [
-      "As a result of working outdoors in adverse, I have developed a stronger work mindset.",
-      "As a result of the self-management nature of cart pushers at Walmart, I have become more efficient in delegating work to other co-workers."
-    ],
-    technologies: ["My Legs ( To Push the Cart )", "My Arms ( Also to Push the Cart )", "My Brain ( To Think About Pushing the Cart )", "Walkie-Talkie ༼⌐■ل͜■༽"]
-  },
+  }
 ]

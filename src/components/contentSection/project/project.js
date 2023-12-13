@@ -15,13 +15,13 @@ const Project = ({ project }) => {
     <div className={styles.projectCardWrapper}>
       <div className={styles.projectHeader}>
         <div className={styles.projectTitle}>{project.title}</div>
-      </div>
-      <div className={styles.topPillRow}>
-        <StatusPill projectStatus={project.status} />
         <div className={styles.linkPillSection}>
           {project.projectLink && <LinkPill name="Project" link={project.projectLink} svg={projectSvg} />}
           {project.repoLink && <LinkPill name="Code" link={project.repoLink} svg={project.repoLink.includes('gitlab') ? gitlabSvg : githubSvg} />}
         </div>
+      </div>
+      <div className={styles.topPillRow}>
+        <StatusPill projectStatus={project.status} />
       </div>
       <div className={styles.projectDescriptionSection}>
         <div className={styles.projectSectionTitle}>About {project.shortTitle}</div>
@@ -38,16 +38,16 @@ const Project = ({ project }) => {
           })}
         </div>
       </div>
-      <div className={styles.projectImageSection}>
-        {project.supportingImgs.map((image, key) => {
-          return <Image className={styles.supportingImg} key={key} src={image} alt={`Supporting image ${key} for ${project.title}`} />
-        })}
-      </div>
       <div className={styles.techPillSection}>
         {project.technologies.map((technology, key) => {
           return (
             <TechPill key={key} name={technology} />
           )
+        })}
+      </div>
+      <div className={styles.projectImageSection}>
+        {project.supportingImgs.map((image, key) => {
+          return <Image className={styles.supportingImg} key={key} src={image} alt={`Supporting image ${key} for ${project.title}`} />
         })}
       </div>
     </div>

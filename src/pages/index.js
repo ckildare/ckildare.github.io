@@ -19,9 +19,18 @@ export default function Index() {
       <main className={styles.main}>
         <Header />
         <div className={styles.pageContent}>
-          <About />
-          <Work />
-          <Projects />
+          <section>
+            <div className={styles.sectionHeading}>About Me</div>
+            <About />
+          </section>
+          <section>
+            <div className={styles.sectionHeading}>Work Experience</div>
+            <Work />
+          </section>
+          <section>
+            <div className={styles.sectionHeading}>Projects</div>
+            <Projects />
+          </section>
         </div>
       </main>
     </>

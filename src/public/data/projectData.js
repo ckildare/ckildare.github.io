@@ -31,7 +31,8 @@ export const projectData = [
   {
     title: "Cookie Jar",
     shortTitle: "Cookie Jar",
-    context: "This is a Buddy Systems project completed in the summer of 2022 that allowed us to learn how to hook into the Google API and manage our cookies. This product would allow users to view, search, manipulate, import, export, and store cookies on Google's storage system where cookies can only be accessed by the user.",
+    context: "This is a Buddy Systems project completed in the summer of 2022 that allowed us to learn how to hook into the Google API and manage our cookies.",
+    concept: "This product would allow users to view, search, manipulate, import, export, and store cookies on Google's storage system where cookies can only be accessed by the user.",
     technologies: ["HTML", "Sass (CSS)", "JavaScript", "Google API", "Google Storage", "Google Extension", "Memory Management"],
     status: ProjectStatus.FINISHED,
     projectLink: "https://bit.ly/freemycookies",
@@ -39,7 +40,7 @@ export const projectData = [
     supportingImgs: [cookiePantry, microsoftCookies],
   },
   {
-    title: "BuddySystem\'s Portfolio Site",
+    title: "BuddySystems Site",
     shortTitle: "Buddy Systems",
     context: "This site was designed after the 2022 Cornhacks event, where my team members and I formed \"Buddy Systems\" to organize the work we do together as a group. This website is designed to showcase the members of Buddy Systems and the work we do together.",
     technologies: ["React.js", "HTML", "Sass (CSS)", "JavaScript"],
@@ -51,7 +52,8 @@ export const projectData = [
   {
     title: "Axel Wilson's Music Maker",
     shortTitle: "AWMM",
-    context: "I helped build Axel Wilson's Music Maker ( AWMM ) during the 2022 Cornhacks hackathon using the theme, “Retro”. AWMM is a dynamic web application that utilizes Spotify's web API that allows users to search for a song and receive a playlist of similar songs based on the searched song. The user can then select songs from the playlist to continue the process of receiving more recommended songs based on the selected songs.",
+    context: "I helped build Axel Wilson's Music Maker ( AWMM ) during the 2022 Cornhacks hackathon using the theme, \“Retro\”.",
+    concept: "AWMM is a dynamic web application that utilizes Spotify's web API that allows users to search for a song and receive a playlist of similar songs based on the searched song. The user can then select songs from the playlist to continue the process of receiving more recommended songs based on the selected songs.",
     technologies: ["React.js", "HTML", "Sass (CSS)", "JavaScript", "Python", "GraphQL", "Spotipy API", "Heroku"],
     status: ProjectStatus.IN_PROGRESS,
     projectLink: "https://axel-wilsons-mixtape-maker.herokuapp.com",

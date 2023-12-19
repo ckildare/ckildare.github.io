@@ -1,4 +1,4 @@
-@use "../../../styles/palette.module.scss"as *;
+@use "../../../styles/palette.module.scss" as *;
 
 .aboutWrapper {
   gap: 1rem;
@@ -9,7 +9,7 @@
   height: min-content;
 
   .title {
-    @include section-title
+    @include section-title;
   }
 
   p {
@@ -19,6 +19,18 @@
     font-weight: $regular;
     font-size: 0.875rem;
     line-height: normal;
-    
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    .dmsi {
+      max-width: 40rem;
+      width: 100%;
+      height: auto;
+    }
   }
 }

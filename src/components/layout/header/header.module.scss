@@ -7,6 +7,7 @@
   max-width: inherit;
   height: min-content;
   padding-bottom: 4.5rem;
+  padding: 1rem 0 1rem 1rem;
 
   .name {
     color: $white;
@@ -41,5 +42,12 @@
       width: 2rem;
       height: auto;
     }
+  }
+}
+
+@media (min-width: 800px) {
+  .header {
+    position: sticky;
+    top: 4rem;
   }
 }

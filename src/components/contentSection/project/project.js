@@ -1,7 +1,6 @@
 import LinkPill from '@/components/pills/linkPill';
 import TechPill from '../../pills/techPill';
 import styles from './project.module.scss';
-import { useState } from 'react';
 import StatusPill from '@/components/pills/statusPill';
 import projectSvg from '@/public/icons/rocket-launch.svg';
 import gitlabSvg from '@/public/icons/gitlab.svg';
@@ -9,8 +8,6 @@ import githubSvg from '@/public/icons/github.svg';
 import Image from 'next/image';
 
 const Project = ({ project }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   return (
     <div className={styles.projectCardWrapper}>
       <div className={styles.projectHeader}>
@@ -47,7 +44,7 @@ const Project = ({ project }) => {
       </div>
       <div className={styles.projectImageSection}>
         {project.supportingImgs.map((image, key) => {
-          return <Image className={styles.supportingImg} key={key} src={image} alt={`Supporting image ${key} for ${project.title}`} />
+          return <Image placeholder={"blur"} className={styles.supportingImg} key={key} src={image} alt={`Supporting image ${key} for ${project.title}`} />
         })}
       </div>
     </div>

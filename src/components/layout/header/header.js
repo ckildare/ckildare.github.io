@@ -5,8 +5,9 @@ import githubLogo from '../../../public/icons/github.svg';
 import linkedinLogo from '../../../public/icons/linkedin.svg';
 import emailLogo from '../../../public/icons/email.svg';
 import gitlabLogo from '../../../public/icons/gitlab.svg';
+import { useEffect, useState } from 'react';
 
-const Header = () => {
+const Header = (aboutRef, workRef, projectsRef) => {
   return (
     <header className={styles.header}>
       <div className={styles.name}>Connor Kildare</div>
@@ -26,12 +27,12 @@ const Header = () => {
           <Image className={styles.linkSvg} src={emailLogo} alt={"Email link"} />
         </Link>
       </div>
-      {/* <div className={styles.navBar}>
+      <div className={styles.navBar}>
         <div className={styles.navItem} onClick={() => onNavClick(aboutRef)} >About</div>
         <div className={styles.navItem} onClick={() => workElement && workElement.scrollIntoView({ behavior: "smooth" })}>Work</div>
         <div className={styles.navItem} onClick={() => onNavClick(projectsRef)}>Projects</div>
         <div className={styles.navItem} onClick={() => onNavClick(schoolRef)}>School</div>
-      </div> */}
+      </div>
     </header>
   )
 }

@@ -69,6 +69,21 @@
       font-size: 0.875rem;
       line-height: normal;
     }
+
+    .listDescription {
+      gap: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+
+
+      .listItem {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        font-size: 0.875rem
+      }
+    }
   }
 
   .projectImageSection {

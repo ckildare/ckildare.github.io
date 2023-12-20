@@ -8,11 +8,11 @@ import Projects from '@/components/layout/projects';
 import SchoolProjects from '@/components/layout/schoolProjects';
 import { useRef, useEffect, useState } from 'react';
 import classNames from 'classnames';
-import githubLogo from '@/public/icons/github.svg';
-import gitlabLogo from '@/public/icons/gitlab.svg';
-import linkedinLogo from '@/public/icons/linkedin.svg';
-import emailLogo from '@/public/icons/email.svg';
-import { resume } from '../public/data/resume.js';
+import githubLogo from 'public/images/icons/github.svg';
+import gitlabLogo from 'public/images/icons/gitlab.svg';
+import linkedinLogo from 'public/images/icons/linkedin.svg';
+import emailLogo from 'public/images/icons/email.svg';
+import { resume } from 'public/data/resume.js';
 
 export default function Index() {
   const headerRef = useRef(null);
@@ -105,15 +105,6 @@ export default function Index() {
 
   return (
     <>
-      <Head>
-        <title>Connor Kildare</title>
-        <meta name="description" content="Portfolio site for Connor Kildare" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content="Connor Kildare, Connor, Kildare, UNL, Conner Kildare, Conner, Portfolio, Portfolio Site, Speedway Motors, Senior Design" />
-        <meta name="author" content="Connor Kildare" />
-        <link rel="icon" href="../public/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <header className={styles.header}>
           <div className={styles.headerContent} ref={headerRef}>

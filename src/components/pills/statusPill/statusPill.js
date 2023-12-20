@@ -1,10 +1,10 @@
 import styles from './statusPill.module.scss';
-import { ProjectStatus } from '@/public/enums/projectStatus.js';
+import { ProjectStatus } from 'public/enums/projectStatus.js';
 import Image from 'next/image';
-import inProgress from '@/public/icons/inProgress.svg';
-import finished from '@/public/icons/done.svg';
-import abandoned from '@/public/icons/cancel.svg';
-import paused from '@/public/icons/paused.svg';
+import inProgress from 'public/images/icons/inProgress.svg';
+import finished from 'public/images/icons/done.svg';
+import abandoned from 'public/images/icons/cancel.svg';
+import paused from 'public/images/icons/paused.svg';
 
 const StatusPill = ({ projectStatus }) => {
   const statusSvg = () => {

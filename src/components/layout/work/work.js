@@ -1,5 +1,5 @@
 import Job from '@/components/contentSection/job';
-import { jobData } from '../../../public/data/jobData';
+import { jobData } from 'public/data/jobData';
 import styles from './work.module.scss';
 import CircleDivider from '@/components/circleDivider';
 

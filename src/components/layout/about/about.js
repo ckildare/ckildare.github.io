@@ -1,6 +1,6 @@
 import styles from './about.module.scss';
 import Image from 'next/image';
-import dmsi from '../../../public/my-photos/dmsi.jpg';
+import dmsi from 'public/images/my-photos/dmsi.jpg';
 
 
 const About = () => {

@@ -1,4 +1,4 @@
-import { projectData } from '../../../public/data/projectData';
+import { projectData } from 'public/data/projectData';
 import styles from './projects.module.scss';
 import CircleDivider from '@/components/circleDivider';
 import Project from '@/components/contentSection/project';

@@ -2,9 +2,9 @@ import LinkPill from '@/components/pills/linkPill';
 import TechPill from '../../pills/techPill';
 import styles from './project.module.scss';
 import StatusPill from '@/components/pills/statusPill';
-import projectSvg from '@/public/icons/rocket-launch.svg';
-import gitlabSvg from '@/public/icons/gitlab.svg';
-import githubSvg from '@/public/icons/github.svg';
+import projectSvg from 'public/images/icons/rocket-launch.svg';
+import gitlabSvg from 'public/images/icons/gitlab.svg';
+import githubSvg from 'public/images/icons/github.svg';
 import Image from 'next/image';
 
 const Project = ({ project }) => {

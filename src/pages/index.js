@@ -111,7 +111,7 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="Connor Kildare, Connor, Kildare, UNL, Conner Kildare, Conner, Portfolio, Portfolio Site, Speedway Motors, Senior Design" />
         <meta name="author" content="Connor Kildare" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../public/favicon.ico" />
       </Head>
 
       <main className={styles.main}>

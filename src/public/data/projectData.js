@@ -2,7 +2,6 @@ import { ProjectStatus } from '@/public/enums/projectStatus';
 
 import axelWilson from '../../public/card-screenshots/axel-wilson-cover-image.png';
 import buddySystems from '../../public/card-screenshots/buddy-systems-cover-image.png';
-import laundryScheduler from '../../public/card-screenshots/laundry-scheduler-cover-image.png';
 import deprecatedPortfolioSite from '../../public/card-screenshots/portfolio-site-cover-image.png';
 import cookiePantry from '../../public/card-screenshots/cookie-pantry.png';
 import microsoftCookies from '../../public/card-screenshots/microsoft-cookies.png';
@@ -17,16 +16,6 @@ export const projectData = [
     projectLink: "https://connorkildare.com",
     repolink: "https://github.com/ckildare/ckildare.github.io",
     supportingImgs: [],
-  },
-  {
-    title: "UNL Laundry Scheduler",
-    shortTitle: "Laundry Scheduler",
-    context: "This is a Buddy Systems project started in a Human-Computer Interaction course and evolved to a project sponsored by UNL Housing. This product would allow users to schedule a load of laundry ( either single load or reoccurring ), view laundry status, and receive push notifications about laundry.",
-    technologies: ["React.js", "HTML", "Sass (CSS)", "JavaScript", "Figma", "TypeScript", "Smart Socket API", "Material UI"],
-    status: ProjectStatus.ABANDONED,
-    projectLink: "",
-    repoLink: "https://github.com/CodeCricut/laundry-scheduler",
-    supportingImgs: [laundryScheduler],
   },
   {
     title: "Cookie Jar",

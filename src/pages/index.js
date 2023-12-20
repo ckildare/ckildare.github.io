@@ -5,6 +5,7 @@ import styles from '@/styles/index.module.scss';
 import About from '@/components/layout/about';
 import Work from '@/components/layout/work';
 import Projects from '@/components/layout/projects';
+import SchoolProjects from '@/components/layout/schoolProjects';
 import { useRef, useEffect, useState, use } from 'react';
 import classNames from 'classnames';
 import githubLogo from '@/public/icons/github.svg';
@@ -18,6 +19,7 @@ export default function Index() {
   const aboutRef = useRef(null);
   const workRef = useRef(null);
   const projectsRef = useRef(null);
+  const schoolProjectsRef = useRef(null);
 
   const [intersectingSection, setIntersectingSection] = useState(0);
   const [isHeaderIntersecting, setIsHeaderIntersecting] = useState(true);
@@ -84,6 +86,17 @@ export default function Index() {
   }, [projectsRef, intersectingSection]);
 
   useEffect(() => {
+    const schoolProjectsObserver = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) setIntersectingSection(3);
+    },
+      {
+        rootMargin: "-30% 0px -70% 0px"
+      });
+    schoolProjectsObserver.observe(schoolProjectsRef.current);
+    return () => schoolProjectsObserver.disconnect();
+  }, [schoolProjectsRef, intersectingSection]);
+
+  useEffect(() => {
     console.log(intersectingSection);
   }, [intersectingSection]);
 
@@ -126,6 +139,7 @@ export default function Index() {
             <div className={classNames(styles.navItem, activeClass(0))} onClick={() => aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" })} >About</div>
             <div className={classNames(styles.navItem, activeClass(1))} onClick={() => workRef.current.scrollIntoView({ behavior: "smooth", block: "start" })}>Work</div>
             <div className={classNames(styles.navItem, activeClass(2))} onClick={() => projectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" })}>Projects</div>
+            <div className={classNames(styles.navItem, activeClass(3))} onClick={() => schoolProjectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" })}>School Projects</div>
             <div className={styles.navItem} onClick={() => openPdf()}>Resume</div>
           </div>
         </header>
@@ -138,6 +152,9 @@ export default function Index() {
           </section>
           <section ref={projectsRef}>
             <Projects />
+          </section>
+          <section ref={schoolProjectsRef}>
+            <SchoolProjects />
           </section>
         </div>
       </main>

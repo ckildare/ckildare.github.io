@@ -26,6 +26,7 @@
     scroll-margin-top: 4.5rem;
     width: 100%;
     margin: 15px 0;
+    max-width: 40rem;
   }
 }
 
@@ -156,5 +157,11 @@
       display: flex;
       flex-direction: column;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    padding-left: 2rem;
   }
 }

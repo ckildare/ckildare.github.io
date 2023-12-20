@@ -6,7 +6,7 @@ import About from '@/components/layout/about';
 import Work from '@/components/layout/work';
 import Projects from '@/components/layout/projects';
 import SchoolProjects from '@/components/layout/schoolProjects';
-import { useRef, useEffect, useState, use } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import classNames from 'classnames';
 import githubLogo from '@/public/icons/github.svg';
 import gitlabLogo from '@/public/icons/gitlab.svg';

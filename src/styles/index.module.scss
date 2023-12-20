@@ -1,31 +1,31 @@
 @use "./palette.module.scss" as *;
 
 @mixin active {
-  color: $white;
+  color: $w;
   font-weight: $bold;
 }
 
 .main {
-  color: $gray;
-  background-color: $purple;
   min-height: 100vh;
+  color: $g;
+  background-color: $b40;
 }
 
 .pageContent {
+  gap: 4.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4.5rem;
-  overflow: scroll;
-  padding: 1rem;
-  overflow-x: hidden;
   height: 100%;
+  padding: 1rem;
+  overflow: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
 
   section {
-    margin: 15px 0;
-    width: 100%;
     scroll-margin-top: 4.5rem;
+    width: 100%;
+    margin: 15px 0;
   }
 }
 
@@ -44,23 +44,23 @@
     padding: 1rem 0 1rem 1rem;
 
     .name {
-      color: $white;
+      color: $w;
       font-weight: $bold;
       font-size: 3rem;
     }
 
     .profession {
-      color: $white;
+      color: $w;
       font-weight: $bold;
       font-size: 1.5rem;
     }
 
     .studies {
       margin-top: 0.5rem;
-      color: $gray;
+      color: $lg;
       font-style: normal;
       font-weight: 400;
-      font-size: 1rem;
+      font-size: 1.125rem;
     }
 
     .links {
@@ -80,22 +80,16 @@
   }
 
   .navBar {
+    gap: 1rem;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     padding: 0 1rem;
 
     .navItem {
-      color: $gray;
+      color: $g;
       font-style: normal;
       font-weight: $bold;
-      font-size: 1rem;
-    }
-
-    .navItem:hover {
-      @include active;
-      text-decoration: underline;
-      cursor: pointer;
+      font-size: 1.25rem;
     }
 
     .active {
@@ -103,17 +97,23 @@
     }
   }
 
+  .navItem:hover {
+    @include active;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   .sticky {
+    @include box-wrapper;
+    z-index: auto;
     position: fixed;
     top: 0;
-    z-index: auto;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: $purple;
     justify-content: space-evenly;
     width: 100%;
-    border: solid 1px #50455775;
-    box-shadow: 1px 1px 1px 1px #50455775;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: $b70;
+    box-shadow: 0px 4px 6px 2px #00000075;
 
     .navItem {
       font-size: 1.25rem;
@@ -123,16 +123,16 @@
 
 @media (min-width: 800px) {
   .main {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+    display: grid;
     height: 100vh;
   }
 
   .pageContent {
-    padding: 4.5rem 1rem 1rem 0;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
+    padding: 4.5rem 1rem 1rem 0;
     overflow-y: scroll;
   }
 

@@ -10,9 +10,9 @@
   .circle {
     width: 1rem;
     height: 1rem;
-    fill: $white;
-    filter: drop-shadow(#50455775 2px 2px);
-    border: solid 1px #50455775;
+    fill: $lg;
+    filter: drop-shadow(#00000075 2px 2px);
+    @include box-wrapper;
     border-radius: 0.75rem;
   }
 }

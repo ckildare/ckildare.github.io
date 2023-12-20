@@ -14,7 +14,7 @@
 
   p {
     margin: 0;
-    color: $gray;
+    color: $g;
     font-style: normal;
     font-weight: $regular;
     font-size: 0.875rem;
@@ -28,12 +28,11 @@
     width: 100%;
 
     .dmsi {
-      max-width: 40rem;
+      @include box-wrapper;
       width: 100%;
+      max-width: 40rem;
       height: auto;
       border-radius: 5px;
-      border: solid 1px #50455775;
-      box-shadow: 1px 1px 1px 1px #50455775;
     }
   }
 }

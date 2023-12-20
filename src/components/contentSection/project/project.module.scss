@@ -1,42 +1,41 @@
 @use "../../../styles/palette.module.scss"as *;
 
 .projectCardWrapper {
+  @include box-wrapper;
   gap: 1rem;
   display: flex;
-  min-width: 18rem;
-  max-width: 30rem;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 18rem;
+  max-width: 30rem;
   height: min-content;
   padding: 0.75rem 0.5rem;
-  border: solid 1px #50455775;
   border-radius: 5px;
-  background-color: #50455750;
-  box-shadow: 1px 1px 1px 1px #50455775;
+  background-color: $b50;
 
   .projectHeader {
+    row-gap: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    row-gap: 1rem;
 
     .projectTitle {
-      color: $lime;
-      font-weight: $bold;
-      font-size: 1rem;
       max-width: 220px;
+      color: $c20;
+      font-weight: $bold;
+      font-size: 1.125rem;
     }
 
     .linkPillSection {
+      gap: 0.5rem;
       display: flex;
       flex-direction: row;
       align-items: flex-start;
       align-content: flex-start;
       align-self: stretch;
-      gap: 0.5rem;
     }
   }
 
@@ -52,33 +51,39 @@
   }
 
   .projectDescriptionSection {
+    gap: 0.25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25rem;
 
     .projectSectionTitle {
-      color: $white;
-      font-weight: $bold;
-      font-size: 0.875rem;
       margin-bottom: 0.5rem;
+      color: $lg;
+      font-weight: $bold;
+      font-size: 1rem;
+    }
+
+    .projectDescription {
+      color: $g;
+      font-weight: $regular;
+      font-size: 0.875rem;
+      line-height: normal;
     }
   }
 
   .projectImageSection {
+    gap: 0.25rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
-    gap: 0.25rem;
 
     .supportingImg {
-      max-height: 125px;
+      @include box-wrapper;
       width: auto;
+      max-height: 125px;
       border-radius: 5px;
-      box-shadow: 1px 1px 1px 1px #50455775;
-      border: 1px solid #ffffff50;
     }
   }
 
@@ -90,13 +95,4 @@
     align-content: flex-start;
     align-self: stretch;
   }
-}
-
-.projectBody:before {
-  max-height: 10rem;
-  overflow: hidden;
-}
-
-.projectBodyOpen {
-  
 }

@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
       <meta name="keywords" content="Connor Kildare, Connor, Kildare, UNL, Conner Kildare, Conner, Portfolio, Portfolio Site, Speedway Motors, Senior Design" />
       <meta name="author" content="Connor Kildare" />
       <link rel="shortcut icon" href="/images/favicon.png" />
-      <link rel="icon" href="public/images/favicon.png" />
+      <link rel="icon" href="/images/favicon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
     </Head>

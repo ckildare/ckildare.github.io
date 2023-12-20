@@ -139,7 +139,7 @@ export default function Index() {
             <div className={classNames(styles.navItem, activeClass(0))} onClick={() => aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" })} >About</div>
             <div className={classNames(styles.navItem, activeClass(1))} onClick={() => workRef.current.scrollIntoView({ behavior: "smooth", block: "start" })}>Work</div>
             <div className={classNames(styles.navItem, activeClass(2))} onClick={() => projectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" })}>Projects</div>
-            <div className={classNames(styles.navItem, activeClass(3))} onClick={() => schoolProjectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" })}>School Projects</div>
+            <div className={classNames(styles.navItem, activeClass(3))} onClick={() => schoolProjectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" })}>School</div>
             <div className={styles.navItem} onClick={() => openPdf()}>Resume</div>
           </div>
         </header>

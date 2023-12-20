@@ -1,5 +1,10 @@
 @use "./palette.module.scss" as *;
 
+@mixin active {
+  color: $white;
+  font-weight: $bold;
+}
+
 .main {
   color: $gray;
   background-color: $purple;
@@ -20,10 +25,98 @@
   section {
     margin: 15px 0;
     width: 100%;
+    scroll-margin-top: 4.5rem;
+  }
+}
 
-    .sectionHeading {
-      position: sticky;
-      top: 4rem;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: inherit;
+  height: min-content;
+  padding-bottom: 4.5rem;
+
+  .headerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0 1rem 1rem;
+
+    .name {
+      color: $white;
+      font-weight: $bold;
+      font-size: 3rem;
+    }
+
+    .profession {
+      color: $white;
+      font-weight: $bold;
+      font-size: 1.5rem;
+    }
+
+    .studies {
+      margin-top: 0.5rem;
+      color: $gray;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    .links {
+      gap: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 15rem;
+      margin: 1rem 0;
+
+      .linkSvg {
+        width: 2rem;
+        height: auto;
+      }
+    }
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 1rem;
+
+    .navItem {
+      color: $gray;
+      font-style: normal;
+      font-weight: $bold;
+      font-size: 1rem;
+    }
+
+    .navItem:hover {
+      @include active;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .active {
+      @include active;
+    }
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    z-index: auto;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: $purple;
+    justify-content: space-evenly;
+    width: 100%;
+    border: solid 1px #50455775;
+    box-shadow: 1px 1px 1px 1px #50455775;
+
+    .navItem {
+      font-size: 1.25rem;
     }
   }
 }
@@ -37,7 +130,7 @@
   }
 
   .pageContent {
-    padding: 1rem 1rem 1rem 0;
+    padding: 4.5rem 1rem 1rem 0;
     height: 100vh;
     width: 100%;
     overflow-y: scroll;
@@ -45,5 +138,15 @@
 
   .sectionHeading {
     display: none;
+  }
+
+  .header {
+    position: sticky;
+    top: 4rem;
+
+    .navBar {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

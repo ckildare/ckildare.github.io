@@ -11,7 +11,7 @@ import githubLogo from '@/public/icons/github.svg';
 import gitlabLogo from '@/public/icons/gitlab.svg';
 import linkedinLogo from '@/public/icons/linkedin.svg';
 import emailLogo from '@/public/icons/email.svg';
-import { resume } from './resume.js';
+import { resume } from '../public/data/resume.js';
 
 export default function Index() {
   const headerRef = useRef(null);
@@ -108,7 +108,7 @@ export default function Index() {
             <div className={styles.profession}>Software Developer</div>
             <div className={styles.studies}>Software Engineering Major at the University of Nebraska - Lincoln</div>
             <div className={styles.links}>
-              <Link href={"https://github.com/ckildare"} >
+              <Link href={"https://github.com/ckildare"}>
                 <Image className={styles.linkSvg} src={githubLogo} alt={"Github link"} />
               </Link>
               <Link href={"https://gitlab.com/ckildare19"}>

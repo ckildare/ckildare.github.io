@@ -73,8 +73,16 @@
       margin: 1rem 0;
 
       .linkSvg {
-        width: 2rem;
+        width: 2.5rem;
         height: auto;
+        padding: 0.25rem;
+        border-radius: 5px;
+      }
+    
+      .linkSvg:hover {
+        padding: 0.25rem;
+        background-color: $g;
+        border-radius: 5px;
       }
     }
   }

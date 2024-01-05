@@ -45,8 +45,7 @@ export const projectData = [
     concept: "AWMM is a dynamic web application that utilizes Spotify's web API that allows users to search for a song and receive a playlist of similar songs based on the searched song. The user can then select songs from the playlist to continue the process of receiving more recommended songs based on the selected songs.",
     technologies: ["React.js", "HTML", "Sass (CSS)", "JavaScript", "Python", "GraphQL", "Spotipy API", "Heroku"],
     status: ProjectStatus.IN_PROGRESS,
-    projectLink: "https://axel-wilsons-mixtape-maker.herokuapp.com",
-    repoLink: "https://github.com/CodeCricut/RetroPlaylistGenerator",
+    repoLink: "https://github.com/ckildare/RetroPlaylistGenerator",
     supportingImgs: [axelWilson],
   },
   {

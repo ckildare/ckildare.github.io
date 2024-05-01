@@ -34,11 +34,7 @@ export default function Index() {
     const blob = new Blob([byteArray], { type: "application/pdf" });
     const blobUrl = URL.createObjectURL(blob);
     window.open(blobUrl);
-  }
-
-  useEffect(() => {
-    console.log("isHeaderIntersecting: ", isHeaderIntersecting);
-  }, [isHeaderIntersecting]);
+  };
 
   useEffect(() => {
     const headerObserver = new IntersectionObserver(([entry]) => {
@@ -81,7 +77,6 @@ export default function Index() {
         rootMargin: "-30% 0px -70% 0px"
       });
     projectsObserver.observe(projectsRef.current);
-    console.log('observe');
     return () => projectsObserver.disconnect();
   }, [projectsRef, intersectingSection]);
 
@@ -95,10 +90,6 @@ export default function Index() {
     schoolProjectsObserver.observe(schoolProjectsRef.current);
     return () => schoolProjectsObserver.disconnect();
   }, [schoolProjectsRef, intersectingSection]);
-
-  useEffect(() => {
-    console.log(intersectingSection);
-  }, [intersectingSection]);
 
   const stickyClass = isHeaderIntersecting ? styles.none : styles.sticky;
   const activeClass = (i) => intersectingSection == i ? styles.active : styles.none;
